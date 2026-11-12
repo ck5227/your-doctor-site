@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ck5227.github.io/your-doctor-site/sitemap.xml

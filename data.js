@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-12T16:22:07.653Z",
+ "builtAt": "2026-11-12T16:23:26.835Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
@@ -73,7 +73,8 @@ window.YD = {
    "approvedBy": "潘麒亘（急診醫學專科醫師、臨床毒物專科醫師）",
    "approvedAt": "2026-11-10",
    "note": "審閱醫師指示：即使建議可以晚點看門診，也必須保守；症狀再次出現就要馬上到醫院。全站所有「儘快安排門診」區塊都會顯示這段文字。"
-  }
+  },
+  "siteUrl": "https://ck5227.github.io/your-doctor-site/"
  },
  "sources": {
   "nhs-chest": {

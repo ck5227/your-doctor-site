@@ -190,6 +190,16 @@ a.bm-cell:hover small { color: #C9C6BF; }
 .bm-empty span { font-weight: 400; font-size: 13px; }
 .bm-extra { justify-content: center; }
 
+/* 手機：底部固定「立即求助」列（寬螢幕改用右側欄） */
+.rf-bar { position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 6; display: flex; gap: 8px; padding: 8px; background: rgba(253,245,244,.96); border: 1px solid var(--em-line); border-radius: 18px; box-shadow: 0 10px 30px -8px rgba(158,27,27,.35); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); transform: translateY(140%); transition: transform .25s; }
+.rf-bar.on { transform: none; }
+.rf-bar a { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 46px; border-radius: 12px; font-weight: 700; font-size: 15px; text-decoration: none; letter-spacing: .04em; }
+.rf-bar-link { flex: 1; color: var(--em-dark); background: #fff; border: 1px solid var(--em-line); }
+.rf-bar-call { padding: 0 18px; color: #fff; background: var(--em); box-shadow: inset 0 1px 0 rgba(255,255,255,.18); }
+body[data-page="symptom"] .site-footer { padding-bottom: 110px; }
+@media (min-width: 1180px) { .rf-bar { display: none; } body[data-page="symptom"] .site-footer { padding-bottom: 48px; } }
+@media (prefers-reduced-motion: reduce) { .rf-bar { transition: none; } }
+
 /* 寬螢幕：右側固定「立即求助」重點 */
 .rf-aside { display: none; }
 @media (min-width: 1180px) {

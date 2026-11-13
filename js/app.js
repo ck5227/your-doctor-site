@@ -276,8 +276,9 @@
       '<p class="rf-lead">有下列任何一項，請立即撥打 ' + esc(EM) + '：</p>' +
       '<ul>' + rf.map(function (it) { return '<li>' + esc(it.text) + '</li>'; }).join('') + '</ul>' +
       telLink(EM) + '<p class="rf-more"><a href="#now">看完整建議</a></p></aside>';
-    // 寬螢幕右側有「立即求助」側欄：先看可能的原因，「現在該怎麼做」放最後（審閱者決定）。手機維持原順序。
-    var WIDE = !!(window.matchMedia && window.matchMedia(WIDE_MQ).matches);
+    // 審閱者決定：所有螢幕都先看可能的原因，「現在該怎麼做」放最後。
+    // 立即求助的重點：寬螢幕在右側欄，手機在底部固定列。
+    var WIDE = true;
     var JUMP = { now: '<a href="#now">現在該怎麼做</a>', causes: '<a href="#causes">可能的原因</a>', prepare: '<a href="#prepare">就醫前準備</a>' };
     var parts = {
       head: '<p class="crumb"><a href="symptoms.html">症狀索引</a> <span aria-hidden="true">/</span> ' + esc(AREA[s.bodyArea] || '') + '</p>' +
@@ -319,13 +320,27 @@
     var order = WIDE ? ['head', 'causes', 'intro', 'qa', 'extra', 'prep', 'now', 'src'] : ['head', 'now', 'intro', 'qa', 'causes', 'extra', 'prep', 'src'];
     var html = '<div class="wrap sym-wrap' + (WIDE ? ' is-wide' : '') + '"><div class="sym-page">' +
       order.map(function (k) { return parts[k]; }).join('') +
-      '</div>' + aside + '</div>';
+      '</div>' + aside + '</div>' +
+      '<div class="rf-bar" role="region" aria-label="立即求助"><a class="rf-bar-link" href="#now"><span aria-hidden="true">⚠</span> 什麼情況要立即求助</a>' +
+      '<a class="rf-bar-call" href="tel:' + esc(EM) + '"><span aria-hidden="true">☎</span> ' + esc(EM) + '</a></div>';
     $('#main').innerHTML = html;
     // 側欄：紅色卡不在畫面上時顯示，避免重複
     var emCard = document.querySelector('.level.em'), asideEl = document.querySelector('.rf-aside');
-    if (emCard && asideEl && 'IntersectionObserver' in window) {
-      new IntersectionObserver(function (es) { asideEl.classList.toggle('on', !es[0].isIntersecting); }).observe(emCard);
-    } else if (asideEl) { asideEl.classList.add('on'); }
+    // 紅色卡在畫面上時隱藏側欄與底部列；其他時候顯示（直接依捲動位置判斷，不靠延遲的回呼）
+    var barEl = document.querySelector('.rf-bar');
+    function syncRf() {
+      if (!emCard) return;
+      var r = emCard.getBoundingClientRect(), vis = r.bottom > 0 && r.top < window.innerHeight;
+      if (asideEl) asideEl.classList.toggle('on', !vis);
+      if (barEl) barEl.classList.toggle('on', !vis);
+    }
+    syncRf();
+    if (!renderSymptom.bound) {
+      renderSymptom.bound = true;
+      window.addEventListener('scroll', function () { if (renderSymptom.sync) renderSymptom.sync(); }, { passive: true });
+      window.addEventListener('resize', function () { if (renderSymptom.sync) renderSymptom.sync(); });
+    }
+    renderSymptom.sync = syncRf;
     // 視窗寬度跨過門檻時重新排版
     if (!renderSymptom.mq && window.matchMedia) {
       renderSymptom.mq = window.matchMedia(WIDE_MQ);

@@ -187,6 +187,7 @@
       itemList(block.items, srcIndex) + (extra || '') + '</section>';
   }
 
+  var WIDE_MQ = '(min-width: 1180px)';
   function renderSymptom() {
     var slug = param('slug');
     var s = D.symptoms.filter(function (x) { return x.slug === slug; })[0];
@@ -275,40 +276,36 @@
       '<p class="rf-lead">有下列任何一項，請立即撥打 ' + esc(EM) + '：</p>' +
       '<ul>' + rf.map(function (it) { return '<li>' + esc(it.text) + '</li>'; }).join('') + '</ul>' +
       telLink(EM) + '<p class="rf-more"><a href="#now">看完整建議</a></p></aside>';
-    var html = '<div class="wrap sym-wrap"><div class="sym-page">' +
-      '<p class="crumb"><a href="symptoms.html">症狀索引</a> <span aria-hidden="true">/</span> ' + esc(AREA[s.bodyArea] || '') + '</p>' +
+    // 寬螢幕右側有「立即求助」側欄：先看可能的原因，「現在該怎麼做」放最後（審閱者決定）。手機維持原順序。
+    var WIDE = !!(window.matchMedia && window.matchMedia(WIDE_MQ).matches);
+    var JUMP = { now: '<a href="#now">現在該怎麼做</a>', causes: '<a href="#causes">可能的原因</a>', prepare: '<a href="#prepare">就醫前準備</a>' };
+    var parts = {
+      head: '<p class="crumb"><a href="symptoms.html">症狀索引</a> <span aria-hidden="true">/</span> ' + esc(AREA[s.bodyArea] || '') + '</p>' +
       (s.status !== 'published' ? '<p class="draft-flag" role="note">草稿・尚未經醫師審核，僅供內部預覽</p>' : '') +
       '<div class="sym-head">' + icon(s.slug) + '<h1>' + esc(s.title) + '</h1></div>' +
       '<p class="aliases">也常說成：' + esc(s.aliases.slice(0, 6).join('、')) + '</p>' +
       '<p class="audience">' + esc(s.audienceNote) + '</p>' +
-      '<nav class="jump" aria-label="本頁內容"><a href="#now">現在該怎麼做</a><a href="#causes">可能的原因</a><a href="#prepare">就醫前準備</a></nav>' +
-
-      '<h2 id="now">現在該怎麼做</h2>' +
+        '<nav class="jump' + (WIDE ? ' jump-wide' : '') + '" aria-label="本頁內容">' + (WIDE ? JUMP.causes + JUMP.prepare + JUMP.now : JUMP.now + JUMP.causes + JUMP.prepare) + '</nav>',
+      now: '<h2 id="now">現在該怎麼做</h2>' +
       levelCard('em', '立即求助', '⚠', a.emergency, srcIndex, emExtra) +
       levelCard('ur', '儘速就醫', '●', a.urgent, srcIndex) +
       levelCard('ro', '儘快門診', '○', a.routine, srcIndex, (a.routine && a.routine.doNow && a.routine.doNow.length ? '<div class="donow"><h4>等待看診時的照顧</h4>' + itemList(a.routine.doNow, srcIndex) + '</div>' : '') + safetyNet()) +
-      observeHtml + delayHtml +
-
-      '<h2>先了解一下</h2><p>' + esc(s.summary) + '</p>' + (s.definition ? '<p>' + esc(s.definition) + refs(s.definitionRefs, srcIndex) + '</p>' : '') +
-
-      '<h2>醫師可能會問你</h2><p class="small muted">先想好這些問題的答案，可以幫助你描述症狀。這些問題不是用來自行判斷病因。</p>' +
-      '<ol class="qa">' + s.keyQuestions.map(function (k) { return '<li><strong>' + esc(k.q) + '</strong><div class="why">' + esc(k.why) + '</div></li>'; }).join('') + '</ol>' +
-
-      '<h2 id="causes">可能的原因</h2>' +
+      observeHtml + delayHtml,
+      intro: '<h2>先了解一下</h2><p>' + esc(s.summary) + '</p>' + (s.definition ? '<p>' + esc(s.definition) + refs(s.definitionRefs, srcIndex) + '</p>' : ''),
+      qa: '<h2>醫師可能會問你</h2><p class="small muted">先想好這些問題的答案，可以幫助你描述症狀。這些問題不是用來自行判斷病因。</p>' +
+      '<ol class="qa">' + s.keyQuestions.map(function (k) { return '<li><strong>' + esc(k.q) + '</strong><div class="why">' + esc(k.why) + '</div></li>'; }).join('') + '</ol>',
+      causes: '<h2 id="causes">可能的原因</h2>' +
       (s.thinking ? '<section class="thinking" aria-labelledby="think-h"><h3 id="think-h">' + esc(s.thinking.heading) + (s.thinking.status !== 'published' ? ' <span class="draft-flag">草稿・未審核</span>' : '') + '</h3>' +
         (s.thinking.intro ? '<p class="small muted">' + esc(s.thinking.intro) + '</p>' : '') +
         '<ol class="think-steps">' + s.thinking.steps.map(function (t) { return '<li><strong>' + esc(t.title) + '</strong>' + refs(t.refs, srcIndex) + pendingFlag(t) + '<span class="plain">' + esc(t.text) + '</span></li>'; }).join('') + '</ol></section>' : '') +
       '<p class="disclaimer">以下不是診斷，也不代表發生的機率高低，只是說明醫師會考慮的方向。原因需要由醫師檢查後判斷。</p>' +
       '<div class="causes"><div class="cause-group"><h3>醫師會優先排除的嚴重原因</h3>' + causeList(c.ruleOutFirst) + '</div>' +
       '<div class="cause-group"><h3>其他較常見的原因</h3>' + causeList(c.otherCommon) + '</div></div>' +
-      locHtml +
-
-      (s.specialPopulations && s.specialPopulations.length ? '<h2>特別注意</h2>' + '<div class="cause-group">' + itemList(s.specialPopulations, srcIndex) + '</div>' : '') +
-      (s.links && s.links.length ? '<h2>延伸閱讀</h2><ul class="links">' + s.links.map(function (l) { return '<li><a href="' + esc(l.url) + '"' + (/^https?:/.test(l.url) ? ' rel="noopener" target="_blank"' : '') + '>' + esc(l.label) + '</a>' + (l.note ? '<br><span class="small muted">' + esc(l.note) + '</span>' : '') + '</li>'; }).join('') + '</ul>' : '') +
-
-      '<h2 id="prepare">就醫前可以準備</h2><ul>' + s.visitPreparation.map(function (v) { return '<li>' + esc(v) + '</li>'; }).join('') + '</ul>' +
-
-      '<h2 id="sources">審核與參考來源</h2><div class="meta"><dl>' +
+      locHtml,
+      extra: (s.specialPopulations && s.specialPopulations.length ? '<h2>特別注意</h2>' + '<div class="cause-group">' + itemList(s.specialPopulations, srcIndex) + '</div>' : '') +
+      (s.links && s.links.length ? '<h2>延伸閱讀</h2><ul class="links">' + s.links.map(function (l) { return '<li><a href="' + esc(l.url) + '"' + (/^https?:/.test(l.url) ? ' rel="noopener" target="_blank"' : '') + '>' + esc(l.label) + '</a>' + (l.note ? '<br><span class="small muted">' + esc(l.note) + '</span>' : '') + '</li>'; }).join('') + '</ul>' : ''),
+      prep: '<h2 id="prepare">就醫前可以準備</h2><ul>' + s.visitPreparation.map(function (v) { return '<li>' + esc(v) + '</li>'; }).join('') + '</ul>',
+      src: '<h2 id="sources">審核與參考來源</h2><div class="meta"><dl>' +
       '<dt>審閱醫師</dt><dd>' + (s.reviewedBy ? esc(s.reviewedBy) + '（' + esc(s.reviewerCredentials) + '）' : '<span class="warn">尚未審核</span>') + '</dd>' +
       '<dt>最後審核</dt><dd>' + esc(s.reviewedAt || '—') + '</dd>' +
       '<dt>下次審核</dt><dd>' + esc(s.nextReviewAt || '—') + '</dd></dl>' +
@@ -317,14 +314,24 @@
         return '<li id="src-' + (i + 1) + '">' + esc(src.publisher) + '. ' + esc(src.title) + '. <a href="' + esc(src.url) + '" rel="noopener" target="_blank">' + esc(src.url) + '</a></li>';
       }).join('') + '</ol>' +
       '<p class="small muted">本頁為依上述來源獨立撰寫的繁體中文衛教內容，並非翻譯。</p>' +
-      (feedback ? '<p>' + feedback + '</p>' : '') + '</div>' +
+      (feedback ? '<p>' + feedback + '</p>' : '') + '</div>'
+    };
+    var order = WIDE ? ['head', 'causes', 'intro', 'qa', 'extra', 'prep', 'now', 'src'] : ['head', 'now', 'intro', 'qa', 'causes', 'extra', 'prep', 'src'];
+    var html = '<div class="wrap sym-wrap' + (WIDE ? ' is-wide' : '') + '"><div class="sym-page">' +
+      order.map(function (k) { return parts[k]; }).join('') +
       '</div>' + aside + '</div>';
     $('#main').innerHTML = html;
-    // 紅色卡還在畫面上時不顯示側欄，避免重複
+    // 側欄：紅色卡不在畫面上時顯示，避免重複
     var emCard = document.querySelector('.level.em'), asideEl = document.querySelector('.rf-aside');
     if (emCard && asideEl && 'IntersectionObserver' in window) {
-      new IntersectionObserver(function (es) { asideEl.classList.toggle('on', !es[0].isIntersecting && es[0].boundingClientRect.top < 0); }).observe(emCard);
+      new IntersectionObserver(function (es) { asideEl.classList.toggle('on', !es[0].isIntersecting); }).observe(emCard);
     } else if (asideEl) { asideEl.classList.add('on'); }
+    // 視窗寬度跨過門檻時重新排版
+    if (!renderSymptom.mq && window.matchMedia) {
+      renderSymptom.mq = window.matchMedia(WIDE_MQ);
+      var onChange = function () { var y = window.scrollY; renderSymptom(); window.scrollTo(0, y); };
+      if (renderSymptom.mq.addEventListener) renderSymptom.mq.addEventListener('change', onChange); else renderSymptom.mq.addListener(onChange);
+    }
   }
 
   /* ---------- 緊急頁 ---------- */

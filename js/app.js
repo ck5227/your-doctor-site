@@ -295,6 +295,9 @@
       '<ol class="qa">' + s.keyQuestions.map(function (k) { return '<li><strong>' + esc(k.q) + '</strong><div class="why">' + esc(k.why) + '</div></li>'; }).join('') + '</ol>' +
 
       '<h2 id="causes">可能的原因</h2>' +
+      (s.thinking ? '<section class="thinking" aria-labelledby="think-h"><h3 id="think-h">' + esc(s.thinking.heading) + (s.thinking.status !== 'published' ? ' <span class="draft-flag">草稿・未審核</span>' : '') + '</h3>' +
+        (s.thinking.intro ? '<p class="small muted">' + esc(s.thinking.intro) + '</p>' : '') +
+        '<ol class="think-steps">' + s.thinking.steps.map(function (t) { return '<li><strong>' + esc(t.title) + '</strong>' + refs(t.refs, srcIndex) + pendingFlag(t) + '<span class="plain">' + esc(t.text) + '</span></li>'; }).join('') + '</ol></section>' : '') +
       '<p class="disclaimer">以下不是診斷，也不代表發生的機率高低，只是說明醫師會考慮的方向。原因需要由醫師檢查後判斷。</p>' +
       '<div class="causes"><div class="cause-group"><h3>醫師會優先排除的嚴重原因</h3>' + causeList(c.ruleOutFirst) + '</div>' +
       '<div class="cause-group"><h3>其他較常見的原因</h3>' + causeList(c.otherCommon) + '</div></div>' +

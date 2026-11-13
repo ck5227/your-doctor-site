@@ -165,6 +165,17 @@ section + section, .em-strip + section { margin-top: 40px; }
 .jump a:first-child { border-color: var(--em-line); color: var(--em-dark); background: var(--em-soft); }
 .jump a:first-child::after { color: var(--em); }
 
+/* 醫師怎麼想：思考順序 */
+.thinking { margin: 8px 0 22px; padding: 20px 22px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.thinking h3 { font-size: 17px; letter-spacing: .06em; margin-bottom: 4px; }
+.think-steps { list-style: none; counter-reset: th; padding: 0; margin: 12px 0 0; position: relative; }
+.think-steps::before { content: ""; position: absolute; left: 12px; top: 14px; bottom: 14px; width: 1px; background: var(--line); }
+.think-steps li { counter-increment: th; position: relative; padding: 4px 0 14px 40px; }
+.think-steps li:last-child { padding-bottom: 0; }
+.think-steps li::before { content: counter(th); position: absolute; left: 0; top: 4px; width: 25px; height: 25px; border-radius: 50%; background: var(--surface); border: 1px solid var(--ink); font-size: 12.5px; font-weight: 700; display: grid; place-items: center; line-height: 1; }
+.think-steps li:first-child::before { background: var(--em); border-color: var(--em); color: #fff; }
+.think-steps .plain { display: block; font-size: 14.5px; color: var(--muted); line-height: 1.7; }
+
 /* 腹部位置圖 */
 .bodymap { margin: 14px 0 6px; }
 .bm-figure { max-width: 420px; margin: 0 auto; }

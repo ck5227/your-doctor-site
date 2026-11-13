@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-13T01:09:46.081Z",
+ "builtAt": "2026-11-13T01:25:49.255Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
@@ -1379,7 +1379,64 @@ window.YD = {
     "nhs-pneumonia",
     "mayo-shingles",
     "nhs-panic"
-   ]
+   ],
+   "thinking": {
+    "status": "published",
+    "heading": "醫師怎麼想",
+    "intro": "醫師看胸痛，會先排除會致命的原因，再由外而內，一層一層想。這只是說明醫師的思考順序，不能用來自己判斷；只要有上方「立即求助」的任何一項，請立即就醫。",
+    "steps": [
+     {
+      "title": "先排除會致命的原因",
+      "text": "心肌梗塞、主動脈剝離、肺栓塞、氣胸。這些無法從外表分辨，需要醫師檢查才能確認，所以新發生、說不出原因的胸痛都要立即就醫。",
+      "refs": [
+       "mayo-chest",
+       "nhs-chest"
+      ]
+     },
+     {
+      "title": "皮膚",
+      "text": "帶狀疱疹（皮蛇）。",
+      "refs": [
+       "mayo-chest"
+      ]
+     },
+     {
+      "title": "肌肉和骨頭",
+      "text": "肌肉或肋軟骨發炎。",
+      "refs": [
+       "mayo-chest"
+      ]
+     },
+     {
+      "title": "肺和肋膜",
+      "text": "肺炎或肋膜炎、氣胸、肺栓塞。",
+      "refs": [
+       "mayo-chest"
+      ]
+     },
+     {
+      "title": "心臟和主動脈",
+      "text": "心肌梗塞、心絞痛、心包膜炎、主動脈剝離。",
+      "refs": [
+       "mayo-chest"
+      ]
+     },
+     {
+      "title": "食道和腸胃",
+      "text": "胃食道逆流。",
+      "refs": [
+       "mayo-chest"
+      ]
+     },
+     {
+      "title": "其他",
+      "text": "恐慌發作或焦慮。",
+      "refs": [
+       "mayo-chest"
+      ]
+     }
+    ]
+   }
   },
   {
    "slug": "shortness-of-breath",
@@ -1807,7 +1864,35 @@ window.YD = {
     "nhs-copd",
     "nhs-anaemia",
     "nhs-panic"
-   ]
+   ],
+   "thinking": {
+    "status": "published",
+    "heading": "醫師怎麼想",
+    "intro": "醫師看呼吸困難，會先排除會致命的原因，再看是突然發生，還是慢慢變喘好幾週。這只是說明醫師的思考順序，不能用來自己判斷；只要有上方「立即求助」的任何一項，請立即就醫。",
+    "steps": [
+     {
+      "title": "先排除會致命的原因",
+      "text": "嚴重過敏反應、心肌梗塞、肺栓塞、氣胸、一氧化碳中毒、氣喘或慢性肺病嚴重發作。",
+      "refs": [
+       "mayo-sob"
+      ]
+     },
+     {
+      "title": "突然發生的喘",
+      "text": "例如嚴重過敏反應、氣喘發作、一氧化碳中毒、心肌梗塞、心臟衰竭、肺炎、氣胸、肺栓塞。",
+      "refs": [
+       "mayo-sob"
+      ]
+     },
+     {
+      "title": "持續好幾週以上的喘",
+      "text": "例如氣喘、慢性阻塞性肺病、心臟的問題、體重過重、很少活動造成的體能下降，以及焦慮或恐慌。",
+      "refs": [
+       "mayo-sob"
+      ]
+     }
+    ]
+   }
   },
   {
    "slug": "abdominal-pain",
@@ -2459,7 +2544,37 @@ window.YD = {
     "nhs-dv",
     "nhs-poisoning",
     "mlp-poisoning"
-   ]
+   ],
+   "thinking": {
+    "status": "published",
+    "heading": "醫師怎麼想",
+    "intro": "醫師看腹痛，會先排除會致命的原因，再看痛的位置，也會想到肚子以外的器官。這只是說明醫師的思考順序，不能用來自己判斷；只要有上方「立即求助」的任何一項，請立即就醫。",
+    "steps": [
+     {
+      "title": "先排除會致命的原因",
+      "text": "闌尾炎、腸阻塞、消化性潰瘍出血、子宮外孕、急性胰臟炎或膽囊炎。",
+      "refs": [
+       "mayo-abdo",
+       "mlp-abdo"
+      ]
+     },
+     {
+      "title": "看痛的位置",
+      "text": "痛的位置和型態是重要的線索；醫師會想這個位置底下有哪些器官（見下方的位置圖）。",
+      "refs": [
+       "mayo-abdo",
+       "mlp-abdo"
+      ]
+     },
+     {
+      "title": "想到肚子以外的原因",
+      "text": "心肌梗塞也可能讓上腹痛；泌尿道感染、腎結石；女性還要想到子宮外孕和經痛。",
+      "refs": [
+       "mayo-abdo"
+      ]
+     }
+    ]
+   }
   },
   {
    "slug": "back-pain",
@@ -2924,7 +3039,43 @@ window.YD = {
     "mayo-kidney-infection",
     "mayo-herniated",
     "mayo-dissection"
-   ]
+   ],
+   "thinking": {
+    "status": "published",
+    "heading": "醫師怎麼想",
+    "intro": "醫師看腰痛，會先排除會致命的原因，再由外而內，先想背部本身，再想背後的器官。這只是說明醫師的思考順序，不能用來自己判斷；只要有上方「立即求助」的任何一項，請立即就醫。",
+    "steps": [
+     {
+      "title": "先排除會致命的原因",
+      "text": "神經嚴重受壓迫（馬尾症候群）、腹主動脈瘤破裂、主動脈剝離、脊椎感染、脊椎骨折、侵犯脊椎的癌症。",
+      "refs": [
+       "mlp-lbp",
+       "nhs-back"
+      ]
+     },
+     {
+      "title": "背部本身：肌肉和韌帶",
+      "text": "最常見的是肌肉或韌帶拉傷、肌肉痙攣。",
+      "refs": [
+       "mlp-lbp"
+      ]
+     },
+     {
+      "title": "背部本身：椎間盤、神經和脊椎骨",
+      "text": "椎間盤突出、坐骨神經痛、脊椎狹窄、關節炎、脊椎骨折。",
+      "refs": [
+       "mlp-lbp"
+      ]
+     },
+     {
+      "title": "背後的器官",
+      "text": "腎臟（結石、感染）、腹主動脈瘤，以及女性生殖器官的問題。",
+      "refs": [
+       "mlp-lbp"
+      ]
+     }
+    ]
+   }
   },
   {
    "slug": "headache",
@@ -3339,7 +3490,35 @@ window.YD = {
     "nhs-cluster",
     "nhs-sinusitis",
     "mohw-stroke"
-   ]
+   ],
+   "thinking": {
+    "status": "published",
+    "heading": "醫師怎麼想",
+    "intro": "醫師看頭痛，會先排除會致命的原因，再分「頭痛本身就是問題」還是「其他疾病造成的頭痛」。這只是說明醫師的思考順序，不能用來自己判斷；只要有上方「立即求助」的任何一項，請立即就醫。",
+    "steps": [
+     {
+      "title": "先排除會致命的原因",
+      "text": "蜘蛛網膜下腔出血、中風、腦膜炎、一氧化碳中毒、頭部外傷後顱內出血、急性青光眼、巨細胞動脈炎。",
+      "refs": [
+       "mayo-headache"
+      ]
+     },
+     {
+      "title": "原發性頭痛：頭痛本身就是問題",
+      "text": "不是其他疾病造成的，例如緊縮型頭痛、偏頭痛、叢發性頭痛。",
+      "refs": [
+       "mayo-headache"
+      ]
+     },
+     {
+      "title": "續發性頭痛：其他疾病造成的頭痛",
+      "text": "輕重差很多，例如鼻竇炎、止痛藥用太多，也包括上面那些會致命的原因。",
+      "refs": [
+       "mayo-headache"
+      ]
+     }
+    ]
+   }
   },
   {
    "slug": "fever",
@@ -3758,7 +3937,45 @@ window.YD = {
      "url": "symptom.html?slug=child-fever",
      "note": "嬰兒與兒童發燒的就醫建議"
     }
-   ]
+   ],
+   "thinking": {
+    "status": "published",
+    "heading": "醫師怎麼想",
+    "intro": "醫師看發燒，會先排除會致命的原因，再找感染在身體哪裡，也會想到不是感染的原因。這只是說明醫師的思考順序，不能用來自己判斷；只要有上方「立即求助」的任何一項，請立即就醫。",
+    "steps": [
+     {
+      "title": "先排除會致命的原因",
+      "text": "腦膜炎、敗血症、嚴重肺炎、嚴重登革熱，以及免疫力低下時的感染。",
+      "refs": [
+       "mlp-fever",
+       "nhs-sepsis",
+       "who-dengue"
+      ]
+     },
+     {
+      "title": "找感染在哪裡",
+      "text": "幾乎任何感染都會發燒：喉嚨、耳朵、鼻竇、肺、腸胃、泌尿道、皮膚、骨頭，或包覆腦部的薄膜（腦膜炎）。",
+      "refs": [
+       "mlp-fever"
+      ]
+     },
+     {
+      "title": "想到不是感染的原因",
+      "text": "某些藥物、自體免疫或發炎性疾病，以及中暑。",
+      "refs": [
+       "mlp-fever",
+       "nhs-heat"
+      ]
+     },
+     {
+      "title": "問旅遊和接觸",
+      "text": "住在或去過登革熱流行地區。",
+      "refs": [
+       "who-dengue"
+      ]
+     }
+    ]
+   }
   },
   {
    "slug": "rash",

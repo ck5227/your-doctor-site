@@ -224,13 +224,30 @@
     }
 
     var c = s.possibleCauses;
+    // 腹部九宮格：以患者本人的左右為準（看圖時，右側在畫面左邊）
+    var GRID = [['ruq', 'epi', 'luq'], ['rflank', 'umb', 'lflank'], ['rlq', 'pelvic', 'llq']];
+    var GRID_LABEL = { ruq: '右上腹', epi: '上腹中央', luq: '左上腹', rflank: '右側腹', umb: '肚臍周圍', lflank: '左側腹', rlq: '右下腹', pelvic: '下腹中央', llq: '左下腹' };
+    function bodyMap(regions) {
+      var have = {};
+      regions.forEach(function (r) { have[r.id] = r; });
+      var cells = GRID.map(function (row) {
+        return row.map(function (id) {
+          var r = have[id];
+          return r ? '<a class="bm-cell" href="#loc-' + esc(id) + '"><span>' + esc(GRID_LABEL[id]) + '</span><small>' + r.causes.length + ' 種</small></a>'
+                   : '<span class="bm-cell bm-empty" aria-hidden="true"><span>' + esc(GRID_LABEL[id]) + '</span></span>';
+        }).join('');
+      }).join('');
+      var extra = regions.filter(function (r) { return GRID.join(',').split(',').indexOf(r.id) < 0; });
+      return '<div class="bodymap"><div class="bm-figure"><p class="bm-side" aria-hidden="true"><span>你的右邊</span><span>你的左邊</span></p>' +
+        '<nav class="bm-grid" aria-label="依疼痛位置跳到可能的原因">' + cells + '</nav></div>' +
+        (extra.length ? '<ul class="chips bm-extra">' + extra.map(function (r) { return '<li><a href="#loc-' + esc(r.id) + '">' + esc(r.region) + '</a></li>'; }).join('') + '</ul>' : '') +
+        '</div>';
+    }
     var locHtml = '';
     if (c.byLocation && c.byLocation.length) {
       locHtml = '<h3 id="by-location" style="margin-top:24px">依疼痛位置</h3>' +
         '<p class="disclaimer">' + esc(c.byLocationIntro || '') + '</p>' +
-        '<nav aria-label="跳到疼痛位置"><ul class="chips">' + c.byLocation.map(function (r) {
-          return '<li><a href="#loc-' + esc(r.id) + '">' + esc(r.region) + '</a></li>';
-        }).join('') + '</ul></nav>' +
+        bodyMap(c.byLocation) +
         c.byLocation.map(function (r) {
           return '<div class="cause-group loc" id="loc-' + esc(r.id) + '"><h4>' + esc(r.region) + '</h4><ul>' + r.causes.map(function (x) {
             return '<li><strong>' + esc(x.name) + '</strong>' + refs(x.refs, srcIndex) + pendingFlag(x) + '<span class="plain">' + esc(x.clues) + '</span></li>';
@@ -252,12 +269,19 @@
       ? '<a href="mailto:' + esc(CFG.feedbackEmail) + '?subject=' + encodeURIComponent('內容回報：' + s.title) + '">回報內容錯誤或過時</a>'
       : (PREVIEW ? '<span class="warn">（尚未設定回報信箱：config.feedbackEmail）</span>' : '');
 
-    var html = '<div class="wrap sym-page">' +
+    var rf = a.emergency.items;
+    var aside = '<aside class="rf-aside" aria-label="立即求助重點">' +
+      '<p class="rf-tag"><span aria-hidden="true">⚠</span>立即求助</p>' +
+      '<p class="rf-lead">有下列任何一項，請立即撥打 ' + esc(EM) + '：</p>' +
+      '<ul>' + rf.map(function (it) { return '<li>' + esc(it.text) + '</li>'; }).join('') + '</ul>' +
+      telLink(EM) + '<p class="rf-more"><a href="#now">看完整建議</a></p></aside>';
+    var html = '<div class="wrap sym-wrap"><div class="sym-page">' +
       '<p class="crumb"><a href="symptoms.html">症狀索引</a> <span aria-hidden="true">/</span> ' + esc(AREA[s.bodyArea] || '') + '</p>' +
       (s.status !== 'published' ? '<p class="draft-flag" role="note">草稿・尚未經醫師審核，僅供內部預覽</p>' : '') +
       '<div class="sym-head">' + icon(s.slug) + '<h1>' + esc(s.title) + '</h1></div>' +
       '<p class="aliases">也常說成：' + esc(s.aliases.slice(0, 6).join('、')) + '</p>' +
       '<p class="audience">' + esc(s.audienceNote) + '</p>' +
+      '<nav class="jump" aria-label="本頁內容"><a href="#now">現在該怎麼做</a><a href="#causes">可能的原因</a><a href="#prepare">就醫前準備</a></nav>' +
 
       '<h2 id="now">現在該怎麼做</h2>' +
       levelCard('em', '立即求助', '⚠', a.emergency, srcIndex, emExtra) +
@@ -270,7 +294,7 @@
       '<h2>醫師可能會問你</h2><p class="small muted">先想好這些問題的答案，可以幫助你描述症狀。這些問題不是用來自行判斷病因。</p>' +
       '<ol class="qa">' + s.keyQuestions.map(function (k) { return '<li><strong>' + esc(k.q) + '</strong><div class="why">' + esc(k.why) + '</div></li>'; }).join('') + '</ol>' +
 
-      '<h2>可能的原因</h2>' +
+      '<h2 id="causes">可能的原因</h2>' +
       '<p class="disclaimer">以下不是診斷，也不代表發生的機率高低，只是說明醫師會考慮的方向。原因需要由醫師檢查後判斷。</p>' +
       '<div class="causes"><div class="cause-group"><h3>醫師會優先排除的嚴重原因</h3>' + causeList(c.ruleOutFirst) + '</div>' +
       '<div class="cause-group"><h3>其他較常見的原因</h3>' + causeList(c.otherCommon) + '</div></div>' +
@@ -279,7 +303,7 @@
       (s.specialPopulations && s.specialPopulations.length ? '<h2>特別注意</h2>' + '<div class="cause-group">' + itemList(s.specialPopulations, srcIndex) + '</div>' : '') +
       (s.links && s.links.length ? '<h2>延伸閱讀</h2><ul class="links">' + s.links.map(function (l) { return '<li><a href="' + esc(l.url) + '"' + (/^https?:/.test(l.url) ? ' rel="noopener" target="_blank"' : '') + '>' + esc(l.label) + '</a>' + (l.note ? '<br><span class="small muted">' + esc(l.note) + '</span>' : '') + '</li>'; }).join('') + '</ul>' : '') +
 
-      '<h2>就醫前可以準備</h2><ul>' + s.visitPreparation.map(function (v) { return '<li>' + esc(v) + '</li>'; }).join('') + '</ul>' +
+      '<h2 id="prepare">就醫前可以準備</h2><ul>' + s.visitPreparation.map(function (v) { return '<li>' + esc(v) + '</li>'; }).join('') + '</ul>' +
 
       '<h2 id="sources">審核與參考來源</h2><div class="meta"><dl>' +
       '<dt>審閱醫師</dt><dd>' + (s.reviewedBy ? esc(s.reviewedBy) + '（' + esc(s.reviewerCredentials) + '）' : '<span class="warn">尚未審核</span>') + '</dd>' +
@@ -291,8 +315,13 @@
       }).join('') + '</ol>' +
       '<p class="small muted">本頁為依上述來源獨立撰寫的繁體中文衛教內容，並非翻譯。</p>' +
       (feedback ? '<p>' + feedback + '</p>' : '') + '</div>' +
-      '</div>';
+      '</div>' + aside + '</div>';
     $('#main').innerHTML = html;
+    // 紅色卡還在畫面上時不顯示側欄，避免重複
+    var emCard = document.querySelector('.level.em'), asideEl = document.querySelector('.rf-aside');
+    if (emCard && asideEl && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { asideEl.classList.toggle('on', !es[0].isIntersecting && es[0].boundingClientRect.top < 0); }).observe(emCard);
+    } else if (asideEl) { asideEl.classList.add('on'); }
   }
 
   /* ---------- 緊急頁 ---------- */

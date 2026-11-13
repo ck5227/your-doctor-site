@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-12T16:24:47.402Z",
+ "builtAt": "2026-11-13T01:09:46.081Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",

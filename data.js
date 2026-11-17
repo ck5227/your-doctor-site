@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-17T02:16:05.968Z",
+ "builtAt": "2026-11-17T02:20:45.992Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
@@ -15,13 +15,17 @@ window.YD = {
    "palpitations",
    "abdominal-pain",
    "gi-bleeding",
+   "vomiting-diarrhea",
    "back-pain",
+   "leg-swelling",
    "headache",
+   "head-injury",
    "stroke",
    "memory-loss",
    "weakness",
    "dizziness",
    "fainting",
+   "seizure",
    "fever",
    "rash",
    "poisoning",
@@ -74,7 +78,9 @@ window.YD = {
     "child-poisoning",
     "stroke",
     "memory-loss",
-    "fainting"
+    "fainting",
+    "seizure",
+    "leg-swelling"
    ],
    "_noObserveNote": "列在此處的症狀不得提供「在家觀察」選項；build 會直接失敗。"
   },
@@ -1286,6 +1292,86 @@ window.YD = {
    "publisher": "NHS（英國國民保健署）",
    "title": "Supraventricular tachycardia (SVT)",
    "url": "https://www.nhs.uk/conditions/supraventricular-tachycardia-svt/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-dehyd": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Dehydration",
+   "url": "https://www.nhs.uk/conditions/dehydration/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-food-poison": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Food poisoning",
+   "url": "https://www.nhs.uk/conditions/food-poisoning/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-head": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Head injury and concussion",
+   "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-head-fa": {
+   "publisher": "Mayo Clinic",
+   "title": "Head trauma: First aid",
+   "url": "https://www.mayoclinic.org/first-aid/first-aid-head-trauma/basics/art-20056626",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-dvt": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "DVT (deep vein thrombosis)",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-dvt": {
+   "publisher": "Mayo Clinic",
+   "title": "Deep vein thrombosis (DVT): Symptoms and causes",
+   "url": "https://www.mayoclinic.org/diseases-conditions/deep-vein-thrombosis/symptoms-causes/syc-20352557",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-cellulitis": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Cellulitis",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-epilepsy": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Epilepsy",
+   "url": "https://www.nhs.uk/conditions/epilepsy/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mlp-seizure": {
+   "publisher": "MedlinePlus（美國國家醫學圖書館）",
+   "title": "Seizures",
+   "url": "https://medlineplus.gov/ency/article/003200.htm",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-seizure": {
+   "publisher": "Mayo Clinic",
+   "title": "Seizures: Symptoms and causes",
+   "url": "https://www.mayoclinic.org/diseases-conditions/seizure/symptoms-causes/syc-20365711",
    "type": "衛教",
    "checkedAt": "2026-11-17",
    "linkCheck": "ok"
@@ -3481,6 +3567,338 @@ window.YD = {
    "nextReviewAt": "2027-11-17"
   },
   {
+   "slug": "vomiting-diarrhea",
+   "title": "嘔吐、腹瀉（拉肚子）",
+   "bodyArea": "abdomen",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "嘔吐",
+    "一直吐",
+    "想吐",
+    "噁心",
+    "腹瀉",
+    "拉肚子",
+    "水瀉",
+    "上吐下瀉",
+    "腸胃炎",
+    "吃壞肚子",
+    "食物中毒",
+    "脫水"
+   ],
+   "summary": "嘔吐和腹瀉很常見，多半是腸胃炎或食物中毒，通常幾天內會好；重點是補充水分、注意脫水。但吐血、吐綠色的東西、劇烈肚子痛或頭痛、意識改變，請立即就醫。",
+   "definition": "成人和兒童的腹瀉通常在 5 到 7 天內停止，嘔吐通常在 1 到 2 天內停止。",
+   "definitionRefs": [
+    "nhs-dv"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "嘔吐或腹瀉，加上下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "吐血，或吐出像咖啡渣的東西",
+       "refs": [
+        "nhs-dv",
+        "nhs-vomit-blood"
+       ]
+      },
+      {
+       "text": "吐出綠色的東西",
+       "refs": [
+        "nhs-dv"
+       ]
+      },
+      {
+       "text": "可能吃到有毒的東西",
+       "refs": [
+        "nhs-dv"
+       ]
+      },
+      {
+       "text": "脖子僵硬，看亮光會痛",
+       "refs": [
+        "nhs-dv"
+       ]
+      },
+      {
+       "text": "突然劇烈頭痛",
+       "refs": [
+        "nhs-dv"
+       ]
+      },
+      {
+       "text": "突然劇烈肚子痛",
+       "refs": [
+        "nhs-dv"
+       ]
+      },
+      {
+       "text": "皮膚、嘴唇或舌頭發青、發灰、蒼白或出現花斑，或皮膚摸起來冰冷",
+       "refs": [
+        "nhs-dv",
+        "nhs-dehyd"
+       ]
+      },
+      {
+       "text": "呼吸非常困難，或呼吸又快又淺",
+       "refs": [
+        "nhs-dv",
+        "nhs-dehyd"
+       ]
+      },
+      {
+       "text": "意識混亂、反應和平常不一樣，或比平常想睡、叫不太醒",
+       "refs": [
+        "nhs-dv",
+        "nhs-dehyd"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119；把正在吃的藥帶去。",
+       "refs": [
+        "nhs-dehyd"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "一直吐，連水都喝不下",
+       "refs": [
+        "nhs-dv"
+       ]
+      },
+      {
+       "text": "血便或血樣腹瀉",
+       "refs": [
+        "nhs-dv"
+       ]
+      },
+      {
+       "text": "腹瀉超過 7 天，或嘔吐超過 2 天",
+       "refs": [
+        "nhs-dv"
+       ]
+      },
+      {
+       "text": "脫水的徵象：特別疲倦、站起來頭暈而且不會好、尿很少或很深黃、心跳或呼吸很快",
+       "refs": [
+        "nhs-dehyd"
+       ]
+      },
+      {
+       "text": "喝了口服電解質液之後，仍有脫水的徵象",
+       "refs": [
+        "nhs-dv"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "沒有上方任何一項：可以到診所看診",
+       "refs": [
+        "nhs-dv",
+        "nhs-food-poison"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "多喝水，想吐時小口小口喝。",
+       "refs": [
+        "nhs-dv"
+       ]
+      },
+      {
+       "text": "不要喝果汁或汽水，可能讓腹瀉更嚴重。",
+       "refs": [
+        "nhs-dv",
+        "nhs-dehyd"
+       ]
+      },
+      {
+       "text": "吃得下再吃，避免油膩和辛辣的食物。",
+       "refs": [
+        "nhs-dv"
+       ]
+      },
+      {
+       "text": "常用肥皂洗手；沾到嘔吐物或糞便的衣物要分開清洗。至少 2 天沒有再吐或腹瀉，再回去上班上學。",
+       "refs": [
+        "nhs-dv"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "脫水嚴重時可能休克，出現皮膚冰冷、發青、呼吸很快或意識混亂。",
+       "refs": [
+        "nhs-dehyd"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "吐和拉了多久？一天幾次？",
+     "why": "時間和次數幫助判斷脫水的程度。"
+    },
+    {
+     "q": "吐出來或拉出來的有沒有血、黑色或綠色？",
+     "why": "這些顏色需要立即處理。"
+    },
+    {
+     "q": "喝得下水嗎？尿量有沒有變少？",
+     "why": "幫助判斷有沒有脫水。"
+    },
+    {
+     "q": "有沒有吃到可疑的食物？一起吃的人也不舒服嗎？",
+     "why": "可能是食物中毒。"
+    },
+    {
+     "q": "有沒有慢性病？正在吃哪些藥？",
+     "why": "某些疾病和藥物會讓脫水更危險。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "腸胃道出血",
+      "plain": "吐血或吐咖啡渣狀的東西。",
+      "refs": [
+       "nhs-dv",
+       "nhs-vomit-blood"
+      ]
+     },
+     {
+      "name": "中毒",
+      "plain": "可能吃到有毒的東西。",
+      "refs": [
+       "nhs-dv"
+      ]
+     },
+     {
+      "name": "腦膜炎",
+      "plain": "合併脖子僵硬、怕光、劇烈頭痛。",
+      "refs": [
+       "nhs-dv",
+       "nhs-meningitis"
+      ]
+     },
+     {
+      "name": "嚴重脫水或休克",
+      "plain": "",
+      "refs": [
+       "nhs-dehyd"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "腸胃炎",
+      "plain": "最常見。",
+      "refs": [
+       "nhs-dv"
+      ]
+     },
+     {
+      "name": "食物中毒",
+      "plain": "吃到受污染的食物，幾小時到幾天後發生。",
+      "refs": [
+       "nhs-dv",
+       "nhs-food-poison"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的情況",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "吐出鮮紅色、咖啡色或像咖啡渣的東西",
+      "text": "可能是胃或食道出血，請立即到急診。",
+      "refs": [
+       "nhs-dv",
+       "nhs-vomit-blood"
+      ]
+     },
+     {
+      "pattern": "吐出綠色的東西",
+      "text": "請立即就醫。",
+      "refs": [
+       "nhs-dv"
+      ]
+     },
+     {
+      "pattern": "合併脖子僵硬、看亮光會痛、劇烈頭痛",
+      "text": "可能是腦膜炎，請立即撥打 119。",
+      "refs": [
+       "nhs-dv",
+       "nhs-meningitis"
+      ]
+     },
+     {
+      "pattern": "一起吃東西的人也上吐下瀉，在吃完幾小時到幾天內發生",
+      "text": "可能是食物中毒，通常一週內會好；出現脫水或上方任何一項，請就醫。",
+      "refs": [
+       "nhs-food-poison"
+      ]
+     },
+     {
+      "pattern": "尿很少或很深黃、站起來頭暈、特別疲倦",
+      "text": "可能是脫水，請今天就醫。",
+      "refs": [
+       "nhs-dehyd"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "5 歲以下的兒童和年長者比較容易脫水，要多補充水分。",
+     "refs": [
+      "nhs-dehyd"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "吐和拉開始的時間、一天幾次",
+    "吐出物或大便的顏色（可以拍照）",
+    "最近吃過的食物，一起吃的人有沒有不舒服",
+    "使用中的所有藥物"
+   ],
+   "sources": [
+    "nhs-dv",
+    "nhs-vomit-blood",
+    "nhs-dehyd",
+    "nhs-food-poison",
+    "nhs-meningitis"
+   ]
+  },
+  {
    "slug": "back-pain",
    "title": "腰痛（下背痛）",
    "aliases": [
@@ -3982,6 +4400,216 @@ window.YD = {
    }
   },
   {
+   "slug": "leg-swelling",
+   "title": "小腿腫痛（單腳腫、痛）",
+   "bodyArea": "limbs",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "小腿腫",
+    "小腿痛",
+    "腳腫",
+    "單腳腫",
+    "腳腫痛",
+    "小腿腫痛",
+    "腿腫",
+    "大腿腫痛",
+    "深部靜脈血栓",
+    "靜脈栓塞",
+    "血栓",
+    "經濟艙症候群"
+   ],
+   "summary": "一隻腳突然腫、痛，可能是深部靜脈血栓（腳的靜脈裡有血塊），請今天就醫；血塊可能跑到肺部造成肺栓塞，合併喘或胸痛時請立即撥打 119。",
+   "definition": "深部靜脈血栓是靜脈裡形成血塊，通常在腳。",
+   "definitionRefs": [
+    "nhs-dvt"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119",
+     "intro": "腳腫痛，加上下列任何一項，請立即撥打 119：",
+     "items": [
+      {
+       "text": "突然喘、呼吸急促",
+       "refs": [
+        "nhs-dvt",
+        "mayo-dvt"
+       ]
+      },
+      {
+       "text": "胸痛，深呼吸或咳嗽時更痛",
+       "refs": [
+        "nhs-dvt",
+        "mayo-dvt"
+       ]
+      },
+      {
+       "text": "頭暈、昏倒，或心跳、呼吸很快",
+       "refs": [
+        "mayo-dvt"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "不要自己開車去急診；把正在吃的藥帶去。",
+       "refs": [
+        "nhs-dvt"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "一隻腳（通常是小腿或大腿）抽痛、腫脹，皮膚變紅、變暗或發青，或靜脈腫起來",
+       "refs": [
+        "nhs-dvt"
+       ]
+      },
+      {
+       "text": "一塊皮膚痛、熱、腫，可能發紅或起水泡",
+       "refs": [
+        "nhs-cellulitis"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": []
+    },
+    "observe": null,
+    "observeOmittedReason": "單腳腫痛不提供在家觀察。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "腳的血塊可能跑到肺部，造成肺栓塞，可能危及生命。",
+       "refs": [
+        "nhs-dvt",
+        "mayo-dvt"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "是一隻腳還是兩隻腳？從什麼時候開始？",
+     "why": "單腳突然腫痛要先想到血栓。"
+    },
+    {
+     "q": "最近有沒有手術、受傷、長時間坐車搭飛機，或臥床不能動？",
+     "why": "這些都會增加血栓的風險。"
+    },
+    {
+     "q": "有沒有吃避孕藥或荷爾蒙、懷孕或剛生產、有癌症？",
+     "why": "這些都會增加血栓的風險。"
+    },
+    {
+     "q": "自己或家人以前有沒有血栓？",
+     "why": "血栓的病史會增加風險。"
+    },
+    {
+     "q": "有沒有喘或胸痛？",
+     "why": "可能是血塊跑到肺部。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "深部靜脈血栓",
+      "plain": "腳的靜脈裡有血塊。",
+      "refs": [
+       "nhs-dvt",
+       "mayo-dvt"
+      ]
+     },
+     {
+      "name": "肺栓塞",
+      "plain": "血塊跑到肺部，突然喘、胸痛。",
+      "refs": [
+       "nhs-dvt",
+       "mayo-dvt"
+      ]
+     },
+     {
+      "name": "蜂窩性組織炎",
+      "plain": "皮膚感染，紅、腫、熱、痛。",
+      "refs": [
+       "nhs-cellulitis"
+      ]
+     }
+    ],
+    "otherCommon": [],
+    "patternsHeading": "依出現的情況",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "一隻小腿或大腿抽痛、腫脹，皮膚發紅或變暗",
+      "text": "可能是深部靜脈血栓，請今天就醫。",
+      "refs": [
+       "nhs-dvt"
+      ]
+     },
+     {
+      "pattern": "腳腫痛之後突然喘、胸痛（深呼吸更痛）、頭暈或昏倒",
+      "text": "可能是肺栓塞，請立即撥打 119。",
+      "refs": [
+       "nhs-dvt",
+       "mayo-dvt"
+      ]
+     },
+     {
+      "pattern": "長時間坐車搭飛機、手術或受傷後不能動、懷孕或產後，出現單腳腫痛",
+      "text": "血栓的風險比較高，請今天就醫。",
+      "refs": [
+       "mayo-dvt"
+      ]
+     },
+     {
+      "pattern": "一塊皮膚痛、熱、腫，可能發紅、起水泡，或覺得像感冒一樣不舒服",
+      "text": "可能是蜂窩性組織炎，請今天就醫。",
+      "refs": [
+       "nhs-cellulitis"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "60 歲以上、肥胖、抽菸、有癌症或心臟衰竭、懷孕或產後 6 週內、吃避孕藥或荷爾蒙、以前有過血栓的人，比較容易發生深部靜脈血栓。",
+     "refs": [
+      "nhs-dvt",
+      "mayo-dvt"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "腫痛開始的時間、哪一隻腳",
+    "最近的手術、受傷、長途旅行",
+    "使用中的所有藥物，特別是避孕藥、荷爾蒙",
+    "自己和家人的血栓病史"
+   ],
+   "sources": [
+    "nhs-dvt",
+    "mayo-dvt",
+    "nhs-cellulitis"
+   ]
+  },
+  {
    "slug": "headache",
    "title": "頭痛",
    "aliases": [
@@ -4423,6 +5051,323 @@ window.YD = {
      }
     ]
    }
+  },
+  {
+   "slug": "head-injury",
+   "title": "頭部撞傷",
+   "bodyArea": "head",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "撞到頭",
+    "頭部撞傷",
+    "頭部外傷",
+    "跌倒撞到頭",
+    "腦震盪",
+    "頭撞到",
+    "頭受傷",
+    "車禍撞到頭",
+    "頭腫一包",
+    "摔到頭"
+   ],
+   "summary": "大多數頭部撞傷不嚴重，但出現任何症狀都要就醫。撞到後叫不醒、一直想睡、抽搐、手腳無力、說話或走路有困難，請立即撥打 119。",
+   "definition": "腦震盪是頭部撞傷後暫時的腦部損傷，症狀可能持續幾週。",
+   "definitionRefs": [
+    "nhs-head"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "撞到頭，加上下列任何一項，請立即撥打 119：",
+     "items": [
+      {
+       "text": "昏過去還沒醒，或醒著但一直想睡、張不開眼睛",
+       "refs": [
+        "nhs-head",
+        "mayo-head-fa"
+       ]
+      },
+      {
+       "text": "抽搐",
+       "refs": [
+        "nhs-head",
+        "mayo-head-fa"
+       ]
+      },
+      {
+       "text": "從超過 1 公尺或 5 階樓梯的高度摔下，或車禍等高速撞擊",
+       "refs": [
+        "nhs-head",
+        "mayo-head-fa"
+       ]
+      },
+      {
+       "text": "看東西或聽力有問題，或兩邊瞳孔一大一小",
+       "refs": [
+        "nhs-head",
+        "mayo-head-fa"
+       ]
+      },
+      {
+       "text": "耳朵或鼻子流出透明的液體或血、耳朵後面瘀青，或沒撞到眼睛卻出現黑眼圈",
+       "refs": [
+        "nhs-head",
+        "mayo-head-fa"
+       ]
+      },
+      {
+       "text": "身體任何部位新出現麻木或無力，或走路、平衡、理解、說話、書寫有困難",
+       "refs": [
+        "nhs-head",
+        "mayo-head-fa"
+       ]
+      },
+      {
+       "text": "頭部傷口有東西插著、頭骨凹陷，或頭臉大量出血",
+       "refs": [
+        "nhs-head",
+        "mayo-head-fa"
+       ]
+      },
+      {
+       "text": "行為改變，或意識混亂、躁動愈來愈嚴重",
+       "refs": [
+        "nhs-head",
+        "mayo-head-fa"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "讓他靜靜躺著，頭和肩膀稍微墊高。除非必要不要移動他，避免轉動脖子；戴著安全帽的不要脫下。",
+       "refs": [
+        "mayo-head-fa"
+       ]
+      },
+      {
+       "text": "用乾淨的布用力按壓止血；懷疑頭骨骨折時，不要直接用力壓傷口。",
+       "refs": [
+        "mayo-head-fa"
+       ]
+      },
+      {
+       "text": "沒有呼吸、咳嗽或任何動作：開始心肺復甦術（做法見「緊急狀況怎麼辦」頁）。",
+       "refs": [
+        "mayo-head-fa",
+        "nfa-cpr"
+       ]
+      },
+      {
+       "text": "撞到頭的人不要自己開車去醫院。",
+       "refs": [
+        "nhs-head"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "撞到頭之後嘔吐",
+       "refs": [
+        "nhs-head"
+       ]
+      },
+      {
+       "text": "撞到頭之後頭暈",
+       "refs": [
+        "nhs-head"
+       ]
+      },
+      {
+       "text": "有吃抗凝血藥，或有容易出血的疾病",
+       "refs": [
+        "nhs-head"
+       ]
+      },
+      {
+       "text": "受傷時有喝酒或用藥",
+       "refs": [
+        "nhs-head"
+       ]
+      },
+      {
+       "text": "頭痛、耳鳴、平衡不好、視力模糊、無法專心等腦震盪症狀",
+       "refs": [
+        "mayo-head-fa"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "輕微撞傷，沒有上方任何一項：可以到診所看診",
+       "refs": [
+        "nhs-head"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "受傷後前幾天，用毛巾包冰袋冰敷，每次短時間，可以消腫。",
+       "refs": [
+        "nhs-head"
+       ]
+      },
+      {
+       "text": "受傷後至少前 24 小時，要有大人陪在旁邊。",
+       "refs": [
+        "nhs-head"
+       ]
+      },
+      {
+       "text": "完全恢復之前不要開車、喝酒或吃安眠藥；至少 3 週不要從事會碰撞的運動。",
+       "refs": [
+        "nhs-head"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "大多數頭部撞傷不嚴重，但出現任何症狀都要就醫。",
+       "refs": [
+        "nhs-head"
+       ]
+      },
+      {
+       "text": "受傷後的症狀可能持續到 2 週。",
+       "refs": [
+        "nhs-head"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "怎麼撞到的？從多高摔下？",
+     "why": "撞擊的力道和頭部傷害的風險有關。"
+    },
+    {
+     "q": "有沒有昏過去？多久？",
+     "why": "昏迷的時間是重要的資訊。"
+    },
+    {
+     "q": "有沒有吃抗凝血藥或阿斯匹靈？",
+     "why": "這些藥會增加出血的風險。"
+    },
+    {
+     "q": "撞到後有沒有吐、頭痛、頭暈或一直想睡？",
+     "why": "這些可能是腦部受傷的表現。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "頭部外傷後顱內出血",
+      "plain": "",
+      "refs": [
+       "mayo-headache"
+      ]
+     },
+     {
+      "name": "頭骨骨折",
+      "plain": "",
+      "refs": [
+       "mayo-head-fa"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "腦震盪",
+      "plain": "頭痛、噁心、耳鳴、平衡不好、視力模糊、無法專心。",
+      "refs": [
+       "nhs-head",
+       "mayo-head-fa"
+      ]
+     },
+     {
+      "name": "頭皮瘀青或腫包",
+      "plain": "",
+      "refs": [
+       "nhs-head"
+      ]
+     }
+    ],
+    "patternsHeading": "依撞傷後的情況",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "撞到後一直想睡、叫不太醒，或意識愈來愈差",
+      "text": "可能是嚴重的腦部傷害，請立即撥打 119。",
+      "refs": [
+       "nhs-head",
+       "mayo-head-fa"
+      ]
+     },
+     {
+      "pattern": "耳朵或鼻子流出透明液體、耳後瘀青，或沒撞到眼睛卻出現黑眼圈",
+      "text": "可能是嚴重的頭部傷害，請立即撥打 119。",
+      "refs": [
+       "nhs-head",
+       "mayo-head-fa"
+      ]
+     },
+     {
+      "pattern": "頭痛、噁心、耳鳴、平衡不好、視力模糊、無法專心",
+      "text": "可能是腦震盪，請今天就醫評估。",
+      "refs": [
+       "mayo-head-fa"
+      ]
+     },
+     {
+      "pattern": "有吃抗凝血藥的人撞到頭",
+      "text": "請今天就醫評估；出現上方任何一項，請撥打 119。",
+      "refs": [
+       "nhs-head"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "有吃抗凝血藥、有容易出血的疾病，或受傷時有喝酒的人，撞到頭請今天就醫。",
+     "refs": [
+      "nhs-head"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "怎麼撞到、從多高摔下",
+    "有沒有昏過去、多久",
+    "使用中的所有藥物，特別是抗凝血藥、阿斯匹靈",
+    "看到經過的人一起去"
+   ],
+   "sources": [
+    "nhs-head",
+    "mayo-head-fa",
+    "nfa-cpr",
+    "mayo-headache"
+   ]
   },
   {
    "slug": "stroke",
@@ -6158,6 +7103,346 @@ window.YD = {
    "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
    "reviewedAt": "2026-11-17",
    "nextReviewAt": "2027-11-17"
+  },
+  {
+   "slug": "seizure",
+   "title": "抽搐、癲癇發作",
+   "bodyArea": "neuro",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。兒童發燒時抽搐，請看「兒童發燒」頁。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "抽搐",
+    "癲癇",
+    "羊癲瘋",
+    "全身抽動",
+    "翻白眼",
+    "口吐白沫",
+    "癲癇發作",
+    "痙攣",
+    "抽搐發作"
+   ],
+   "summary": "抽搐通常幾秒到幾分鐘會自己停止。發作時最重要的是保護他不要受傷。第一次抽搐、抽超過 5 分鐘、抽完沒有恢復或接連發作，請立即撥打 119。",
+   "definition": "抽搐（癲癇發作）是腦部突然異常放電，可能造成意識、動作或感覺的改變。兩次以上沒有明確誘因的發作，稱為癲癇。",
+   "definitionRefs": [
+    "mayo-seizure"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119",
+     "intro": "有人抽搐，加上下列任何一項，請立即撥打 119：",
+     "items": [
+      {
+       "text": "第一次抽搐",
+       "refs": [
+        "nhs-epilepsy",
+        "mlp-seizure"
+       ]
+      },
+      {
+       "text": "抽超過 5 分鐘，或比他平常的發作更久",
+       "refs": [
+        "nhs-epilepsy",
+        "mayo-seizure"
+       ]
+      },
+      {
+       "text": "抽完沒有恢復，或還沒恢復又抽第二次",
+       "refs": [
+        "nhs-epilepsy",
+        "mlp-seizure",
+        "mayo-seizure"
+       ]
+      },
+      {
+       "text": "24 小時內抽了 3 次以上",
+       "refs": [
+        "nhs-epilepsy"
+       ]
+      },
+      {
+       "text": "抽完之後沒有呼吸",
+       "refs": [
+        "mayo-seizure"
+       ]
+      },
+      {
+       "text": "在水裡抽搐",
+       "refs": [
+        "mlp-seizure"
+       ]
+      },
+      {
+       "text": "抽搐時受傷",
+       "refs": [
+        "mayo-seizure",
+        "mlp-seizure"
+       ]
+      },
+      {
+       "text": "懷孕、有糖尿病，或發高燒、中暑",
+       "refs": [
+        "mayo-seizure",
+        "mlp-seizure"
+       ]
+      },
+      {
+       "text": "這次的發作和平常不一樣",
+       "refs": [
+        "mlp-seizure"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "讓他躺在安全的地上，移開周圍尖銳或危險的東西，頭下墊軟的東西。",
+       "refs": [
+        "mlp-seizure"
+       ]
+      },
+      {
+       "text": "鬆開脖子周圍的衣服；讓他側躺，萬一吐了才不會嗆到。",
+       "refs": [
+        "mlp-seizure"
+       ]
+      },
+      {
+       "text": "記下開始和結束的時間。",
+       "refs": [
+        "nhs-febrile"
+       ]
+      },
+      {
+       "text": "不要壓住他，不要把任何東西（包括手指）放進他嘴裡，也不要拉他的舌頭。",
+       "refs": [
+        "mlp-seizure"
+       ]
+      },
+      {
+       "text": "完全清醒之前，不要給他吃喝任何東西。",
+       "refs": [
+        "mlp-seizure"
+       ]
+      },
+      {
+       "text": "抽搐明確停止後沒有呼吸，才開始心肺復甦術。陪在旁邊，直到他恢復或救護人員到達。",
+       "refs": [
+        "mlp-seizure"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "覺得自己可能抽搐過，但當時沒有就醫",
+       "refs": [
+        "nhs-epilepsy"
+       ]
+      },
+      {
+       "text": "有癲癇，很久沒發作又再發作",
+       "refs": [
+        "nhs-epilepsy"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": []
+    },
+    "observe": null,
+    "observeOmittedReason": "抽搐不提供在家觀察。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "抽搐持續很久，或接連發作沒有恢復，需要緊急治療，以免腦部受損。",
+       "refs": [
+        "nhs-epilepsy"
+       ]
+      },
+      {
+       "text": "抽搐可能造成意外或受傷。",
+       "refs": [
+        "nhs-epilepsy"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "抽了多久？全身還是身體一部分？",
+     "why": "發作的時間和型態幫助判斷原因。"
+    },
+    {
+     "q": "是第一次嗎？有沒有癲癇，平常吃藥嗎？最近有沒有漏吃？",
+     "why": "漏吃藥是常見的誘發原因。"
+    },
+    {
+     "q": "抽之前有沒有發燒、頭痛、撞到頭、喝酒或戒酒？",
+     "why": "這些都可能引起抽搐。"
+    },
+    {
+     "q": "有沒有糖尿病？懷孕嗎？",
+     "why": "低血糖和懷孕相關的抽搐需要立即處理。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "低血糖或血鈉異常",
+      "plain": "",
+      "refs": [
+       "mlp-seizure"
+      ]
+     },
+     {
+      "name": "腦部感染（腦膜炎、腦炎）",
+      "plain": "",
+      "refs": [
+       "mlp-seizure"
+      ]
+     },
+     {
+      "name": "頭部受傷",
+      "plain": "",
+      "refs": [
+       "mlp-seizure"
+      ]
+     },
+     {
+      "name": "中風",
+      "plain": "",
+      "refs": [
+       "mlp-seizure"
+      ]
+     },
+     {
+      "name": "中毒或毒品",
+      "plain": "",
+      "refs": [
+       "mlp-seizure"
+      ]
+     },
+     {
+      "name": "中暑",
+      "plain": "",
+      "refs": [
+       "mlp-seizure",
+       "mayo-seizure"
+      ]
+     },
+     {
+      "name": "懷孕相關（子癲症）",
+      "plain": "",
+      "refs": [
+       "mlp-seizure"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "癲癇",
+      "plain": "",
+      "refs": [
+       "mlp-seizure",
+       "nhs-epilepsy"
+      ]
+     },
+     {
+      "name": "酒精或某些藥物戒斷",
+      "plain": "長期使用後突然停止。",
+      "refs": [
+       "mlp-seizure"
+      ]
+     }
+    ],
+    "patternsHeading": "依發作前後的情況",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "第一次抽搐",
+      "text": "需要檢查原因，請立即撥打 119。",
+      "refs": [
+       "nhs-epilepsy",
+       "mlp-seizure"
+      ]
+     },
+     {
+      "pattern": "有糖尿病，抽搐前冒汗、發抖",
+      "text": "可能是低血糖，請撥打 119；抽搐或叫不醒時不要餵食。",
+      "refs": [
+       "mlp-seizure",
+       "nhs-hypo"
+      ]
+     },
+     {
+      "pattern": "長期喝酒的人停酒之後抽搐",
+      "text": "可能是酒精戒斷，請撥打 119。",
+      "refs": [
+       "mlp-seizure"
+      ]
+     },
+     {
+      "pattern": "發燒、頭痛、脖子僵硬之後抽搐",
+      "text": "可能是腦部感染，請立即撥打 119。",
+      "refs": [
+       "mlp-seizure"
+      ]
+     },
+     {
+      "pattern": "撞到頭之後抽搐",
+      "text": "請立即撥打 119。",
+      "refs": [
+       "mlp-seizure",
+       "nhs-head"
+      ]
+     },
+     {
+      "pattern": "突然失去意識倒下、身體短暫抽動幾下，很快醒來",
+      "text": "也可能是昏倒，不一定是癲癇；請就醫檢查（也可看「昏倒、暈厥」頁）。",
+      "refs": [
+       "mlp-seizure"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "懷孕中抽搐，對孕婦和胎兒都有危險，請立即撥打 119。",
+     "refs": [
+      "mayo-seizure",
+      "mlp-seizure"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "看到發作經過的人一起去（可以錄影）",
+    "發作開始和結束的時間",
+    "使用中的所有藥物，最近有沒有漏吃",
+    "病史：癲癇、糖尿病、最近有沒有撞到頭"
+   ],
+   "sources": [
+    "mayo-seizure",
+    "nhs-epilepsy",
+    "mlp-seizure",
+    "nhs-febrile",
+    "nhs-hypo",
+    "nhs-head"
+   ]
   },
   {
    "slug": "fever",

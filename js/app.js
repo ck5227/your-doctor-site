@@ -13,8 +13,8 @@
   }
   function $(sel) { return document.querySelector(sel); }
   function param(name) { return new URLSearchParams(location.search).get(name) || ''; }
-  var AREA = { head: '頭頸部', chest: '胸部', abdomen: '腹部', back: '背部', 'whole-body': '全身', skin: '皮膚', neuro: '腦和神經', child: '兒童' };
-  var AREA_ORDER = ['head', 'neuro', 'chest', 'abdomen', 'back', 'skin', 'whole-body', 'child'];
+  var AREA = { head: '頭頸部', chest: '胸部', abdomen: '腹部', back: '背部', 'whole-body': '全身', skin: '皮膚', neuro: '腦和神經', limbs: '手腳', child: '兒童' };
+  var AREA_ORDER = ['head', 'neuro', 'chest', 'abdomen', 'back', 'limbs', 'skin', 'whole-body', 'child'];
 
   /* 單色線條圖示（裝飾用，aria-hidden） */
   var ICON_PATHS = {
@@ -34,6 +34,10 @@
   ICON_PATHS.fainting = '<circle cx="7" cy="7.5" r="2"/><path d="M8.5 9.5l5 3.5h6"/><path d="M4 18h16"/><path d="M15 6h2.5L15 9h2.5"/>';
   ICON_PATHS['gi-bleeding'] = '<path d="M12 3.5s-5 5.8-5 9.5a5 5 0 0 0 10 0c0-3.7-5-9.5-5-9.5z"/><path d="M10 14.5a2 2 0 0 0 2 2"/>';
   ICON_PATHS.palpitations = '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/><path d="M7 11.5h2.5l1-2.5 2 5 1-2.5H17"/>';
+  ICON_PATHS['vomiting-diarrhea'] = '<path d="M8 3.5c-2.6 3.5-2.6 13.5 0 17"/><path d="M16 3.5c2.6 3.5 2.6 13.5 0 17"/><path d="M10 10.5c1.3-1 2.7 1 4 0M10 14c1.3-1 2.7 1 4 0"/>';
+  ICON_PATHS['head-injury'] = '<circle cx="12" cy="11" r="6.5"/><path d="M9.5 17.3V21M14.5 17.3V21"/><path d="M15 3.5l1.5 2.5 2.5-1-1 2.5 2.5 1.5"/>';
+  ICON_PATHS['leg-swelling'] = '<path d="M9 3v9.5c0 2-1 3.5-1 5.5 0 1.7 1.3 3 3 3h4"/><path d="M14 3v8"/><path d="M14 11c2.2 1 3 3 2.5 5"/>';
+  ICON_PATHS.seizure = '<path d="M13 2.5L6.5 13H12l-1 8.5L17.5 11H12z"/>';
   ICON_PATHS['child-fever'] = ICON_PATHS.fever;
   ICON_PATHS['child-poisoning'] = ICON_PATHS.poisoning;
   function icon(slug) {

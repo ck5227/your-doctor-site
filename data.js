@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-17T12:03:46.078Z",
+ "builtAt": "2026-11-17T12:07:00.826Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
@@ -13,6 +13,7 @@ window.YD = {
    "chest-pain",
    "shortness-of-breath",
    "coughing-blood",
+   "cough",
    "palpitations",
    "abdominal-pain",
    "gi-bleeding",
@@ -26,6 +27,8 @@ window.YD = {
    "eye-problems",
    "nosebleed",
    "sore-throat",
+   "ear-pain",
+   "toothache",
    "stroke",
    "memory-loss",
    "weakness",
@@ -33,6 +36,7 @@ window.YD = {
    "fainting",
    "seizure",
    "fever",
+   "heat-illness",
    "rash",
    "burns",
    "wounds-bites",
@@ -864,7 +868,7 @@ window.YD = {
    "title": "Heat exhaustion and heatstroke",
    "url": "https://www.nhs.uk/conditions/heat-exhaustion-heatstroke/",
    "type": "衛教",
-   "checkedAt": "2026-11-11",
+   "checkedAt": "2026-11-17",
    "linkCheck": "ok"
   },
   "nhs-sepsis": {
@@ -1584,6 +1588,70 @@ window.YD = {
    "publisher": "NHS（英國國民保健署）",
    "title": "Broken ankle",
    "url": "https://www.nhs.uk/conditions/broken-ankle/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-cough": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Cough",
+   "url": "https://www.nhs.uk/conditions/cough/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-tb": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Tuberculosis (TB)",
+   "url": "https://www.nhs.uk/conditions/tuberculosis-tb/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mohw-tb": {
+   "publisher": "衛生福利部疾病管制署",
+   "title": "「舉手一起篩，結核說掰掰」世界結核病日記者會（2025）",
+   "url": "https://www.mohw.gov.tw/cp-16-81981-1.html",
+   "type": "台灣政府",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-earache": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Earache",
+   "url": "https://www.nhs.uk/conditions/earache/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-ear-infection": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Ear infections",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-mastoiditis": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Mastoiditis",
+   "url": "https://www.nhs.uk/conditions/mastoiditis/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-toothache": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Toothache",
+   "url": "https://www.nhs.uk/conditions/toothache/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-dental-abscess": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Dental abscess",
+   "url": "https://www.nhs.uk/conditions/dental-abscess/",
    "type": "衛教",
    "checkedAt": "2026-11-17",
    "linkCheck": "ok"
@@ -2722,6 +2790,284 @@ window.YD = {
    "sources": [
     "mlp-cough-blood",
     "nhs-cough-blood"
+   ]
+  },
+  {
+   "slug": "cough",
+   "title": "咳嗽",
+   "bodyArea": "chest",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "咳嗽",
+    "一直咳",
+    "咳不停",
+    "久咳",
+    "慢性咳嗽",
+    "乾咳",
+    "有痰",
+    "咳痰",
+    "咳嗽很久",
+    "結核病",
+    "肺結核"
+   ],
+   "summary": "咳嗽多半是感冒或流感，通常 3 到 4 週內會自己好。咳嗽合併很喘、胸痛、咳血，請立即就醫；咳嗽超過 2 週，請就醫檢查是否有結核病。",
+   "definition": "大多數咳嗽是感冒或流感造成，其他原因包括抽菸、胃食道逆流、過敏。",
+   "definitionRefs": [
+    "nhs-cough"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "咳嗽，加上下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "很喘、呼吸困難，或說不出完整的句子",
+       "refs": [
+        "nhs-cough",
+        "nhs-sob"
+       ]
+      },
+      {
+       "text": "胸痛",
+       "refs": [
+        "nhs-cough"
+       ]
+      },
+      {
+       "text": "咳出的血不只幾點或幾絲（請看「咳血」頁）",
+       "refs": [
+        "nhs-cough-blood"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "咳得很厲害，或很快變嚴重，咳不停",
+       "refs": [
+        "nhs-cough"
+       ]
+      },
+      {
+       "text": "覺得非常不舒服",
+       "refs": [
+        "nhs-cough"
+       ]
+      },
+      {
+       "text": "脖子側邊腫痛（淋巴結腫）",
+       "refs": [
+        "nhs-cough"
+       ]
+      },
+      {
+       "text": "痰裡有血絲",
+       "refs": [
+        "nhs-cough-blood",
+        "nhs-tb"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "咳嗽超過 2 週，或合併胸痛、體重減輕、發燒（請檢查是否有結核病）",
+       "refs": [
+        "mohw-tb",
+        "nhs-tb"
+       ]
+      },
+      {
+       "text": "體重莫名減輕，或晚上盜汗",
+       "refs": [
+        "nhs-cough",
+        "nhs-tb"
+       ]
+      },
+      {
+       "text": "免疫力差（例如正在化療或有糖尿病）",
+       "refs": [
+        "nhs-cough"
+       ]
+      },
+      {
+       "text": "沒有上方任何一項：可以到診所看診",
+       "refs": [
+        "nhs-cough"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "多休息、多喝水；發燒或不舒服時，儘量待在家、避免接觸別人。",
+       "refs": [
+        "nhs-cough"
+       ]
+      },
+      {
+       "text": "溫檸檬蜂蜜水可能有幫助（1 歲以下不能吃蜂蜜）。",
+       "refs": [
+        "nhs-cough"
+       ]
+      },
+      {
+       "text": "吃藥前請先看說明書或問藥師，懷孕時有些藥不能吃。",
+       "refs": [
+        "nhs-cough"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "結核病可以規則服藥治好，及早診斷才能及早治療。",
+       "refs": [
+        "mohw-tb"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "咳了多久？有沒有痰？痰的顏色？",
+     "why": "咳嗽超過 2 週要檢查結核病。"
+    },
+    {
+     "q": "有沒有喘、胸痛、發燒、咳血？",
+     "why": "這些需要更快就醫。"
+    },
+    {
+     "q": "有沒有體重減輕、晚上盜汗？",
+     "why": "可能是結核病的症狀。"
+    },
+    {
+     "q": "有沒有抽菸、胃食道逆流、過敏？",
+     "why": "這些是常見的咳嗽原因。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "肺炎",
+      "plain": "咳嗽、發燒、喘、胸痛。",
+      "refs": [
+       "nhs-pneumonia"
+      ]
+     },
+     {
+      "name": "結核病",
+      "plain": "咳嗽超過 2 到 3 週、可能有血痰、發燒、盜汗、體重減輕。",
+      "refs": [
+       "nhs-tb",
+       "mohw-tb"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "感冒、流感",
+      "plain": "最常見。",
+      "refs": [
+       "nhs-cough"
+      ]
+     },
+     {
+      "name": "抽菸",
+      "plain": "",
+      "refs": [
+       "nhs-cough"
+      ]
+     },
+     {
+      "name": "胃食道逆流",
+      "plain": "",
+      "refs": [
+       "nhs-cough"
+      ]
+     },
+     {
+      "name": "過敏",
+      "plain": "例如過敏性鼻炎。",
+      "refs": [
+       "nhs-cough"
+      ]
+     }
+    ],
+    "patternsHeading": "依咳嗽的情況",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "咳嗽、發燒、喘、胸痛，可能咳黃綠色的痰",
+      "text": "可能是肺炎；喘或胸痛請立即就醫。",
+      "refs": [
+       "nhs-pneumonia"
+      ]
+     },
+     {
+      "pattern": "咳嗽超過 2 週，合併有痰、胸痛、體重減輕、發燒或盜汗",
+      "text": "請就醫檢查是否有結核病（胸部 X 光）。",
+      "refs": [
+       "mohw-tb",
+       "nhs-tb"
+      ]
+     },
+     {
+      "pattern": "流鼻水、喉嚨痛之後咳嗽",
+      "text": "多半是感冒，通常 3 到 4 週內會好。",
+      "refs": [
+       "nhs-cough"
+      ]
+     },
+     {
+      "pattern": "咳嗽合併胸口灼熱（火燒心）",
+      "text": "可能和胃食道逆流有關，請安排門診。",
+      "refs": [
+       "nhs-cough"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "免疫力差的人（例如正在化療或有糖尿病）咳嗽請就醫。",
+     "refs": [
+      "nhs-cough"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "咳嗽開始的時間",
+    "有沒有發燒、體重減輕、盜汗",
+    "抽菸史、結核病接觸史",
+    "使用中的所有藥物"
+   ],
+   "sources": [
+    "nhs-cough",
+    "nhs-sob",
+    "nhs-cough-blood",
+    "nhs-tb",
+    "mohw-tb",
+    "nhs-pneumonia"
    ]
   },
   {
@@ -7297,6 +7643,498 @@ window.YD = {
    ]
   },
   {
+   "slug": "ear-pain",
+   "title": "耳朵痛",
+   "bodyArea": "head",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "耳朵痛",
+    "耳痛",
+    "中耳炎",
+    "外耳炎",
+    "耳朵發炎",
+    "耳朵流膿",
+    "耳朵流水",
+    "耳朵悶",
+    "耳後痛"
+   ],
+   "summary": "耳朵痛常是耳朵感染，多半幾天內會好。但耳朵後面紅腫痛、耳朵往外推，可能是乳突炎，請今天就醫；耳朵痛超過 2 到 3 天、發燒、耳朵流液體、聽力改變，也請今天就醫。",
+   "definition": "耳朵痛常見的原因是耳朵感染。",
+   "definitionRefs": [
+    "nhs-earache"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "耳朵痛，加上下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "發燒合併脖子僵硬、看亮光會痛、劇烈頭痛或意識混亂",
+       "refs": [
+        "nhs-meningitis"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "耳朵後面痛、紅、腫，耳朵被往外推",
+       "refs": [
+        "nhs-mastoiditis"
+       ]
+      },
+      {
+       "text": "痛超過 2 到 3 天",
+       "refs": [
+        "nhs-earache"
+       ]
+      },
+      {
+       "text": "全身不舒服，或發高燒、忽冷忽熱、發抖",
+       "refs": [
+        "nhs-earache",
+        "nhs-ear-infection"
+       ]
+      },
+      {
+       "text": "耳朵周圍腫起來",
+       "refs": [
+        "nhs-earache",
+        "nhs-ear-infection"
+       ]
+      },
+      {
+       "text": "耳朵流出液體",
+       "refs": [
+        "nhs-earache",
+        "nhs-ear-infection"
+       ]
+      },
+      {
+       "text": "聽力變差或改變",
+       "refs": [
+        "nhs-earache",
+        "nhs-ear-infection"
+       ]
+      },
+      {
+       "text": "有東西卡在耳朵裡",
+       "refs": [
+        "nhs-earache"
+       ]
+      },
+      {
+       "text": "合併想吐、嘔吐、頭暈，或嚴重喉嚨痛",
+       "refs": [
+        "nhs-ear-infection"
+       ]
+      },
+      {
+       "text": "有糖尿病，或有心臟、肺、腎臟或神經方面的疾病",
+       "refs": [
+        "nhs-ear-infection"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "常常耳朵痛或耳朵感染",
+       "refs": [
+        "nhs-earache",
+        "nhs-ear-infection"
+       ]
+      },
+      {
+       "text": "沒有上方任何一項：可以到診所看診",
+       "refs": [
+        "nhs-earache"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "可以吃普拿疼（乙醯胺酚）或布洛芬止痛；用溫毛巾敷耳朵。",
+       "refs": [
+        "nhs-earache"
+       ]
+      },
+      {
+       "text": "不要把棉花棒或任何東西放進耳朵，不要自己挖耳垢，不要讓水進入耳朵。",
+       "refs": [
+        "nhs-earache",
+        "nhs-ear-infection"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "乳突炎如果沒有及時治療，可能造成永久聽力喪失或腦膜炎。",
+       "refs": [
+        "nhs-mastoiditis"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "痛多久了？一邊還是兩邊？",
+     "why": "持續 2 到 3 天以上要就醫。"
+    },
+    {
+     "q": "有沒有發燒、流液體、聽力變差？",
+     "why": "這些表示需要治療。"
+    },
+    {
+     "q": "耳朵後面有沒有紅腫？",
+     "why": "可能是乳突炎。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "乳突炎",
+      "plain": "耳朵後面的骨頭感染，痛、紅、腫，耳朵被往外推。",
+      "refs": [
+       "nhs-mastoiditis"
+      ]
+     },
+     {
+      "name": "腦膜炎",
+      "plain": "發燒、脖子僵硬、怕光、劇烈頭痛。",
+      "refs": [
+       "nhs-meningitis"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "耳朵感染（中耳炎、外耳炎）",
+      "plain": "",
+      "refs": [
+       "nhs-ear-infection",
+       "nhs-earache"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的症狀",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "耳朵後面痛、紅、腫，耳朵被往外推",
+      "text": "可能是乳突炎，請今天就醫。",
+      "refs": [
+       "nhs-mastoiditis"
+      ]
+     },
+     {
+      "pattern": "耳朵痛、發燒，可能流出液體",
+      "text": "可能是耳朵感染，請今天就醫。",
+      "refs": [
+       "nhs-ear-infection"
+      ]
+     },
+     {
+      "pattern": "耳朵痛合併發燒、脖子僵硬、怕光、劇烈頭痛",
+      "text": "可能是腦膜炎，請立即撥打 119。",
+      "refs": [
+       "nhs-meningitis"
+      ]
+     },
+     {
+      "pattern": "耳朵痛合併聽力變差，或覺得有東西卡在耳朵裡",
+      "text": "請今天就醫；不要自己用棉花棒或其他東西掏耳朵。",
+      "refs": [
+       "nhs-earache"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [],
+   "visitPreparation": [
+    "耳朵痛開始的時間、哪一邊",
+    "有沒有發燒、流液體、聽力改變",
+    "使用中的所有藥物"
+   ],
+   "sources": [
+    "nhs-earache",
+    "nhs-meningitis",
+    "nhs-mastoiditis",
+    "nhs-ear-infection"
+   ]
+  },
+  {
+   "slug": "toothache",
+   "title": "牙痛、牙齦腫",
+   "bodyArea": "head",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "牙痛",
+    "牙齒痛",
+    "蛀牙",
+    "牙齦腫",
+    "牙齦痛",
+    "牙齒膿包",
+    "智齒痛",
+    "臉頰腫",
+    "牙齦膿腫"
+   ],
+   "summary": "牙痛請看牙醫。但眼睛周圍或脖子腫起來，或嘴巴、脖子腫到呼吸、吞嚥、說話困難，請立即到急診。",
+   "definition": "牙齒膿包（牙齒或牙齦化膿）是感染造成，不會自己好，需要牙醫儘快處理。",
+   "definitionRefs": [
+    "nhs-dental-abscess"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "牙痛，加上下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "眼睛周圍或脖子腫起來",
+       "refs": [
+        "nhs-toothache",
+        "nhs-dental-abscess"
+       ]
+      },
+      {
+       "text": "嘴巴或脖子腫到呼吸、吞嚥或說話困難",
+       "refs": [
+        "nhs-toothache",
+        "nhs-dental-abscess"
+       ]
+      },
+      {
+       "text": "眼睛腫痛，或視力突然出問題",
+       "refs": [
+        "nhs-dental-abscess"
+       ]
+      },
+      {
+       "text": "嘴巴裡腫得很厲害，或嘴巴張不開",
+       "refs": [
+        "nhs-dental-abscess"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119。",
+       "refs": [
+        "nhs-toothache",
+        "nhs-dental-abscess"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要看牙醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天看牙醫：",
+     "items": [
+      {
+       "text": "可能是牙齒膿包：劇烈牙痛或牙齦痛、臉或下巴腫、嘴巴有怪味、咀嚼困難",
+       "refs": [
+        "nhs-dental-abscess"
+       ]
+      },
+      {
+       "text": "牙痛合併發燒、咬東西會痛、牙齦紅",
+       "refs": [
+        "nhs-toothache"
+       ]
+      },
+      {
+       "text": "臉頰或下巴腫起來",
+       "refs": [
+        "nhs-toothache"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快看牙醫，不要拖延：",
+     "items": [
+      {
+       "text": "牙痛超過 2 天",
+       "refs": [
+        "nhs-toothache"
+       ]
+      },
+      {
+       "text": "吃止痛藥也沒有好",
+       "refs": [
+        "nhs-toothache"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "可以吃布洛芬或普拿疼止痛；成人可以用溫鹽水漱口。",
+       "refs": [
+        "nhs-toothache"
+       ]
+      },
+      {
+       "text": "吃軟的食物，避免用痛的那一側咀嚼；不要吃甜的、很燙或很冰的東西；不要抽菸。",
+       "refs": [
+        "nhs-toothache"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "牙齒膿包不會自己好，需要牙醫儘快處理。",
+       "refs": [
+        "nhs-dental-abscess"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "痛多久了？吃止痛藥有用嗎？",
+     "why": "持續或止痛藥無效要看牙醫。"
+    },
+    {
+     "q": "臉、下巴、眼睛周圍或脖子有沒有腫？",
+     "why": "腫脹擴散可能危險。"
+    },
+    {
+     "q": "呼吸、吞嚥、張嘴有沒有困難？",
+     "why": "這些需要立即到急診。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "牙齒膿包擴散",
+      "plain": "臉、眼睛周圍或脖子腫，呼吸吞嚥困難。",
+      "refs": [
+       "nhs-dental-abscess",
+       "nhs-toothache"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "蛀牙",
+      "plain": "",
+      "refs": [
+       "nhs-toothache"
+      ]
+     },
+     {
+      "name": "牙齒膿包",
+      "plain": "",
+      "refs": [
+       "nhs-toothache",
+       "nhs-dental-abscess"
+      ]
+     },
+     {
+      "name": "牙齒裂開或受損、補牙鬆脫",
+      "plain": "",
+      "refs": [
+       "nhs-toothache"
+      ]
+     },
+     {
+      "name": "智齒等長出來的牙齒周圍感染",
+      "plain": "",
+      "refs": [
+       "nhs-toothache"
+      ]
+     },
+     {
+      "name": "牙周病",
+      "plain": "",
+      "refs": [
+       "nhs-toothache"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的症狀",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "劇烈牙痛，臉或下巴腫、嘴巴有怪味",
+      "text": "可能是牙齒膿包，請今天看牙醫；腫到眼睛或脖子，請立即到急診。",
+      "refs": [
+       "nhs-dental-abscess"
+      ]
+     },
+     {
+      "pattern": "吃甜的、冷的或熱的東西時痛",
+      "text": "可能是蛀牙或牙齒受損，請儘快看牙醫。",
+      "refs": [
+       "nhs-toothache",
+       "nhs-dental-abscess"
+      ]
+     },
+     {
+      "pattern": "智齒周圍的牙齦腫痛",
+      "text": "可能是智齒周圍感染，請儘快看牙醫。",
+      "refs": [
+       "nhs-toothache"
+      ]
+     },
+     {
+      "pattern": "牙痛合併咬東西會痛、牙齦紅、發燒",
+      "text": "可能是感染，請今天看牙醫。",
+      "refs": [
+       "nhs-toothache"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [],
+   "visitPreparation": [
+    "痛開始的時間、哪一顆牙",
+    "吃過的止痛藥",
+    "使用中的所有藥物"
+   ],
+   "sources": [
+    "nhs-dental-abscess",
+    "nhs-toothache"
+   ]
+  },
+  {
    "slug": "stroke",
    "title": "中風徵兆（臉歪、手腳無力、說話不清）",
    "bodyArea": "neuro",
@@ -9827,6 +10665,220 @@ window.YD = {
      }
     ]
    }
+  },
+  {
+   "slug": "heat-illness",
+   "title": "中暑、熱衰竭",
+   "bodyArea": "whole-body",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "中暑",
+    "熱衰竭",
+    "熱中暑",
+    "熱傷害",
+    "曬太久",
+    "太熱頭暈"
+   ],
+   "summary": "在高溫或運動後出現疲倦、頭暈、頭痛、噁心、大量流汗，可能是熱衰竭：移到陰涼處、降溫、補充水分，30 分鐘內應該好轉。體溫很高、皮膚很燙卻不流汗、意識混亂、抽搐或昏倒，可能是中暑，請立即撥打 119。",
+   "definition": "熱衰竭只要能在 30 分鐘內降溫，通常不需要急救；如果變成中暑（熱中暑），就是緊急狀況。",
+   "definitionRefs": [
+    "nhs-heat"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119",
+     "intro": "在高溫環境或運動後，有下列任何一項，請立即撥打 119：",
+     "items": [
+      {
+       "text": "在陰涼處休息、降溫、喝水 30 分鐘後仍然不舒服",
+       "refs": [
+        "nhs-heat"
+       ]
+      },
+      {
+       "text": "體溫很高",
+       "refs": [
+        "nhs-heat"
+       ]
+      },
+      {
+       "text": "皮膚很燙、發紅，卻不流汗",
+       "refs": [
+        "nhs-heat"
+       ]
+      },
+      {
+       "text": "心跳很快、呼吸很快或很喘",
+       "refs": [
+        "nhs-heat"
+       ]
+      },
+      {
+       "text": "意識混亂、動作不協調",
+       "refs": [
+        "nhs-heat"
+       ]
+      },
+      {
+       "text": "抽搐，或失去意識",
+       "refs": [
+        "nhs-heat"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "把人移到陰涼的地方，脫掉外套、襪子等不必要的衣物。",
+       "refs": [
+        "nhs-heat"
+       ]
+      },
+      {
+       "text": "清醒能喝時，給他喝大量的水，也可以喝運動飲料或口服電解質液。",
+       "refs": [
+        "nhs-heat"
+       ]
+      },
+      {
+       "text": "用涼水噴或擦他的皮膚並搧風；用布包冰袋放在腋下或脖子；等待救護時，可以用濕涼的床單包住他。",
+       "refs": [
+        "nhs-heat"
+       ]
+      },
+      {
+       "text": "失去意識：讓他側躺，告訴救護人員；沒有呼吸就開始心肺復甦術。",
+       "refs": [
+        "nhs-heat",
+        "nfa-cpr"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": []
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "熱衰竭的症狀在 30 分鐘內降溫後已經好轉：可以到診所看診",
+       "refs": [
+        "nhs-heat"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "熱衰竭如果沒有降溫，可能變成中暑，是緊急狀況。",
+       "refs": [
+        "nhs-heat"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "在什麼環境？做了什麼活動？多久了？",
+     "why": "高溫和運動是中暑的主要原因。"
+    },
+    {
+     "q": "還有沒有流汗？意識清楚嗎？",
+     "why": "不流汗、意識混亂是中暑的警訊。"
+    },
+    {
+     "q": "有沒有喝水？有沒有慢性病或正在吃的藥？",
+     "why": "脫水和某些藥物會增加風險。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "中暑（熱中暑）",
+      "plain": "體溫很高、皮膚很燙不流汗、意識混亂、抽搐。",
+      "refs": [
+       "nhs-heat",
+       "nhs-fever"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "熱衰竭",
+      "plain": "疲倦、頭暈、頭痛、噁心、大量流汗、皮膚蒼白濕冷、抽筋、很口渴。",
+      "refs": [
+       "nhs-heat"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的症狀",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "大量流汗、皮膚蒼白濕冷、頭暈、噁心、手腳或肚子抽筋、很口渴",
+      "text": "可能是熱衰竭；移到陰涼處、降溫、補充水分，30 分鐘內應該好轉。",
+      "refs": [
+       "nhs-heat"
+      ]
+     },
+     {
+      "pattern": "體溫很高、皮膚很燙卻不流汗、心跳呼吸很快、意識混亂",
+      "text": "可能是中暑，請立即撥打 119，等待時持續降溫。",
+      "refs": [
+       "nhs-heat"
+      ]
+     },
+     {
+      "pattern": "降溫休息 30 分鐘後還是不舒服",
+      "text": "可能已經變成中暑，請立即撥打 119。",
+      "refs": [
+       "nhs-heat"
+      ]
+     },
+     {
+      "pattern": "在高溫環境中抽搐或昏倒",
+      "text": "可能是中暑，請立即撥打 119；失去意識時讓他側躺，沒有呼吸就開始心肺復甦術。",
+      "refs": [
+       "nhs-heat"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "天氣炎熱或運動時，發生熱衰竭和中暑的風險很高。",
+     "refs": [
+      "nhs-heat"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "發生的時間、環境和活動",
+    "有沒有喝水、量過體溫",
+    "使用中的所有藥物"
+   ],
+   "sources": [
+    "nhs-heat",
+    "nfa-cpr",
+    "nhs-fever"
+   ]
   },
   {
    "slug": "rash",

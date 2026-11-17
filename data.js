@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-17T12:10:13.822Z",
+ "builtAt": "2026-11-17T23:19:25.762Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
@@ -1726,6 +1726,38 @@ window.YD = {
    "type": "衛教",
    "checkedAt": "2026-11-17",
    "linkCheck": "ok"
+  },
+  "mlp-burns": {
+   "publisher": "MedlinePlus（美國國家醫學圖書館）",
+   "title": "Burns",
+   "url": "https://medlineplus.gov/ency/article/000030.htm",
+   "type": "衛教",
+   "checkedAt": "2026-11-18",
+   "linkCheck": "ok"
+  },
+  "nhs-asthma-attack": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Asthma attack",
+   "url": "https://www.nhs.uk/conditions/asthma/asthma-attack/",
+   "type": "衛教",
+   "checkedAt": "2026-11-18",
+   "linkCheck": "ok"
+  },
+  "nice-head": {
+   "publisher": "NICE（英國國家健康與照顧卓越研究院）",
+   "title": "Head injury: assessment and early management (NG232)",
+   "url": "https://www.nice.org.uk/guidance/ng232/chapter/Recommendations",
+   "type": "指引",
+   "checkedAt": "2026-11-18",
+   "linkCheck": "ok"
+  },
+  "cdc-tetanus": {
+   "publisher": "CDC（美國疾病管制與預防中心）",
+   "title": "Clinical Guidance for Wound Management to Prevent Tetanus",
+   "url": "https://www.cdc.gov/tetanus/hcp/clinical-guidance/index.html",
+   "type": "指引",
+   "checkedAt": "2026-11-18",
+   "linkCheck": "ok"
   }
  },
  "symptoms": [
@@ -1848,7 +1880,7 @@ window.YD = {
       {
        "text": "胸痛已經消失，但當時痛得很厲害——仍要就醫，請今天到急診，不要因為現在不痛了就不看（如果又再痛，請撥打 119）",
        "refs": [
-        "nhs-chest",
+        "nhs-angina",
         "mayo-chest"
        ]
       },
@@ -2021,7 +2053,7 @@ window.YD = {
      },
      {
       "pattern": "突然胸痛，同時覺得喘",
-      "text": "可能是氣胸（肺塌陷），請立即就醫。",
+      "text": "可能是氣胸（肺塌陷），請立即撥打 119。",
       "refs": [
        "mayo-pneumothorax",
        "mayo-chest"
@@ -2087,11 +2119,11 @@ window.YD = {
     "藥物過敏史"
    ],
    "sources": [
-    "nhs-chest",
     "mayo-chest",
+    "nhs-chest",
     "mlp-chest",
-    "nhs-heart-attack",
     "nhs-angina",
+    "nhs-heart-attack",
     "mayo-dissection",
     "nhs-pe",
     "mayo-pneumothorax",
@@ -2237,10 +2269,11 @@ window.YD = {
        ]
       },
       {
-       "text": "嚴重過敏：嘴唇、舌頭或喉嚨腫起來，全身起疹子，呼吸有咻咻聲，頭暈、快昏倒或脈搏快而弱",
+       "text": "嚴重過敏：嘴唇、舌頭或喉嚨腫起來、喉嚨覺得緊，全身起疹子，呼吸有咻咻聲，頭暈、快昏倒或脈搏快而弱",
        "refs": [
         "mayo-anaphylaxis",
-        "mlp-sob"
+        "mlp-sob",
+        "nhs-anaphylaxis"
        ]
       },
       {
@@ -2255,6 +2288,18 @@ window.YD = {
         "cdc-co",
         "nhs-poisoning",
         "mayo-sob"
+       ]
+      },
+      {
+       "text": "有氣喘，急救吸入劑用到醫師指示的最大劑量仍沒有改善，或愈來愈喘",
+       "refs": [
+        "nhs-asthma-attack"
+       ]
+      },
+      {
+       "text": "喘合併咳血（不論多少）",
+       "refs": [
+        "nhs-cough-blood"
        ]
       }
      ],
@@ -2293,26 +2338,20 @@ window.YD = {
        ]
       },
       {
-       "text": "有氣喘或慢性肺病，比平常明顯更喘，或平常的急救藥物用了沒有改善（喘到說不出完整句子時，請直接撥 119）",
+       "text": "有氣喘或慢性肺病，比平常明顯更喘",
        "refs": [
         "mlp-sob"
        ]
       },
       {
-       "text": "咳出血（不論多少）",
-       "refs": [
-        "nhs-sob"
-       ]
-      },
-      {
-       "text": "喉嚨覺得緊、咳嗽聲像狗叫，或呼吸有咻咻聲",
+       "text": "咳嗽聲像狗叫，或呼吸有咻咻聲",
        "refs": [
         "mlp-sob",
         "mayo-sob"
        ]
       },
       {
-       "text": "喘合併心悸，或合併噁心、嘔吐",
+       "text": "喘合併心悸",
        "refs": [
         "nhs-sob"
        ]
@@ -2345,9 +2384,9 @@ window.YD = {
        ]
       },
       {
-       "text": "咳嗽超過 3 週",
+       "text": "咳嗽超過 2 週（請看「咳嗽」頁）",
        "refs": [
-        "nhs-sob"
+        "mohw-tb"
        ]
       }
      ]
@@ -2482,7 +2521,7 @@ window.YD = {
      },
      {
       "pattern": "突然胸痛，同時覺得喘",
-      "text": "可能是氣胸（肺塌陷），請立即就醫。",
+      "text": "可能是氣胸（肺塌陷），請立即撥打 119。",
       "refs": [
        "mayo-pneumothorax"
       ]
@@ -2518,7 +2557,7 @@ window.YD = {
       ]
      },
      {
-      "pattern": "躺下或做日常活動就喘，腳、腳踝或腿腫，晚上咳嗽，或咳出粉紅色泡沫痰",
+      "pattern": "躺下或做日常活動就喘，腳、腳踝或腿腫，晚上咳嗽",
       "text": "可能是心臟衰竭，請今天就醫。",
       "refs": [
        "nhs-heart-failure",
@@ -2565,17 +2604,20 @@ window.YD = {
     "抽菸史"
    ],
    "sources": [
-    "nhs-sob",
     "mayo-sob",
+    "nhs-sob",
     "mlp-sob",
     "mayo-anaphylaxis",
+    "nhs-anaphylaxis",
     "cdc-co",
     "nhs-poisoning",
+    "nhs-asthma-attack",
+    "nhs-cough-blood",
     "nfa-119",
+    "mohw-tb",
     "nhs-pe",
     "mayo-pneumothorax",
     "nhs-heart-attack",
-    "nhs-anaphylaxis",
     "nhs-co",
     "nhs-asthma",
     "nhs-heart-failure",
@@ -2647,10 +2689,9 @@ window.YD = {
      "intro": "咳血，加上下列任何一項，請立即就醫：",
      "items": [
       {
-       "text": "咳出的血不只幾點或幾絲（例如超過幾茶匙）",
+       "text": "咳出的血不只幾點或幾絲",
        "refs": [
-        "nhs-cough-blood",
-        "mlp-cough-blood"
+        "nhs-cough-blood"
        ]
       },
       {
@@ -2838,7 +2879,7 @@ window.YD = {
      },
      {
       "pattern": "咳嗽、發燒、喘，痰裡有血",
-      "text": "可能是肺炎等呼吸道感染，請今天就醫。",
+      "text": "可能是肺炎等呼吸道感染，請立即撥打 119 或到急診。",
       "refs": [
        "mlp-cough-blood"
       ]
@@ -3386,7 +3427,7 @@ window.YD = {
      },
      {
       "pattern": "脈搏不規則，可能合併疲倦、喘、頭暈",
-      "text": "可能是心房顫動，請安排門診；合併胸痛、喘、頭暈或昏倒，請撥打 119。",
+      "text": "可能是心房顫動，請安排門診；合併胸痛、喘、頭暈、昏倒，或一側手腳無力麻木、說話困難、視力模糊、劇烈頭痛，請撥打 119。",
       "refs": [
        "nhs-af"
       ]
@@ -3606,13 +3647,6 @@ window.YD = {
       ]
      },
      {
-      "name": "突然停用某些心臟藥物",
-      "plain": "例如乙型阻斷劑。",
-      "refs": [
-       "mayo-htn-crisis"
-      ]
-     },
-     {
       "name": "藥物交互作用",
       "plain": "",
       "refs": [
@@ -3820,6 +3854,7 @@ window.YD = {
       {
        "text": "在醫師評估前，先不要自行服用止痛藥或瀉藥。",
        "refs": [
+        "mayo-abdo",
         "mlp-abdo"
        ]
       }
@@ -4310,19 +4345,19 @@ window.YD = {
     "nhs-abdo",
     "mayo-abdo",
     "mlp-abdo",
-    "mayo-appendicitis",
-    "mlp-appendicitis",
-    "nhs-appendicitis",
-    "mayo-kidneystones",
-    "nhs-kidneystones",
-    "mlp-kidneystones",
-    "mayo-gallstones",
-    "mayo-diverticulitis",
-    "mayo-pancreatitis",
-    "mayo-ectopic",
     "nhs-dv",
     "nhs-poisoning",
-    "mlp-poisoning"
+    "mlp-poisoning",
+    "nhs-appendicitis",
+    "mayo-appendicitis",
+    "mayo-ectopic",
+    "mayo-kidneystones",
+    "mlp-kidneystones",
+    "mlp-appendicitis",
+    "nhs-kidneystones",
+    "mayo-diverticulitis",
+    "mayo-gallstones",
+    "mayo-pancreatitis"
    ],
    "thinking": {
     "status": "published",
@@ -4399,10 +4434,11 @@ window.YD = {
        ]
       },
       {
-       "text": "解黑色、像柏油的大便",
+       "text": "解黑色、像柏油，或暗紅色的大便",
        "refs": [
         "mayo-gi-bleed",
-        "mlp-black-stool"
+        "mlp-black-stool",
+        "nhs-blood-poo"
        ]
       },
       {
@@ -4442,8 +4478,7 @@ window.YD = {
       {
        "text": "大便裡混著血，或血樣腹瀉",
        "refs": [
-        "nhs-blood-poo",
-        "mayo-gi-bleed"
+        "nhs-blood-poo"
        ]
       }
      ]
@@ -5359,7 +5394,7 @@ window.YD = {
      ],
      "doNow": [
       {
-       "text": "不要自己開車去急診，請別人載或撥打 119；把正在吃的藥帶去。",
+       "text": "請撥打 119 叫救護車。",
        "refs": [
         "nhs-preg-bleed"
        ]
@@ -5727,7 +5762,7 @@ window.YD = {
      },
      {
       "pattern": "受傷後睪丸痛",
-      "text": "請今天就醫；劇痛或愈來愈痛，請立即到急診。",
+      "text": "突然劇痛、痛超過 1 小時或休息時也痛，請立即到急診；腫起來或形狀改變，請今天就醫。",
       "refs": [
        "nhs-testicle"
       ]
@@ -6290,9 +6325,10 @@ window.YD = {
        ]
       },
       {
-       "text": "胸痛，深呼吸或咳嗽時更痛",
+       "text": "胸痛、胸悶或上背痛（深呼吸或咳嗽時可能更痛）",
        "refs": [
         "nhs-dvt",
+        "nhs-pe",
         "mayo-dvt"
        ]
       },
@@ -6300,6 +6336,12 @@ window.YD = {
        "text": "頭暈、昏倒，或心跳、呼吸很快",
        "refs": [
         "mayo-dvt"
+       ]
+      },
+      {
+       "text": "皮膚紅腫熱痛，合併發高燒或發冷發抖、心跳或呼吸很快、意識混亂，或頭暈快昏倒",
+       "refs": [
+        "nhs-cellulitis"
        ]
       }
      ],
@@ -6452,6 +6494,7 @@ window.YD = {
    "sources": [
     "nhs-dvt",
     "mayo-dvt",
+    "nhs-pe",
     "nhs-cellulitis"
    ]
   },
@@ -6527,6 +6570,18 @@ window.YD = {
        "refs": [
         "nhs-broken-ankle"
        ]
+      },
+      {
+       "text": "受傷當下聽到「喀」一聲",
+       "refs": [
+        "nhs-sprain"
+       ]
+      },
+      {
+       "text": "受傷部位周圍的皮膚變青、變灰，或摸起來冰冷",
+       "refs": [
+        "nhs-sprain"
+       ]
       }
      ],
      "doNow": [
@@ -6537,9 +6592,10 @@ window.YD = {
        ]
       },
       {
-       "text": "有傷口出血：用乾淨的布壓住止血。",
+       "text": "有傷口出血：用乾淨的布壓住止血；骨頭穿出時，壓在傷口周圍，不要直接壓在骨頭上。",
        "refs": [
-        "nhs-broken-arm"
+        "nhs-broken-arm",
+        "nhs-broken-ankle"
        ]
       },
       {
@@ -6798,7 +6854,8 @@ window.YD = {
         "mayo-headache",
         "mlp-headache",
         "asa-stroke",
-        "mohw-stroke"
+        "mohw-stroke",
+        "nhs-tia"
        ]
       },
       {
@@ -6833,7 +6890,7 @@ window.YD = {
        "text": "頭痛合併眼睛紅、眼睛痛（可能是急性青光眼）",
        "refs": [
         "nhs-glaucoma",
-        "nhs-headache"
+        "mlp-headache"
        ]
       }
      ],
@@ -6865,7 +6922,8 @@ window.YD = {
       {
        "text": "太陽穴痛、頭皮一碰就痛，或咀嚼時下巴痛",
        "refs": [
-        "nhs-headache"
+        "nhs-headache",
+        "nhs-gca"
        ]
       },
       {
@@ -7079,13 +7137,14 @@ window.YD = {
      },
      {
       "pattern": "太陽穴或頭皮一碰就痛，吃東西或說話時下巴痛，看東西變兩個，或一眼、兩眼看不見",
-      "text": "可能是顳動脈炎，沒有儘快治療可能造成失明或中風，請今天就醫。",
+      "text": "可能是顳動脈炎，沒有儘快治療可能造成失明或中風，請今天就醫；如果看東西變兩個、一眼或兩眼看不見，請立即到急診。",
       "refs": [
-       "nhs-gca"
+       "nhs-gca",
+       "nhs-headache"
       ]
      },
      {
-      "pattern": "頭的兩側像被壓住或箍緊，肩頸緊繃痠痛，還能照常活動",
+      "pattern": "頭的兩側像被壓住或箍緊，脖子痠痛，還能照常活動",
       "text": "常見於緊縮型頭痛。",
       "refs": [
        "nhs-tension",
@@ -7108,7 +7167,7 @@ window.YD = {
       ]
      },
      {
-      "pattern": "臉頰、眼睛周圍或前額痛而且有壓痛，合併鼻塞、黃綠色鼻涕，常在感冒後出現，彎腰時更痛",
+      "pattern": "臉頰、眼睛周圍或前額痛而且有壓痛，合併鼻塞、黃綠色鼻涕，常在感冒後出現",
       "text": "常見於鼻竇炎。",
       "refs": [
        "nhs-sinusitis",
@@ -7126,9 +7185,9 @@ window.YD = {
    },
    "specialPopulations": [
     {
-     "text": "正在使用抗凝血藥（俗稱血液稀釋劑）的人，頭部撞到之後出現頭痛，請撥打 119。",
+     "text": "正在使用抗凝血藥（俗稱血液稀釋劑）的人，頭部撞到之後出現頭痛，請立即到急診；有「頭部撞傷」頁的危險徵兆時，請撥打 119。",
      "refs": [
-      "nhs-headache"
+      "nhs-head"
      ]
     }
    ],
@@ -7144,19 +7203,21 @@ window.YD = {
     "nhs-headache",
     "mayo-headache",
     "mlp-headache",
-    "guideline-headache-2019",
     "asa-stroke",
+    "mohw-stroke",
+    "nhs-tia",
+    "nhs-glaucoma",
+    "nhs-gca",
+    "guideline-headache-2019",
     "cdc-co",
     "nhs-sah",
     "nhs-migraine",
     "nhs-meningitis",
     "nhs-co",
-    "nhs-glaucoma",
-    "nhs-gca",
     "nhs-tension",
     "nhs-cluster",
     "nhs-sinusitis",
-    "mohw-stroke"
+    "nhs-head"
    ],
    "thinking": {
     "status": "published",
@@ -7283,6 +7344,32 @@ window.YD = {
        "refs": [
         "nhs-head"
        ]
+      },
+      {
+       "text": "撞到之後曾經昏過去超過幾秒，即使現在已經醒來",
+       "refs": [
+        "mayo-head-fa"
+       ]
+      },
+      {
+       "text": "撞到頭之後嘔吐（即使只吐一次）",
+       "refs": [
+        "nhs-head",
+        "nice-head"
+       ]
+      },
+      {
+       "text": "受傷時有喝酒或用藥",
+       "refs": [
+        "nhs-head",
+        "nice-head"
+       ]
+      },
+      {
+       "text": "想不起受傷前後發生的事",
+       "refs": [
+        "nice-head"
+       ]
       }
      ],
      "doNow": [
@@ -7318,19 +7405,7 @@ window.YD = {
      "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
      "items": [
       {
-       "text": "撞到頭之後嘔吐",
-       "refs": [
-        "nhs-head"
-       ]
-      },
-      {
        "text": "撞到頭之後頭暈",
-       "refs": [
-        "nhs-head"
-       ]
-      },
-      {
-       "text": "受傷時有喝酒或用藥",
        "refs": [
         "nhs-head"
        ]
@@ -7348,7 +7423,7 @@ window.YD = {
      "intro": "下列情況請儘快安排門診，不要拖延：",
      "items": [
       {
-       "text": "輕微撞傷，沒有上方任何一項：可以到診所看診",
+       "text": "症狀超過 2 週沒有好，或不確定什麼時候可以開車、上班上學或運動",
        "refs": [
         "nhs-head"
        ]
@@ -7485,9 +7560,10 @@ window.YD = {
    },
    "specialPopulations": [
     {
-     "text": "有吃抗凝血藥或有容易出血的疾病，撞到頭請立即到急診；受傷時有喝酒或用藥，請今天就醫。",
+     "text": "有吃抗凝血藥或有容易出血的疾病，撞到頭請立即到急診；受傷時有喝酒或用藥，也請立即到急診。",
      "refs": [
-      "nhs-head"
+      "nhs-head",
+      "nice-head"
      ]
     }
    ],
@@ -7500,6 +7576,7 @@ window.YD = {
    "sources": [
     "nhs-head",
     "mayo-head-fa",
+    "nice-head",
     "nfa-cpr",
     "mayo-headache"
    ]
@@ -7650,6 +7727,12 @@ window.YD = {
        "refs": [
         "nhs-retinal-detach",
         "nhs-vision-loss"
+       ]
+      },
+      {
+       "text": "戴隱形眼鏡，眼睛紅",
+       "refs": [
+        "nhs-red-eye"
        ]
       }
      ]
@@ -7858,10 +7941,10 @@ window.YD = {
     "nhs-vision-loss",
     "nhs-eye-pain",
     "nhs-eye-injury",
+    "tsem-chem",
     "nhs-retinal-detach",
     "nhs-glaucoma",
-    "nhs-stroke",
-    "tsem-chem"
+    "nhs-stroke"
    ]
   },
   {
@@ -8053,7 +8136,7 @@ window.YD = {
     "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
     "painPatterns": [
      {
-      "pattern": "撞到頭或鼻子之後流鼻血",
+      "pattern": "撞到頭之後流鼻血",
       "text": "請立即到急診。",
       "refs": [
        "nhs-nosebleed"
@@ -8199,6 +8282,18 @@ window.YD = {
        "text": "脫水：尿變少、尿很深很臭",
        "refs": [
         "nhs-sore-throat"
+       ]
+      },
+      {
+       "text": "免疫力低下（例如化療中、糖尿病）",
+       "refs": [
+        "nhs-sore-throat"
+       ]
+      },
+      {
+       "text": "痛到很難吃東西或喝水",
+       "refs": [
+        "nhs-tonsillitis"
        ]
       }
      ]
@@ -8480,7 +8575,7 @@ window.YD = {
        ]
       },
       {
-       "text": "有糖尿病，或有心臟、肺、腎臟或神經方面的疾病",
+       "text": "有糖尿病，或有心臟、肺、腎臟或神經方面的疾病，或免疫力低下（例如化療中）",
        "refs": [
         "nhs-ear-infection"
        ]
@@ -9594,6 +9689,12 @@ window.YD = {
        "refs": [
         "nhs-sepsis"
        ]
+      },
+      {
+       "text": "無力反覆發作（發作之間完全正常），現在正在發作、手腳無力",
+       "refs": [
+        "mlp-tpp"
+       ]
       }
      ],
      "doNow": [
@@ -9616,12 +9717,6 @@ window.YD = {
      "heading": "今天就要就醫",
      "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
      "items": [
-      {
-       "text": "突然出現無力，特別是只在某個部位",
-       "refs": [
-        "mlp-weakness"
-       ]
-      },
       {
        "text": "感冒、腸胃炎等病毒感染之後出現無力",
        "refs": [
@@ -9847,7 +9942,7 @@ window.YD = {
      },
      {
       "pattern": "睡醒、飽餐或運動後休息時，突然四肢無力（常在肩膀、髖部），發作之間完全正常；可能合併心悸、手抖、怕熱、體重減輕",
-      "text": "可能是低血鉀週期性麻痺（包括甲狀腺亢進引起的），請今天就醫；合併呼吸困難、心跳不規則或昏倒，請撥打 119。",
+      "text": "可能是低血鉀週期性麻痺（包括甲狀腺亢進引起的），正在發作請立即到急診；已經恢復，請今天就醫；合併呼吸困難、心跳不規則或昏倒，請撥打 119。",
       "refs": [
        "mlp-hpp",
        "mlp-tpp"
@@ -9994,6 +10089,13 @@ window.YD = {
        "refs": [
         "nhs-vertigo"
        ]
+      },
+      {
+       "text": "頭暈、眩暈合併一側耳朵突然聽不到",
+       "refs": [
+        "mayo-dizzy",
+        "nhs-vertigo"
+       ]
       }
      ],
      "doNow": [
@@ -10019,12 +10121,6 @@ window.YD = {
        "text": "眩暈合併劇烈頭痛、一直想吐或嘔吐，或發燒、發冷發抖",
        "refs": [
         "nhs-vertigo"
-       ]
-      },
-      {
-       "text": "一側耳朵突然聽不到",
-       "refs": [
-        "nhs-labyrinthitis"
        ]
       }
      ]
@@ -10182,7 +10278,7 @@ window.YD = {
      },
      {
       "pattern": "突然持續的天旋地轉、站不穩、噁心嘔吐，可能合併聽力變差或耳鳴",
-      "text": "可能是前庭神經炎或迷路炎；一側耳朵突然聽不到，請今天就醫。合併上方任何一項，請撥打 119。",
+      "text": "可能是前庭神經炎或迷路炎；一側耳朵突然聽不到，請立即到急診。合併上方任何一項，請撥打 119。",
       "refs": [
        "nhs-labyrinthitis"
       ]
@@ -10343,10 +10439,11 @@ window.YD = {
        ]
       },
       {
-       "text": "有人昏倒時：讓他平躺，鬆開領口和皮帶；沒有受傷又有呼吸，可以把腳抬高約 30 公分。",
+       "text": "有人昏倒時：讓他平躺，鬆開領口和皮帶；沒有受傷又有呼吸，可以把腳抬高約 30 公分。懷孕（特別是 28 週以上）的人，改成側躺。",
        "refs": [
         "mayo-faint-fa",
-        "mlp-faint"
+        "mlp-faint",
+        "nhs-faint"
        ]
       },
       {
@@ -10556,7 +10653,7 @@ window.YD = {
      },
      {
       "pattern": "有糖尿病，昏倒前冒汗、發抖",
-      "text": "可能是低血糖。還能安全吞嚥時，先喝一小杯果汁或含糖飲料；叫不醒或沒有改善，請撥打 119。",
+      "text": "可能是低血糖。有糖尿病的人昏倒，請撥打 119；等待時如果已經清醒、能安全吞嚥，可以先喝一小杯果汁或含糖飲料。",
       "refs": [
        "mlp-faint",
        "nhs-hypo"
@@ -10914,13 +11011,6 @@ window.YD = {
        "mlp-seizure",
        "nhs-head"
       ]
-     },
-     {
-      "pattern": "突然失去意識倒下、身體短暫抽動幾下，很快醒來",
-      "text": "也可能是昏倒，不一定是癲癇；請就醫檢查（也可看「昏倒、暈厥」頁）。",
-      "refs": [
-       "mlp-seizure"
-      ]
      }
     ]
    },
@@ -11059,12 +11149,6 @@ window.YD = {
        ]
       },
       {
-       "text": "體溫達 40.6°C 以上，或持續在 39.4°C 以上",
-       "refs": [
-        "mlp-fever"
-       ]
-      },
-      {
        "text": "牙齦或鼻子出血、吐血或血便、皮膚蒼白濕冷、手腳冰冷、躁動不安、非常口渴或極度虛弱（可能是嚴重登革熱，常在退燒時才出現）",
        "refs": [
         "who-dengue"
@@ -11098,9 +11182,10 @@ window.YD = {
        ]
       },
       {
-       "text": "體溫達 39.4°C 以上",
+       "text": "體溫達 39.4°C 以上，或吃退燒藥也降不下來",
        "refs": [
-        "mayo-fever"
+        "mayo-fever",
+        "mlp-fever"
        ]
       },
       {
@@ -11128,9 +11213,9 @@ window.YD = {
        ]
       },
       {
-       "text": "無法進食喝水，或尿量明顯減少",
+       "text": "一直吐，連水都喝不下",
        "refs": [
-        "mlp-fever"
+        "nhs-dv"
        ]
       },
       {
@@ -11344,10 +11429,12 @@ window.YD = {
     "慢性病史"
    ],
    "sources": [
+    "nhs-fever",
     "mayo-fever",
     "mlp-fever",
-    "nhs-fever",
     "who-dengue",
+    "nhs-dv",
+    "nhs-flu",
     "nhs-meningitis",
     "nhs-sepsis",
     "nhs-heat",
@@ -11355,9 +11442,7 @@ window.YD = {
     "nhs-uti",
     "mayo-kidney-infection",
     "mayo-cellulitis",
-    "nhs-flu",
-    "nhs-tonsillitis",
-    "nhs-dv"
+    "nhs-tonsillitis"
    ],
    "links": [
     {
@@ -11511,7 +11596,7 @@ window.YD = {
      "intro": "下列情況請儘快安排門診，不要拖延：",
      "items": [
       {
-       "text": "熱衰竭的症狀在 30 分鐘內降溫後已經好轉：可以到診所看診",
+       "text": "熱衰竭的症狀在 30 分鐘內降溫後已經好轉：繼續休息、補充水分；不確定時可以就醫諮詢",
        "refs": [
         "nhs-heat"
        ]
@@ -11553,8 +11638,7 @@ window.YD = {
       "name": "中暑（熱中暑）",
       "plain": "體溫很高、皮膚很燙不流汗、意識混亂、抽搐。",
       "refs": [
-       "nhs-heat",
-       "nhs-fever"
+       "nhs-heat"
       ]
      }
     ],
@@ -11615,8 +11699,7 @@ window.YD = {
    ],
    "sources": [
     "nhs-heat",
-    "nfa-cpr",
-    "nhs-fever"
+    "nfa-cpr"
    ]
   },
   {
@@ -11804,6 +11887,13 @@ window.YD = {
        "refs": [
         "mayo-shingles"
        ]
+      },
+      {
+       "text": "蕁麻疹 2 天沒有改善、很嚴重，或一直反覆發作",
+       "refs": [
+        "nhs-hives",
+        "mayo-hives"
+       ]
       }
      ]
     },
@@ -11811,13 +11901,6 @@ window.YD = {
      "heading": "儘快安排門診",
      "intro": "下列情況請儘快安排門診，不要拖延：",
      "items": [
-      {
-       "text": "蕁麻疹 2 天沒有改善、很嚴重，或一直反覆發作",
-       "refs": [
-        "nhs-hives",
-        "mayo-hives"
-       ]
-      },
       {
        "text": "吃了某種食物之後出現過敏症狀，需要找出過敏原",
        "refs": [
@@ -11848,10 +11931,9 @@ window.YD = {
        ]
       },
       {
-       "text": "藥物引起的嚴重皮膚反應（史蒂文生氏-強生症候群）需要立即住院治療，可能造成脫水、敗血症，甚至影響視力。",
+       "text": "藥物引起的嚴重皮膚反應（史蒂文生氏-強生症候群）需要立即住院治療，可能造成皮膚感染、器官受損，甚至影響視力。",
        "refs": [
-        "nhs-sjs",
-        "mayo-sjs"
+        "nhs-sjs"
        ]
       },
       {
@@ -12057,7 +12139,8 @@ window.YD = {
     {
      "text": "曾經因為某種藥物發生史蒂文生氏-強生症候群的人，再次使用同一種藥物可能復發。",
      "refs": [
-      "mayo-sjs"
+      "mayo-sjs",
+      "nhs-sjs"
      ]
     }
    ],
@@ -12073,16 +12156,16 @@ window.YD = {
     "nhs-hives",
     "mlp-hives",
     "mlp-rash",
-    "mayo-anaphylaxis",
     "mayo-food-allergy",
     "nhs-meningitis",
     "nhs-sjs",
     "mayo-sjs",
     "mayo-cellulitis",
-    "mayo-drug-allergy",
-    "mayo-hives",
-    "mayo-shingles",
+    "mayo-anaphylaxis",
     "mohw-cbz",
+    "mayo-drug-allergy",
+    "mayo-shingles",
+    "mayo-hives",
     "mohw-nhi-hla"
    ]
   },
@@ -12136,6 +12219,30 @@ window.YD = {
        "text": "酸、化學品或電造成的",
        "refs": [
         "nhs-burns"
+       ]
+      },
+      {
+       "text": "面積約手掌大或更大",
+       "refs": [
+        "mlp-burns"
+       ]
+      },
+      {
+       "text": "手、腳、臉、鼠蹊部、屁股或大關節的燒燙傷起水泡",
+       "refs": [
+        "mlp-burns"
+       ]
+      },
+      {
+       "text": "吸入濃煙",
+       "refs": [
+        "mlp-burns"
+       ]
+      },
+      {
+       "text": "出現休克的徵象",
+       "refs": [
+        "mlp-burns"
        ]
       }
      ],
@@ -12322,6 +12429,7 @@ window.YD = {
    ],
    "sources": [
     "nhs-burns",
+    "mlp-burns",
     "tsem-chem"
    ]
   },
@@ -12496,9 +12604,9 @@ window.YD = {
        ]
       },
       {
-       "text": "被咬傷，而且過去 10 年沒有打過破傷風疫苗",
+       "text": "傷口髒（沾到泥土、口水或糞便）或被咬傷，而且超過 5 年沒有打破傷風疫苗，或不確定上次什麼時候打",
        "refs": [
-        "nhs-bites"
+        "cdc-tetanus"
        ]
       }
      ]
@@ -12662,6 +12770,7 @@ window.YD = {
     "nhs-cuts",
     "nhs-bites",
     "mohw-rabies",
+    "cdc-tetanus",
     "nhs-tetanus"
    ]
   },
@@ -12771,7 +12880,7 @@ window.YD = {
        ]
       },
       {
-       "text": "不要催吐，可能會嗆到。除非醫護人員指示，不要給患者吃喝任何東西，也不要用檸檬汁、醋等偏方中和。",
+       "text": "不要催吐，可能會嗆到。除非毒物諮詢中心或醫護人員指示，不要給患者吃喝任何東西，也不要用檸檬汁、醋等偏方中和。",
        "refs": [
         "nhs-poisoning",
         "mlp-poisoning"
@@ -13035,11 +13144,10 @@ window.YD = {
     "mayo-poisoning",
     "nhs-co",
     "cdc-co",
+    "tsem-chem",
     "nfa-cpr",
-    "mohw-1925",
     "vgh-tox",
-    "tox-site",
-    "tsem-chem"
+    "mohw-1925"
    ],
    "links": [
     {
@@ -13495,7 +13603,7 @@ window.YD = {
        ]
       },
       {
-       "text": "魚刺、海膽、魟魚、獅子魚刺傷：泡溫水（乾淨的溫水或海水，約 43 到 46°C），直到疼痛緩解；小心燙傷。",
+       "text": "魚刺、海膽、魟魚、獅子魚刺傷：泡溫水（乾淨的溫水或海水，約 43 到 45°C），直到疼痛緩解；小心燙傷。",
        "refs": [
         "tsem-marine"
        ]
@@ -13787,7 +13895,7 @@ window.YD = {
      "intro": "有想結束生命的念頭，但還沒有行動：",
      "items": [
       {
-       "text": "撥打 1925 安心專線（24 小時免付費），擔心身邊的人也可以打。",
+       "text": "撥打 1925 安心專線（24 小時免付費）。",
        "refs": [
         "mohw-1925",
         "nhs-suicidal"
@@ -13886,9 +13994,8 @@ window.YD = {
      },
      {
       "pattern": "擔心身邊的人想自殺",
-      "text": "可以撥打 1925 安心專線討論怎麼幫助他；他有立即危險時，請撥打 119。",
+      "text": "陪在他身邊；他有立即危險時，請撥打 119。",
       "refs": [
-       "mohw-1925",
        "nhs-suicidal"
       ]
      }
@@ -14772,7 +14879,7 @@ window.YD = {
    "intro": "孩子還能咳嗽、哭或說話，就鼓勵他繼續咳。咳不出聲、哭不出來、無法呼吸時，立即急救：",
    "items": [
     {
-     "text": "1 歲以上：讓孩子身體前傾，用掌根在兩側肩胛骨中間用力拍背 5 下；沒有吐出來，就站在孩子背後，雙手握拳放在肚臍和胸骨下緣之間，往內往上快速推 5 下。",
+     "text": "1 歲以上：讓孩子身體前傾，用掌根在兩側肩胛骨中間用力拍背 5 下；沒有吐出來，就站在孩子背後，一手握拳放在肚臍和胸骨下緣之間，另一手包住拳頭，往內往上快速推 5 下。",
      "refs": [
       "sja-child-choking"
      ]

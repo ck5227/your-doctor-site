@@ -38,6 +38,10 @@
   ICON_PATHS['head-injury'] = '<circle cx="12" cy="11" r="6.5"/><path d="M9.5 17.3V21M14.5 17.3V21"/><path d="M15 3.5l1.5 2.5 2.5-1-1 2.5 2.5 1.5"/>';
   ICON_PATHS['leg-swelling'] = '<path d="M9 3v9.5c0 2-1 3.5-1 5.5 0 1.7 1.3 3 3 3h4"/><path d="M14 3v8"/><path d="M14 11c2.2 1 3 3 2.5 5"/>';
   ICON_PATHS.seizure = '<path d="M13 2.5L6.5 13H12l-1 8.5L17.5 11H12z"/>';
+  ICON_PATHS['coughing-blood'] = '<path d="M4 10.5c2.5-1.5 5-1.5 7 0"/><path d="M4 14c2.5-1.5 5-1.5 7 0"/><path d="M17 7.5s-3 3.5-3 5.7a3 3 0 0 0 6 0c0-2.2-3-5.7-3-5.7z"/>';
+  ICON_PATHS['eye-problems'] = '<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/>';
+  ICON_PATHS.urinary = '<path d="M12 3.5s-5 5.8-5 9.5a5 5 0 0 0 10 0c0-3.7-5-9.5-5-9.5z"/><path d="M12 11v4M10 13h4"/>';
+  ICON_PATHS['sore-throat'] = '<path d="M8 3.5v5a4 4 0 0 0 8 0v-5"/><path d="M10 12.5V20M14 12.5V20"/><path d="M9.5 16h5"/>';
   ICON_PATHS['child-fever'] = ICON_PATHS.fever;
   ICON_PATHS['child-poisoning'] = ICON_PATHS.poisoning;
   function icon(slug) {

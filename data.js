@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-17T02:36:30.021Z",
+ "builtAt": "2026-11-17T03:20:17.158Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
@@ -12,14 +12,18 @@ window.YD = {
   "symptomOrder": [
    "chest-pain",
    "shortness-of-breath",
+   "coughing-blood",
    "palpitations",
    "abdominal-pain",
    "gi-bleeding",
    "vomiting-diarrhea",
+   "urinary",
    "back-pain",
    "leg-swelling",
    "headache",
    "head-injury",
+   "eye-problems",
+   "sore-throat",
    "stroke",
    "memory-loss",
    "weakness",
@@ -80,7 +84,8 @@ window.YD = {
     "memory-loss",
     "fainting",
     "seizure",
-    "leg-swelling"
+    "leg-swelling",
+    "coughing-blood"
    ],
    "_noObserveNote": "列在此處的症狀不得提供「在家觀察」選項；build 會直接失敗。"
   },
@@ -1375,6 +1380,94 @@ window.YD = {
    "type": "衛教",
    "checkedAt": "2026-11-17",
    "linkCheck": "ok"
+  },
+  "nhs-cough-blood": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Coughing up blood (blood in phlegm)",
+   "url": "https://www.nhs.uk/symptoms/coughing-up-blood/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mlp-cough-blood": {
+   "publisher": "MedlinePlus（美國國家醫學圖書館）",
+   "title": "Coughing up blood",
+   "url": "https://medlineplus.gov/ency/article/003073.htm",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-red-eye": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Red eye",
+   "url": "https://www.nhs.uk/symptoms/red-eye/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-eye-pain": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Eye pain",
+   "url": "https://www.nhs.uk/symptoms/eye-pain/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-vision-loss": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Vision loss",
+   "url": "https://www.nhs.uk/conditions/vision-loss/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-eye-injury": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Eye injuries",
+   "url": "https://www.nhs.uk/conditions/eye-injuries/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-retinal-detach": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Detached retina (retinal detachment)",
+   "url": "https://www.nhs.uk/conditions/detached-retina-retinal-detachment/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-blood-urine": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Blood in urine",
+   "url": "https://www.nhs.uk/symptoms/blood-in-urine/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mlp-dysuria": {
+   "publisher": "MedlinePlus（美國國家醫學圖書館）",
+   "title": "Urination - painful",
+   "url": "https://medlineplus.gov/ency/article/003145.htm",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-sore-throat": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Sore throat",
+   "url": "https://www.nhs.uk/conditions/sore-throat/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-epiglottitis": {
+   "publisher": "Mayo Clinic",
+   "title": "Epiglottitis: Symptoms and causes",
+   "url": "https://www.mayoclinic.org/diseases-conditions/epiglottitis/symptoms-causes/syc-20372227",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
   }
  },
  "symptoms": [
@@ -2261,6 +2354,256 @@ window.YD = {
      }
     ]
    }
+  },
+  {
+   "slug": "coughing-blood",
+   "title": "咳血（痰裡有血）",
+   "bodyArea": "chest",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "咳血",
+    "咳出血",
+    "痰有血",
+    "痰裡有血",
+    "痰中帶血",
+    "血痰",
+    "咳嗽有血",
+    "咯血"
+   ],
+   "summary": "咳血有很多可能的原因，也可能是肺栓塞、肺癌等嚴重的問題，請一定要就醫檢查。咳出的血不只幾點或幾絲，或合併喘、心跳很快、胸痛，請立即撥打 119。",
+   "definition": "咳血是從肺部或呼吸道咳出血來，常和痰混在一起、有泡泡，通常是鮮紅色或鐵鏽色。這和嘴巴、喉嚨或腸胃道出血不同。",
+   "definitionRefs": [
+    "mlp-cough-blood"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "咳血，加上下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "咳出的血不只幾點或幾絲（例如超過幾茶匙）",
+       "refs": [
+        "nhs-cough-blood",
+        "mlp-cough-blood"
+       ]
+      },
+      {
+       "text": "呼吸困難或很喘",
+       "refs": [
+        "nhs-cough-blood",
+        "mlp-cough-blood"
+       ]
+      },
+      {
+       "text": "心跳很快",
+       "refs": [
+        "nhs-cough-blood"
+       ]
+      },
+      {
+       "text": "胸痛或上背痛",
+       "refs": [
+        "nhs-cough-blood",
+        "mlp-cough-blood"
+       ]
+      },
+      {
+       "text": "頭暈、快昏倒",
+       "refs": [
+        "mlp-cough-blood"
+       ]
+      },
+      {
+       "text": "尿或大便裡也有血",
+       "refs": [
+        "mlp-cough-blood"
+       ]
+      },
+      {
+       "text": "發燒",
+       "refs": [
+        "mlp-cough-blood"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119；把正在吃的藥帶去。",
+       "refs": [
+        "nhs-cough-blood"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "任何咳血，即使只有痰裡幾絲血、沒有其他症狀",
+       "refs": [
+        "nhs-cough-blood",
+        "mlp-cough-blood"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": []
+    },
+    "observe": null,
+    "observeOmittedReason": "咳血不提供在家觀察。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "咳血有時是肺栓塞或肺癌等嚴重疾病的徵兆。",
+       "refs": [
+        "nhs-cough-blood"
+       ]
+      },
+      {
+       "text": "大量咳血可能致命。",
+       "refs": [
+        "mlp-cough-blood"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "咳出多少血？持續多久了？",
+     "why": "出血量和時間決定處理的急迫性。"
+    },
+    {
+     "q": "確定是咳出來的，不是從鼻子、嘴巴流出或吐出來的？",
+     "why": "咳血和腸胃道出血的原因不同。"
+    },
+    {
+     "q": "有沒有喘、胸痛、發燒、體重減輕？",
+     "why": "幫助找出原因。"
+    },
+    {
+     "q": "有沒有吃抗凝血藥？有沒有抽菸、肺病或結核病接觸史？",
+     "why": "這些和咳血的原因有關。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "肺栓塞",
+      "plain": "肺部的血管被血塊塞住，可能合併喘、胸痛、心跳很快。",
+      "refs": [
+       "nhs-cough-blood",
+       "mlp-cough-blood"
+      ]
+     },
+     {
+      "name": "肺癌",
+      "plain": "",
+      "refs": [
+       "nhs-cough-blood",
+       "mlp-cough-blood"
+      ]
+     },
+     {
+      "name": "結核病",
+      "plain": "",
+      "refs": [
+       "nhs-cough-blood",
+       "mlp-cough-blood"
+      ]
+     },
+     {
+      "name": "抗凝血藥過量",
+      "plain": "血液太稀，容易出血。",
+      "refs": [
+       "mlp-cough-blood"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "長期或劇烈咳嗽",
+      "plain": "喉嚨受刺激，通常只有少量的血。",
+      "refs": [
+       "nhs-cough-blood",
+       "mlp-cough-blood"
+      ]
+     },
+     {
+      "name": "肺炎、支氣管炎等呼吸道感染",
+      "plain": "",
+      "refs": [
+       "nhs-cough-blood",
+       "mlp-cough-blood"
+      ]
+     },
+     {
+      "name": "支氣管擴張症",
+      "plain": "呼吸道變寬、痰變多。",
+      "refs": [
+       "nhs-cough-blood",
+       "mlp-cough-blood"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的情況",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "咳血合併突然喘、胸痛或上背痛、心跳很快",
+      "text": "可能是肺栓塞，請立即撥打 119。",
+      "refs": [
+       "nhs-cough-blood"
+      ]
+     },
+     {
+      "pattern": "劇烈咳嗽很多天後，痰裡有幾絲血",
+      "text": "可能是咳嗽刺激造成，但仍要今天就醫檢查。",
+      "refs": [
+       "mlp-cough-blood",
+       "nhs-cough-blood"
+      ]
+     },
+     {
+      "pattern": "咳嗽、發燒、喘，痰裡有血",
+      "text": "可能是肺炎等呼吸道感染，請今天就醫。",
+      "refs": [
+       "mlp-cough-blood"
+      ]
+     },
+     {
+      "pattern": "正在吃抗凝血藥",
+      "text": "可能是血液太稀造成出血，請今天就醫；量多或合併上方任何一項，請撥打 119。",
+      "refs": [
+       "mlp-cough-blood"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [],
+   "visitPreparation": [
+    "咳血開始的時間、每次的量（可以拍照）",
+    "使用中的所有藥物，特別是抗凝血藥",
+    "抽菸史、肺病病史、結核病接觸史"
+   ],
+   "sources": [
+    "mlp-cough-blood",
+    "nhs-cough-blood"
+   ]
   },
   {
    "slug": "palpitations",
@@ -3899,6 +4242,305 @@ window.YD = {
    ]
   },
   {
+   "slug": "urinary",
+   "title": "解尿痛、頻尿或血尿",
+   "bodyArea": "abdomen",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "解尿痛",
+    "小便痛",
+    "尿尿痛",
+    "排尿疼痛",
+    "頻尿",
+    "急尿",
+    "尿道炎",
+    "膀胱炎",
+    "泌尿道感染",
+    "血尿",
+    "小便有血",
+    "尿有血",
+    "尿液混濁"
+   ],
+   "summary": "解尿痛、頻尿多半是泌尿道感染，通常不嚴重但需要治療。合併發燒、腰痛可能是腎臟感染；血尿一定要檢查。意識混亂或想睡、說話困難，請立即撥打 119。",
+   "definition": "泌尿道感染可能出現解尿疼痛或灼熱、頻尿、急尿、尿液混濁或有血、下腹痛，或肋骨下方的背痛。",
+   "definitionRefs": [
+    "nhs-uti"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "有下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "意識混亂、很想睡，或說話困難",
+       "refs": [
+        "nhs-uti"
+       ]
+      },
+      {
+       "text": "合併意識混亂、無法控制的發抖、呼吸困難，或皮膚、嘴唇發紫或出現花斑（可能是敗血症）",
+       "refs": [
+        "nhs-sepsis"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119；把正在吃的藥帶去。",
+       "refs": [
+        "nhs-uti"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "發燒、覺得忽冷忽熱、發抖，或體溫低於 36°C",
+       "refs": [
+        "nhs-uti",
+        "mlp-dysuria"
+       ]
+      },
+      {
+       "text": "合併腰痛或肋骨下方的背痛",
+       "refs": [
+        "nhs-uti",
+        "mlp-dysuria"
+       ]
+      },
+      {
+       "text": "腰側、背部到鼠蹊部一陣一陣劇痛，痛到坐立難安",
+       "refs": [
+        "nhs-blood-urine",
+        "nhs-kidneystones"
+       ]
+      },
+      {
+       "text": "尿裡有血（粉紅色、紅色或深咖啡色）",
+       "refs": [
+        "nhs-blood-urine"
+       ]
+      },
+      {
+       "text": "懷孕中",
+       "refs": [
+        "nhs-uti",
+        "mlp-dysuria"
+       ]
+      },
+      {
+       "text": "男性、65 歲以上，或有糖尿病",
+       "refs": [
+        "nhs-uti"
+       ]
+      },
+      {
+       "text": "症狀很快變嚴重，或治療 2 天後沒有改善",
+       "refs": [
+        "nhs-uti"
+       ]
+      },
+      {
+       "text": "陰莖或陰道有分泌物",
+       "refs": [
+        "mlp-dysuria"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "沒有上方任何一項：可以到診所看診",
+       "refs": [
+        "nhs-uti"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "血尿有時是癌症的徵兆，早期發現比較好治療。",
+       "refs": [
+        "nhs-blood-urine"
+       ]
+      },
+      {
+       "text": "泌尿道感染可能往上影響腎臟，出現發燒和腰痛。",
+       "refs": [
+        "nhs-uti"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "有沒有發燒、發抖、腰痛？",
+     "why": "可能是腎臟感染。"
+    },
+    {
+     "q": "尿是什麼顏色？有沒有血？",
+     "why": "血尿需要進一步檢查。"
+    },
+    {
+     "q": "有沒有懷孕的可能？有沒有糖尿病？",
+     "why": "這些情況需要更早治療。"
+    },
+    {
+     "q": "有沒有分泌物、新的性伴侶？",
+     "why": "可能是性傳染病。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "腎臟感染",
+      "plain": "發燒、發抖、腰痛。",
+      "refs": [
+       "nhs-uti",
+       "mayo-kidney-infection"
+      ]
+     },
+     {
+      "name": "敗血症",
+      "plain": "感染引起的嚴重全身反應。",
+      "refs": [
+       "nhs-sepsis"
+      ]
+     },
+     {
+      "name": "腎結石",
+      "plain": "腰側、背部到鼠蹊部一陣一陣劇痛。",
+      "refs": [
+       "nhs-blood-urine",
+       "nhs-kidneystones"
+      ]
+     },
+     {
+      "name": "泌尿道的癌症",
+      "plain": "血尿可能是徵兆。",
+      "refs": [
+       "nhs-blood-urine"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "膀胱炎（泌尿道感染）",
+      "plain": "解尿痛、頻尿、急尿、尿液混濁。",
+      "refs": [
+       "nhs-uti",
+       "mlp-dysuria"
+      ]
+     },
+     {
+      "name": "性傳染病",
+      "plain": "例如淋病、披衣菌，可能有分泌物。",
+      "refs": [
+       "mlp-dysuria"
+      ]
+     },
+     {
+      "name": "陰道炎",
+      "plain": "例如念珠菌感染。",
+      "refs": [
+       "mlp-dysuria"
+      ]
+     },
+     {
+      "name": "攝護腺肥大",
+      "plain": "50 歲以上男性，尿不太出來、常要起床小便。",
+      "refs": [
+       "nhs-blood-urine"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的症狀",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "解尿痛或灼熱、頻尿、急尿、尿液混濁",
+      "text": "可能是膀胱炎（泌尿道感染），請到診所看診。",
+      "refs": [
+       "nhs-uti",
+       "nhs-blood-urine"
+      ]
+     },
+     {
+      "pattern": "合併發燒、發抖、腰痛",
+      "text": "可能是腎臟感染，請今天就醫。",
+      "refs": [
+       "nhs-uti",
+       "mayo-kidney-infection"
+      ]
+     },
+     {
+      "pattern": "腰側、背部到鼠蹊部一陣一陣劇痛，坐立難安、噁心，可能有血尿",
+      "text": "可能是腎結石，請今天就醫。",
+      "refs": [
+       "nhs-blood-urine",
+       "nhs-kidneystones"
+      ]
+     },
+     {
+      "pattern": "年長者或失智症患者突然變得糊塗、躁動，或尿失禁比平常嚴重",
+      "text": "可能是泌尿道感染，請今天就醫；很想睡或說話困難，請撥打 119。",
+      "refs": [
+       "nhs-uti"
+      ]
+     },
+     {
+      "pattern": "剛吃過甜菜根，或開始吃新的藥，尿變紅或咖啡色",
+      "text": "也可能不是血尿；不確定時，請今天就醫。",
+      "refs": [
+       "nhs-blood-urine"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "年長者、失智症患者或有導尿管的人，泌尿道感染可能只表現為意識混亂、躁動或尿失禁變嚴重。",
+     "refs": [
+      "nhs-uti"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "症狀開始的時間",
+    "尿的顏色（可以拍照）",
+    "使用中的所有藥物",
+    "是否懷孕、有沒有糖尿病"
+   ],
+   "sources": [
+    "nhs-uti",
+    "nhs-sepsis",
+    "mlp-dysuria",
+    "nhs-blood-urine",
+    "nhs-kidneystones",
+    "mayo-kidney-infection"
+   ]
+  },
+  {
    "slug": "back-pain",
    "title": "腰痛（下背痛）",
    "aliases": [
@@ -5367,6 +6009,640 @@ window.YD = {
     "mayo-head-fa",
     "nfa-cpr",
     "mayo-headache"
+   ]
+  },
+  {
+   "slug": "eye-problems",
+   "title": "眼睛紅、痛，或視力突然改變",
+   "bodyArea": "head",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "眼睛紅",
+    "紅眼",
+    "眼睛痛",
+    "眼睛紅痛",
+    "看不清楚",
+    "視力模糊",
+    "眼前有黑影",
+    "飛蚊症",
+    "閃光",
+    "眼睛被噴到",
+    "化學物質噴到眼睛",
+    "眼睛有異物",
+    "結膜炎",
+    "眼睛充血"
+   ],
+   "summary": "眼睛紅多半是感染或乾眼，常不嚴重。但突然看不見、視力改變、眼睛劇痛、看亮光會痛、眼睛受傷或被化學品噴到，請立即到急診。",
+   "definition": "眼睛紅通常是感染或乾眼造成，但原因很多，請不要自己判斷。",
+   "definitionRefs": [
+    "nhs-red-eye"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "有下列任何一項，請立即到急診：",
+     "items": [
+      {
+       "text": "一眼或兩眼突然看不見",
+       "refs": [
+        "nhs-vision-loss",
+        "nhs-eye-pain"
+       ]
+      },
+      {
+       "text": "突然劇烈眼睛痛，或痛到晚上睡不著",
+       "refs": [
+        "nhs-vision-loss",
+        "nhs-eye-pain"
+       ]
+      },
+      {
+       "text": "眼睛紅，加上視力改變（波浪線、閃光、看不見）",
+       "refs": [
+        "nhs-red-eye"
+       ]
+      },
+      {
+       "text": "眼睛紅，加上看亮光會痛",
+       "refs": [
+        "nhs-red-eye"
+       ]
+      },
+      {
+       "text": "眼睛紅，加上劇烈頭痛和噁心",
+       "refs": [
+        "nhs-red-eye",
+        "nhs-eye-pain"
+       ]
+      },
+      {
+       "text": "眼睛受傷、被刺到，或有東西卡在眼睛裡（例如玻璃、砂石）",
+       "refs": [
+        "nhs-red-eye",
+        "nhs-eye-pain",
+        "nhs-eye-injury"
+       ]
+      },
+      {
+       "text": "漂白水、清潔劑等化學品噴到眼睛",
+       "refs": [
+        "nhs-red-eye",
+        "nhs-eye-injury"
+       ]
+      },
+      {
+       "text": "兩邊瞳孔一大一小",
+       "refs": [
+        "nhs-red-eye"
+       ]
+      },
+      {
+       "text": "戴隱形眼鏡，眼睛痛又看不清楚",
+       "refs": [
+        "nhs-eye-pain"
+       ]
+      },
+      {
+       "text": "最近 4 週內做過眼睛手術或治療，眼睛劇痛或看不清楚",
+       "refs": [
+        "nhs-eye-pain"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "化學品噴到眼睛：立刻用大量乾淨的清水（不要用熱水）沖眼睛至少 20 分鐘，等救護時也繼續沖，並把容器帶去醫院。",
+       "refs": [
+        "nhs-eye-injury"
+       ]
+      },
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119。",
+       "refs": [
+        "nhs-red-eye",
+        "nhs-eye-pain"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "眼睛很紅、很痛",
+       "refs": [
+        "nhs-red-eye",
+        "nhs-vision-loss"
+       ]
+      },
+      {
+       "text": "視力模糊、看東西有兩個影像，或看到閃光",
+       "refs": [
+        "nhs-vision-loss",
+        "nhs-eye-pain"
+       ]
+      },
+      {
+       "text": "眼前突然出現很多黑點、線條（飛蚊），或有一片黑影像簾幕一樣移過來",
+       "refs": [
+        "nhs-retinal-detach",
+        "nhs-vision-loss"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "眼睛紅、有黏黏的分泌物",
+       "refs": [
+        "nhs-red-eye"
+       ]
+      },
+      {
+       "text": "眼睛紅或眼皮、睫毛的問題超過幾天",
+       "refs": [
+        "nhs-red-eye"
+       ]
+      },
+      {
+       "text": "視力慢慢變差",
+       "refs": [
+        "nhs-vision-loss"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "有些造成視力喪失的疾病可能永久失明，早期診斷和治療可能避免視力繼續變差。",
+       "refs": [
+        "nhs-vision-loss"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "是一眼還是兩眼？突然發生還是慢慢變差？",
+     "why": "突然的視力改變需要立即處理。"
+    },
+    {
+     "q": "有沒有痛、怕光、分泌物、看到閃光或黑影？",
+     "why": "幫助分辨原因。"
+    },
+    {
+     "q": "有沒有受傷、被噴到東西、戴隱形眼鏡？",
+     "why": "這些需要特別處理。"
+    },
+    {
+     "q": "最近有沒有做過眼睛手術？有沒有糖尿病？",
+     "why": "和併發症、視力變差的原因有關。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "急性青光眼",
+      "plain": "眼睛紅、痛，合併劇烈頭痛、噁心。",
+      "refs": [
+       "nhs-red-eye",
+       "nhs-glaucoma"
+      ]
+     },
+     {
+      "name": "視網膜剝離",
+      "plain": "突然很多飛蚊、閃光，或黑影像簾幕一樣移過來。",
+      "refs": [
+       "nhs-retinal-detach",
+       "nhs-vision-loss"
+      ]
+     },
+     {
+      "name": "眼睛受傷或化學品灼傷",
+      "plain": "",
+      "refs": [
+       "nhs-eye-injury"
+      ]
+     },
+     {
+      "name": "眼睛裡面的感染或發炎",
+      "plain": "例如戴隱形眼鏡造成的感染、葡萄膜炎：痛、紅、視力模糊、怕光。",
+      "refs": [
+       "nhs-eye-pain"
+      ]
+     },
+     {
+      "name": "中風",
+      "plain": "突然看不見，可能合併臉歪、手腳無力、說話不清楚。",
+      "refs": [
+       "nhs-stroke"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "結膜炎",
+      "plain": "眼睛有沙沙或灼熱感，有黏黏的分泌物。",
+      "refs": [
+       "nhs-red-eye",
+       "nhs-eye-pain"
+      ]
+     },
+     {
+      "name": "乾眼",
+      "plain": "眼睛痠、模糊、流眼淚。",
+      "refs": [
+       "nhs-red-eye",
+       "nhs-eye-pain"
+      ]
+     },
+     {
+      "name": "結膜下出血",
+      "plain": "眼白上一塊鮮紅色。",
+      "refs": [
+       "nhs-red-eye"
+      ]
+     },
+     {
+      "name": "眼皮發炎、睫毛倒插",
+      "plain": "",
+      "refs": [
+       "nhs-red-eye"
+      ]
+     },
+     {
+      "name": "白內障",
+      "plain": "視力慢慢變模糊，看燈光有光暈。",
+      "refs": [
+       "nhs-vision-loss"
+      ]
+     }
+    ],
+    "patternsHeading": "依眼睛的症狀",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "眼睛紅、痛，合併劇烈頭痛、噁心",
+      "text": "可能是急性青光眼，請立即到急診。",
+      "refs": [
+       "nhs-red-eye",
+       "nhs-glaucoma"
+      ]
+     },
+     {
+      "pattern": "突然出現很多飛蚊或閃光，或有黑影像簾幕一樣移過來",
+      "text": "可能是視網膜剝離，請今天就醫；看不見請立即到急診。",
+      "refs": [
+       "nhs-retinal-detach",
+       "nhs-vision-loss"
+      ]
+     },
+     {
+      "pattern": "一眼突然看不見，合併臉歪、手腳無力或說話不清楚",
+      "text": "可能是中風，請立即撥打 119。",
+      "refs": [
+       "nhs-stroke"
+      ]
+     },
+     {
+      "pattern": "眼白上一塊鮮紅色",
+      "text": "可能是結膜下出血（微血管破裂）；合併痛、視力改變或受傷，請依上方就醫。",
+      "refs": [
+       "nhs-red-eye"
+      ]
+     },
+     {
+      "pattern": "眼睛有沙沙、灼熱感，有黏黏的分泌物",
+      "text": "可能是結膜炎，請安排門診。",
+      "refs": [
+       "nhs-red-eye",
+       "nhs-eye-pain"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "有糖尿病的人視力慢慢變差，請安排眼科檢查。",
+     "refs": [
+      "nhs-vision-loss"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "症狀開始的時間、哪一隻眼睛",
+    "化學品噴到時，帶著容器",
+    "使用中的眼藥和其他藥物",
+    "有沒有戴隱形眼鏡、最近的眼睛手術"
+   ],
+   "sources": [
+    "nhs-red-eye",
+    "nhs-vision-loss",
+    "nhs-eye-pain",
+    "nhs-eye-injury",
+    "nhs-retinal-detach",
+    "nhs-glaucoma",
+    "nhs-stroke"
+   ]
+  },
+  {
+   "slug": "sore-throat",
+   "title": "喉嚨痛",
+   "bodyArea": "head",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "喉嚨痛",
+    "咽喉痛",
+    "吞嚥痛",
+    "吞口水會痛",
+    "扁桃腺發炎",
+    "扁桃腺炎",
+    "喉嚨發炎",
+    "喉嚨腫",
+    "咽喉炎"
+   ],
+   "summary": "喉嚨痛很常見，多半是病毒感染，通常一週內會好。但呼吸困難、吞不下口水而流口水、吸氣時有尖銳的聲音，請立即撥打 119。",
+   "definition": "喉嚨痛通常是感冒或流感等病毒造成，少數是細菌感染。",
+   "definitionRefs": [
+    "nhs-sore-throat"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "喉嚨痛，加上下列任何一項，請立即撥打 119 或到急診：",
+     "items": [
+      {
+       "text": "呼吸困難",
+       "refs": [
+        "nhs-sore-throat",
+        "nhs-tonsillitis",
+        "mayo-epiglottitis"
+       ]
+      },
+      {
+       "text": "吞不下去，或吞不下口水而一直流口水",
+       "refs": [
+        "nhs-sore-throat",
+        "nhs-tonsillitis",
+        "mayo-epiglottitis"
+       ]
+      },
+      {
+       "text": "吸氣時發出尖銳的聲音",
+       "refs": [
+        "nhs-sore-throat",
+        "mayo-epiglottitis"
+       ]
+      },
+      {
+       "text": "嘴巴裡或喉嚨腫起來，或說話困難、嘴巴張不開",
+       "refs": [
+        "nhs-tonsillitis"
+       ]
+      },
+      {
+       "text": "喉嚨痛很嚴重，而且很快變嚴重",
+       "refs": [
+        "nhs-sore-throat",
+        "nhs-tonsillitis"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119。",
+       "refs": [
+        "nhs-sore-throat"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "發高燒，或覺得忽冷忽熱、發抖",
+       "refs": [
+        "nhs-sore-throat"
+       ]
+      },
+      {
+       "text": "扁桃腺上有白色或黃色的膿點",
+       "refs": [
+        "nhs-tonsillitis"
+       ]
+      },
+      {
+       "text": "脫水：尿變少、尿很深很臭",
+       "refs": [
+        "nhs-sore-throat"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "沒有上方任何一項：可以到診所看診",
+       "refs": [
+        "nhs-sore-throat"
+       ]
+      },
+      {
+       "text": "喉嚨痛超過一週沒有好轉，或常常喉嚨痛",
+       "refs": [
+        "nhs-sore-throat",
+        "nhs-tonsillitis"
+       ]
+      },
+      {
+       "text": "嘴巴或脖子有腫塊，或嘴破超過 3 週沒好",
+       "refs": [
+        "nhs-sore-throat"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "多喝水、多休息，吃涼的或軟的食物。",
+       "refs": [
+        "nhs-sore-throat"
+       ]
+      },
+      {
+       "text": "成人可以用溫鹽水漱口：半茶匙鹽溶在一杯溫水裡，漱完吐掉。",
+       "refs": [
+        "nhs-sore-throat"
+       ]
+      },
+      {
+       "text": "避免抽菸或待在煙霧多的地方。",
+       "refs": [
+        "nhs-sore-throat"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "會厭炎是醫療緊急狀況，可能很快阻塞呼吸道。",
+       "refs": [
+        "mayo-epiglottitis"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "喉嚨痛多久了？有沒有愈來愈嚴重？",
+     "why": "很快變嚴重需要立即處理。"
+    },
+    {
+     "q": "吞得下口水嗎？呼吸順嗎？嘴巴張得開嗎？",
+     "why": "這些是呼吸道可能阻塞的警訊。"
+    },
+    {
+     "q": "有沒有發燒、咳嗽、流鼻水？",
+     "why": "幫助分辨病毒或細菌感染。"
+    },
+    {
+     "q": "最近有沒有喝到很燙的東西或吸入濃煙？",
+     "why": "也可能造成喉嚨嚴重腫脹。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "會厭炎",
+      "plain": "吞嚥很痛、流口水、吸氣有尖銳聲、身體前傾才好呼吸。",
+      "refs": [
+       "mayo-epiglottitis"
+      ]
+     },
+     {
+      "name": "扁桃腺周圍膿瘍",
+      "plain": "喉嚨痛很快變嚴重、嘴巴張不開、說話困難。",
+      "refs": [
+       "nhs-tonsillitis"
+      ]
+     },
+     {
+      "name": "嚴重過敏反應",
+      "plain": "喉嚨或舌頭腫、呼吸困難。",
+      "refs": [
+       "nhs-anaphylaxis"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "感冒、流感等病毒感染",
+      "plain": "最常見，通常一週內會好。",
+      "refs": [
+       "nhs-sore-throat"
+      ]
+     },
+     {
+      "name": "扁桃腺炎",
+      "plain": "扁桃腺紅腫，可能有膿點。",
+      "refs": [
+       "nhs-tonsillitis"
+      ]
+     },
+     {
+      "name": "抽菸或煙霧刺激",
+      "plain": "",
+      "refs": [
+       "nhs-sore-throat"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的症狀",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "吞嚥很痛、流口水、吸氣有尖銳聲，坐著身體前傾才好呼吸",
+      "text": "可能是會厭炎，請立即撥打 119。",
+      "refs": [
+       "mayo-epiglottitis"
+      ]
+     },
+     {
+      "pattern": "喉嚨痛很快變嚴重，嘴巴張不開、說話困難、吞不下去",
+      "text": "可能是扁桃腺周圍膿瘍，請立即到急診。",
+      "refs": [
+       "nhs-tonsillitis"
+      ]
+     },
+     {
+      "pattern": "喉嚨或舌頭突然腫起來、呼吸困難",
+      "text": "可能是嚴重過敏反應，請立即撥打 119。",
+      "refs": [
+       "nhs-anaphylaxis"
+      ]
+     },
+     {
+      "pattern": "扁桃腺紅腫，上面有膿點",
+      "text": "可能是扁桃腺炎，請今天就醫。",
+      "refs": [
+       "nhs-tonsillitis"
+      ]
+     },
+     {
+      "pattern": "合併流鼻水、咳嗽",
+      "text": "多半是感冒等病毒感染，通常一週內會好。",
+      "refs": [
+       "nhs-sore-throat"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [],
+   "visitPreparation": [
+    "症狀開始的時間、最高溫度",
+    "使用中的所有藥物",
+    "有沒有過敏"
+   ],
+   "sources": [
+    "nhs-sore-throat",
+    "nhs-tonsillitis",
+    "mayo-epiglottitis",
+    "nhs-anaphylaxis"
    ]
   },
   {

@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-17T11:01:25.742Z",
+ "builtAt": "2026-11-17T11:14:23.760Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
@@ -1501,6 +1501,14 @@ window.YD = {
    "title": "Insect bites and stings",
    "url": "https://www.nhs.uk/conditions/insect-bites-and-stings/",
    "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "tsem-chem": {
+   "publisher": "台灣急診醫學會（台灣急診醫學通訊 3(4)：e2020030401，2020）",
+   "title": "化學物質濺身的緊急處置（廖婉如、鄧昭芳、黃獻皞，臺北榮民總醫院急診部、臨床毒物與職業醫學科）",
+   "url": "https://www.sem.org.tw/EJournal/Detail/235",
+   "type": "台灣專業學會",
    "checkedAt": "2026-11-17",
    "linkCheck": "ok"
   }
@@ -6154,9 +6162,10 @@ window.YD = {
      ],
      "doNow": [
       {
-       "text": "化學品噴到眼睛：立刻用大量乾淨的清水（不要用熱水）沖眼睛至少 20 分鐘，等救護時也繼續沖，並把容器帶去醫院。",
+       "text": "化學品噴到眼睛：立刻用大量乾淨的流動清水（不要用熱水）輕柔沖眼睛至少 20 分鐘，等救護時也繼續沖；不要自己用其他藥水中和。把容器帶去醫院。",
        "refs": [
-        "nhs-eye-injury"
+        "nhs-eye-injury",
+        "tsem-chem"
        ]
       },
       {
@@ -6229,6 +6238,12 @@ window.YD = {
        "text": "有些造成視力喪失的疾病可能永久失明，早期診斷和治療可能避免視力繼續變差。",
        "refs": [
         "nhs-vision-loss"
+       ]
+      },
+      {
+       "text": "強鹼化學品造成的灼傷往往比外表看起來更深，疼痛也可能延遲出現。",
+       "refs": [
+        "tsem-chem"
        ]
       }
      ]
@@ -6395,7 +6410,8 @@ window.YD = {
     "nhs-eye-injury",
     "nhs-retinal-detach",
     "nhs-glaucoma",
-    "nhs-stroke"
+    "nhs-stroke",
+    "tsem-chem"
    ]
   },
   {
@@ -9768,6 +9784,12 @@ window.YD = {
         "nhs-co",
         "cdc-co"
        ]
+      },
+      {
+       "text": "被氫氟酸（化骨水）濺到——即使看起來沒有灼傷、還不太痛",
+       "refs": [
+        "tsem-chem"
+       ]
       }
      ],
      "doNow": [
@@ -9794,9 +9816,16 @@ window.YD = {
        ]
       },
       {
-       "text": "皮膚沾到：戴手套脫掉沾到的衣物，用水沖洗皮膚 15 到 20 分鐘。",
+       "text": "皮膚沾到化學品：戴手套脫掉沾到的衣物，用大量流動的清水（溫水）輕柔沖洗至少 15 到 20 分鐘，不要用高壓水柱；強鹼可能要沖更久。",
        "refs": [
-        "mayo-poisoning"
+        "mayo-poisoning",
+        "tsem-chem"
+       ]
+      },
+      {
+       "text": "不要自己用醋、鹼水或其他藥品做酸鹼中和，中和時產生的熱可能讓灼傷更嚴重。帶著化學品的容器或名稱去醫院。",
+       "refs": [
+        "tsem-chem"
        ]
       },
       {
@@ -9875,6 +9904,18 @@ window.YD = {
        "text": "會灼傷喉嚨的毒物，催吐吐出來時會再灼傷一次。",
        "refs": [
         "mlp-poisoning"
+       ]
+      },
+      {
+       "text": "強鹼灼傷的疼痛常常延遲出現，灼傷往往比外表看起來更深；化學灼傷的嚴重程度無法只從外觀判斷。",
+       "refs": [
+        "tsem-chem"
+       ]
+      },
+      {
+       "text": "氫氟酸（化骨水）濺到皮膚，初期可能只有發紅、灰白或疼痛，但吸收後可能造成低血鈣和致命的心律不整。",
+       "refs": [
+        "tsem-chem"
        ]
       }
      ]
@@ -10027,7 +10068,8 @@ window.YD = {
     "nfa-cpr",
     "mohw-1925",
     "vgh-tox",
-    "tox-site"
+    "tox-site",
+    "tsem-chem"
    ],
    "links": [
     {
@@ -10483,7 +10525,7 @@ window.YD = {
        ]
       },
       {
-       "text": "魚刺、海膽、魟魚、獅子魚刺傷：用 43 到 46°C 的乾淨溫水或海水浸泡，直到疼痛緩解。",
+       "text": "魚刺、海膽、魟魚、獅子魚刺傷：泡溫水（乾淨的溫水或海水，約 43 到 46°C），直到疼痛緩解；小心燙傷。",
        "refs": [
         "tsem-marine"
        ]
@@ -10664,7 +10706,7 @@ window.YD = {
      },
      {
       "pattern": "被魚刺刺傷後立即疼痛、往四肢擴散，傷口周圍起水泡、麻",
-      "text": "可能是獅子魚等有毒的魚，請用溫水浸泡並今天就醫。",
+      "text": "可能是獅子魚等有毒的魚，請泡溫水（小心燙傷）並今天就醫。",
       "refs": [
        "tsem-marine"
       ]

@@ -30,6 +30,10 @@
   ICON_PATHS.stroke = '<path d="M12 4.5c-3.8 0-6.5 2.6-6.5 6 0 2 .9 3.6 2.4 4.6V19h8.2v-3.9c1.5-1 2.4-2.6 2.4-4.6 0-3.4-2.7-6-6.5-6z"/><path d="M12 4.5v14.5"/><path d="M14.5 9l1.5 1.5-1.5 1.5"/>';
   ICON_PATHS['memory-loss'] = '<circle cx="12" cy="11" r="7"/><path d="M9.8 9.2a2.3 2.3 0 1 1 3.2 2.1c-.7.3-1 .8-1 1.5v.4"/><path d="M12 16h.01"/>';
   ICON_PATHS.weakness = '<circle cx="12" cy="4.5" r="1.8"/><path d="M12 7v6"/><path d="M8 10l4-1 4 1"/><path d="M12 13l-2.5 7M12 13l2.5 7"/><path d="M5 20h14" stroke-dasharray="1.5 2"/>';
+  ICON_PATHS.dizziness = '<circle cx="12" cy="12" r="2"/><path d="M12 5a7 7 0 0 1 7 7"/><path d="M12 19a7 7 0 0 1-7-7"/><path d="M19 12l-2-2M5 12l2 2"/>';
+  ICON_PATHS.fainting = '<circle cx="7" cy="7.5" r="2"/><path d="M8.5 9.5l5 3.5h6"/><path d="M4 18h16"/><path d="M15 6h2.5L15 9h2.5"/>';
+  ICON_PATHS['gi-bleeding'] = '<path d="M12 3.5s-5 5.8-5 9.5a5 5 0 0 0 10 0c0-3.7-5-9.5-5-9.5z"/><path d="M10 14.5a2 2 0 0 0 2 2"/>';
+  ICON_PATHS.palpitations = '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/><path d="M7 11.5h2.5l1-2.5 2 5 1-2.5H17"/>';
   ICON_PATHS['child-fever'] = ICON_PATHS.fever;
   ICON_PATHS['child-poisoning'] = ICON_PATHS.poisoning;
   function icon(slug) {

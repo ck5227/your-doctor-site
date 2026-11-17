@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-17T01:52:50.247Z",
+ "builtAt": "2026-11-17T02:16:05.968Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
@@ -12,12 +12,16 @@ window.YD = {
   "symptomOrder": [
    "chest-pain",
    "shortness-of-breath",
+   "palpitations",
    "abdominal-pain",
+   "gi-bleeding",
    "back-pain",
    "headache",
    "stroke",
    "memory-loss",
    "weakness",
+   "dizziness",
+   "fainting",
    "fever",
    "rash",
    "poisoning",
@@ -69,7 +73,8 @@ window.YD = {
     "poisoning",
     "child-poisoning",
     "stroke",
-    "memory-loss"
+    "memory-loss",
+    "fainting"
    ],
    "_noObserveNote": "列在此處的症狀不得提供「在家觀察」選項；build 會直接失敗。"
   },
@@ -1156,6 +1161,134 @@ window.YD = {
    "type": "衛教",
    "checkedAt": "2026-11-17",
    "linkCheck": "ok"
+  },
+  "nhs-dizzy": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Dizziness",
+   "url": "https://www.nhs.uk/symptoms/dizziness/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-vertigo": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Vertigo",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-dizzy": {
+   "publisher": "Mayo Clinic",
+   "title": "Dizziness: Symptoms and causes",
+   "url": "https://www.mayoclinic.org/diseases-conditions/dizziness/symptoms-causes/syc-20371787",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-labyrinthitis": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Labyrinthitis and vestibular neuritis",
+   "url": "https://www.nhs.uk/conditions/labyrinthitis/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-faint": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Fainting",
+   "url": "https://www.nhs.uk/symptoms/fainting/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mlp-faint": {
+   "publisher": "MedlinePlus（美國國家醫學圖書館）",
+   "title": "Fainting",
+   "url": "https://medlineplus.gov/ency/article/003092.htm",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-faint-fa": {
+   "publisher": "Mayo Clinic",
+   "title": "Fainting: First aid",
+   "url": "https://www.mayoclinic.org/first-aid/first-aid-fainting/basics/art-20056606",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-syncope": {
+   "publisher": "Mayo Clinic",
+   "title": "Vasovagal syncope: Symptoms and causes",
+   "url": "https://www.mayoclinic.org/diseases-conditions/vasovagal-syncope/symptoms-causes/syc-20350527",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-vomit-blood": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Vomiting blood",
+   "url": "https://www.nhs.uk/symptoms/vomiting-blood/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-blood-poo": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Bleeding from the bottom (rectal bleeding)",
+   "url": "https://www.nhs.uk/symptoms/bleeding-from-the-bottom-rectal-bleeding/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-gi-bleed": {
+   "publisher": "Mayo Clinic",
+   "title": "Gastrointestinal bleeding: Symptoms and causes",
+   "url": "https://www.mayoclinic.org/diseases-conditions/gastrointestinal-bleeding/symptoms-causes/syc-20372729",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mlp-black-stool": {
+   "publisher": "MedlinePlus（美國國家醫學圖書館）",
+   "title": "Black or tarry stools",
+   "url": "https://medlineplus.gov/ency/article/003130.htm",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-palp": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Heart palpitations",
+   "url": "https://www.nhs.uk/symptoms/heart-palpitations/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-palp": {
+   "publisher": "Mayo Clinic",
+   "title": "Heart palpitations: Symptoms and causes",
+   "url": "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/symptoms-causes/syc-20373196",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-af": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Atrial fibrillation: Symptoms",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/symptoms/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-svt": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Supraventricular tachycardia (SVT)",
+   "url": "https://www.nhs.uk/conditions/supraventricular-tachycardia-svt/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
   }
  },
  "symptoms": [
@@ -2044,6 +2177,315 @@ window.YD = {
    }
   },
   {
+   "slug": "palpitations",
+   "title": "心悸（心跳很快、亂跳）",
+   "bodyArea": "chest",
+   "audience": [
+    "adult"
+   ],
+   "status": "published",
+   "aliases": [
+    "心悸",
+    "心跳很快",
+    "心跳很大力",
+    "心跳亂跳",
+    "心跳不規則",
+    "心臟亂跳",
+    "心跳漏拍",
+    "心慌",
+    "心臟怦怦跳",
+    "心律不整",
+    "心房顫動",
+    "心跳加速"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "summary": "心悸是突然很明顯感覺到自己的心跳：很快、很用力、不規則或漏拍。通常無害，常和壓力、咖啡因或運動有關；但如果合併胸痛、喘或快昏倒，可能是危險的心律不整，請立即撥打 119。",
+   "definition": "心悸是感覺心跳變得不舒服或不尋常，可能在胸口、脖子或喉嚨感覺到，持續幾秒、幾分鐘或更久。",
+   "definitionRefs": [
+    "nhs-palp"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119",
+     "intro": "正在心悸，加上下列任何一項，請立即撥打 119：",
+     "items": [
+      {
+       "text": "心悸一直沒有停",
+       "refs": [
+        "nhs-palp"
+       ]
+      },
+      {
+       "text": "胸痛或胸悶",
+       "refs": [
+        "nhs-palp",
+        "mayo-palp"
+       ]
+      },
+      {
+       "text": "呼吸困難",
+       "refs": [
+        "nhs-palp",
+        "mayo-palp"
+       ]
+      },
+      {
+       "text": "頭暈、快昏倒、跌倒或昏倒",
+       "refs": [
+        "nhs-palp",
+        "mayo-palp",
+        "nhs-af"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "不要自己開車去急診；把正在吃的藥帶去。",
+       "refs": [
+        "nhs-palp"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "心悸時曾經合併胸痛、喘或快昏倒，但現在已經停了",
+       "refs": [
+        "nhs-palp"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "心悸反覆發作，或愈來愈頻繁",
+       "refs": [
+        "nhs-palp",
+        "nhs-af"
+       ]
+      },
+      {
+       "text": "每次持續超過幾分鐘",
+       "refs": [
+        "nhs-palp"
+       ]
+      },
+      {
+       "text": "有心臟病，或家人有心臟病",
+       "refs": [
+        "nhs-palp"
+       ]
+      },
+      {
+       "text": "覺得心跳不規則（可能是心房顫動）",
+       "refs": [
+        "nhs-af"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "少數心悸是危及生命的心律不整造成，可能讓心臟無法有效跳動。",
+       "refs": [
+        "mayo-palp"
+       ]
+      },
+      {
+       "text": "心房顫動可能在心臟裡形成血塊，引起中風。",
+       "refs": [
+        "mayo-palp"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "心跳是很快、很用力，還是不規則、漏拍？",
+     "why": "不同的感覺指向不同的心律。"
+    },
+    {
+     "q": "是突然開始、突然停止嗎？每次持續多久？",
+     "why": "幫助判斷是哪一種心律不整。"
+    },
+    {
+     "q": "有沒有胸痛、喘、頭暈或昏倒？",
+     "why": "這些表示需要立即處理。"
+    },
+    {
+     "q": "心悸前有沒有喝咖啡、茶、酒、抽菸，或吃感冒藥？",
+     "why": "這些是常見的誘發因素。"
+    },
+    {
+     "q": "有沒有心臟病、甲狀腺疾病、貧血？",
+     "why": "這些疾病都可能造成心悸。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "心律不整",
+      "plain": "例如心房顫動、上心室心搏過速。",
+      "refs": [
+       "nhs-palp",
+       "nhs-af",
+       "nhs-svt"
+      ]
+     },
+     {
+      "name": "其他心臟病",
+      "plain": "例如心臟瓣膜疾病。",
+      "refs": [
+       "nhs-palp"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "壓力、焦慮或恐慌發作",
+      "plain": "",
+      "refs": [
+       "nhs-palp",
+       "mayo-palp"
+      ]
+     },
+     {
+      "name": "劇烈運動、睡眠不足",
+      "plain": "",
+      "refs": [
+       "nhs-palp",
+       "mayo-palp"
+      ]
+     },
+     {
+      "name": "咖啡因、尼古丁、酒精或毒品",
+      "plain": "",
+      "refs": [
+       "nhs-palp",
+       "mayo-palp"
+      ]
+     },
+     {
+      "name": "藥物",
+      "plain": "例如含偽麻黃鹼的感冒藥、某些氣喘藥。",
+      "refs": [
+       "mayo-palp",
+       "nhs-palp"
+      ]
+     },
+     {
+      "name": "月經、懷孕、更年期",
+      "plain": "荷爾蒙變化。",
+      "refs": [
+       "nhs-palp",
+       "mayo-palp"
+      ]
+     },
+     {
+      "name": "甲狀腺亢進",
+      "plain": "",
+      "refs": [
+       "nhs-palp",
+       "mayo-palp"
+      ]
+     },
+     {
+      "name": "貧血",
+      "plain": "",
+      "refs": [
+       "nhs-palp"
+      ]
+     }
+    ],
+    "patternsHeading": "依心跳的感覺",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "心跳突然變很快，又突然停止，可能持續幾分鐘到幾小時",
+      "text": "可能是上心室心搏過速，請安排門診；合併喘、胸痛或快昏倒，請撥打 119。",
+      "refs": [
+       "nhs-svt"
+      ]
+     },
+     {
+      "pattern": "脈搏不規則，可能合併疲倦、喘、頭暈",
+      "text": "可能是心房顫動，請安排門診；合併胸痛、喘、頭暈或昏倒，請撥打 119。",
+      "refs": [
+       "nhs-af"
+      ]
+     },
+     {
+      "pattern": "偶爾覺得心跳漏一拍或多跳一下",
+      "text": "心悸很常見，通常無害；反覆發作或愈來愈頻繁，請安排門診。",
+      "refs": [
+       "nhs-palp"
+      ]
+     },
+     {
+      "pattern": "喝咖啡、茶、酒、抽菸或吃感冒藥之後",
+      "text": "可能是這些刺激物引起，可以減少使用；反覆發作請安排門診。",
+      "refs": [
+       "nhs-palp",
+       "mayo-palp"
+      ]
+     },
+     {
+      "pattern": "合併疲倦、喘、臉色蒼白",
+      "text": "可能是貧血，請安排門診。",
+      "refs": [
+       "nhs-tired"
+      ]
+     },
+     {
+      "pattern": "合併手抖、怕熱、流汗、體重減輕",
+      "text": "可能是甲狀腺亢進，請安排門診。",
+      "refs": [
+       "mlp-tpp"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "有心臟病的人，心跳太快時比較容易血壓下降而昏倒。",
+     "refs": [
+      "mayo-palp"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "心悸開始和結束的時間、每次多久",
+    "心悸時摸到的脈搏快慢、規不規則（可以用血壓計或手錶記錄）",
+    "使用中的所有藥物和保健品",
+    "咖啡、茶、酒、菸的習慣",
+    "病史：心臟病、甲狀腺疾病"
+   ],
+   "sources": [
+    "nhs-palp",
+    "mayo-palp",
+    "nhs-af",
+    "nhs-svt",
+    "nhs-tired",
+    "mlp-tpp"
+   ],
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17"
+  },
+  {
    "slug": "abdominal-pain",
    "title": "腹痛",
    "aliases": [
@@ -2724,6 +3166,319 @@ window.YD = {
      }
     ]
    }
+  },
+  {
+   "slug": "gi-bleeding",
+   "title": "吐血、解黑便或血便",
+   "bodyArea": "abdomen",
+   "audience": [
+    "adult"
+   ],
+   "status": "published",
+   "aliases": [
+    "吐血",
+    "嘔血",
+    "吐咖啡色",
+    "黑便",
+    "解黑便",
+    "大便黑黑的",
+    "柏油便",
+    "血便",
+    "便血",
+    "大便有血",
+    "肛門出血",
+    "痔瘡出血",
+    "衛生紙有血",
+    "腸胃道出血",
+    "胃出血"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "summary": "吐血、解黑色柏油狀的大便，常是胃或食道出血，請立即到急診；大量出血可能很快休克。少量、一次性的鮮紅色血（例如衛生紙上有血）通常不嚴重，但也要檢查。",
+   "definition": "腸胃道出血可能出現在嘔吐物或大便中，但不一定看得出來，有時只表現為大便變黑。",
+   "definitionRefs": [
+    "mayo-gi-bleed"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "有下列任何一項，請立即到急診。合併頭暈、昏倒、冒冷汗時，請撥打 119：",
+     "items": [
+      {
+       "text": "吐血：鮮紅色、咖啡色或黑色，或像咖啡渣",
+       "refs": [
+        "nhs-vomit-blood",
+        "mayo-gi-bleed"
+       ]
+      },
+      {
+       "text": "解黑色、像柏油的大便",
+       "refs": [
+        "mayo-gi-bleed",
+        "mlp-black-stool"
+       ]
+      },
+      {
+       "text": "大量出血：馬桶的水變紅、有大血塊，或一直流血不停",
+       "refs": [
+        "nhs-blood-poo"
+       ]
+      },
+      {
+       "text": "出血合併頭暈、快昏倒或昏倒、皮膚濕冷蒼白、心跳或呼吸很快、意識混亂",
+       "refs": [
+        "nhs-vomit-blood",
+        "mayo-gi-bleed"
+       ]
+      },
+      {
+       "text": "出血合併肚子痛",
+       "refs": [
+        "nhs-vomit-blood"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119；把正在吃的藥帶去。",
+       "refs": [
+        "nhs-vomit-blood",
+        "nhs-blood-poo"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "大便裡混著血，或血樣腹瀉",
+       "refs": [
+        "nhs-blood-poo",
+        "mayo-gi-bleed"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "少量、一次性的鮮紅色血：衛生紙上有血、大便表面有血絲，或馬桶的水淡粉紅色",
+       "refs": [
+        "nhs-blood-poo"
+       ]
+      },
+      {
+       "text": "大便有血持續 3 週，或排便習慣改變 3 週、體重莫名減輕、比平常疲倦",
+       "refs": [
+        "nhs-blood-poo"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "出血如果突然發生又愈來愈多，可能很快休克。",
+       "refs": [
+        "mayo-gi-bleed"
+       ]
+      },
+      {
+       "text": "出血有時看不出來，可能只表現為大便變黑。",
+       "refs": [
+        "mayo-gi-bleed"
+       ]
+      },
+      {
+       "text": "肛門出血有時是大腸癌的徵兆，早期發現比較好治療。",
+       "refs": [
+        "nhs-blood-poo"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "吐出來或解出來的是什麼顏色？大概多少？",
+     "why": "顏色能幫助判斷出血的位置。"
+    },
+    {
+     "q": "有沒有吃抗凝血藥、阿斯匹靈，或布洛芬等止痛藥？",
+     "why": "這些藥會增加出血的機會。"
+    },
+    {
+     "q": "有沒有肝病、胃潰瘍病史，或常喝酒？",
+     "why": "和出血的原因有關。"
+    },
+    {
+     "q": "有沒有頭暈、快昏倒、心跳很快？",
+     "why": "可能表示出血量大。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "消化性潰瘍出血",
+      "plain": "上消化道出血最常見的原因。",
+      "refs": [
+       "mayo-gi-bleed",
+       "mlp-black-stool"
+      ]
+     },
+     {
+      "name": "食道靜脈曲張出血",
+      "plain": "常見於嚴重肝病，例如長期喝酒。",
+      "refs": [
+       "mayo-gi-bleed",
+       "mlp-black-stool"
+      ]
+     },
+     {
+      "name": "食道撕裂",
+      "plain": "劇烈嘔吐或咳嗽之後。",
+      "refs": [
+       "mayo-gi-bleed",
+       "nhs-vomit-blood"
+      ]
+     },
+     {
+      "name": "腸胃道腫瘤",
+      "plain": "",
+      "refs": [
+       "mayo-gi-bleed",
+       "nhs-blood-poo"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "胃炎、胃食道逆流",
+      "plain": "",
+      "refs": [
+       "nhs-vomit-blood",
+       "mayo-gi-bleed"
+      ]
+     },
+     {
+      "name": "痔瘡",
+      "plain": "排便時鮮紅色血，可能合併肛門痛、癢、有腫塊。",
+      "refs": [
+       "nhs-blood-poo",
+       "mayo-gi-bleed"
+      ]
+     },
+     {
+      "name": "肛裂",
+      "plain": "便秘後解便很痛、有鮮紅色血。",
+      "refs": [
+       "nhs-blood-poo"
+      ]
+     },
+     {
+      "name": "大腸憩室",
+      "plain": "",
+      "refs": [
+       "mayo-gi-bleed"
+      ]
+     },
+     {
+      "name": "發炎性腸道疾病",
+      "plain": "例如潰瘍性結腸炎。",
+      "refs": [
+       "mayo-gi-bleed"
+      ]
+     },
+     {
+      "name": "藥物",
+      "plain": "阿斯匹靈、布洛芬等止痛藥、抗凝血藥。",
+      "refs": [
+       "nhs-vomit-blood",
+       "nhs-blood-poo",
+       "mlp-black-stool"
+      ]
+     }
+    ],
+    "patternsHeading": "依出血的樣子",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "吐出鮮紅色、咖啡色，或像咖啡渣的東西",
+      "text": "通常是胃或食道出血，請立即到急診。",
+      "refs": [
+       "nhs-vomit-blood",
+       "mayo-gi-bleed"
+      ]
+     },
+     {
+      "pattern": "解黑色、像柏油、很臭的大便",
+      "text": "通常是食道、胃或十二指腸出血，請立即到急診。",
+      "refs": [
+       "mlp-black-stool"
+      ]
+     },
+     {
+      "pattern": "有肝硬化或長期喝酒，吐血",
+      "text": "可能是食道靜脈曲張出血，請立即撥打 119。",
+      "refs": [
+       "mayo-gi-bleed"
+      ]
+     },
+     {
+      "pattern": "劇烈嘔吐或咳嗽之後吐血",
+      "text": "可能是食道撕裂，請立即到急診。",
+      "refs": [
+       "nhs-vomit-blood",
+       "mayo-gi-bleed"
+      ]
+     },
+     {
+      "pattern": "排便時有鮮紅色血，合併肛門痛、癢或有腫塊；或便秘後解便很痛",
+      "text": "可能是痔瘡或肛裂，請安排門診。量多或一直流血，請立即就醫。",
+      "refs": [
+       "nhs-blood-poo"
+      ]
+     },
+     {
+      "pattern": "吃了鐵劑、含鉍的胃藥、活性碳、黑甘草或藍莓之後大便變黑",
+      "text": "這些也會讓大便變黑，但無法自己確定；不確定時，請立即到急診。",
+      "refs": [
+       "mlp-black-stool"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "吃抗凝血藥或抗血小板藥（例如阿斯匹靈）的人，腸胃道出血的風險比較高。",
+     "refs": [
+      "mlp-black-stool"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "吐出物或大便的顏色和量（可以拍照）",
+    "使用中的所有藥物，特別是抗凝血藥、阿斯匹靈、止痛藥、鐵劑",
+    "病史：肝病、胃潰瘍",
+    "喝酒的習慣"
+   ],
+   "sources": [
+    "mayo-gi-bleed",
+    "nhs-vomit-blood",
+    "mlp-black-stool",
+    "nhs-blood-poo"
+   ],
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17"
   },
   {
    "slug": "back-pain",
@@ -4693,6 +5448,711 @@ window.YD = {
     "mlp-tpp",
     "nhs-tired",
     "mayo-tm"
+   ],
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17"
+  },
+  {
+   "slug": "dizziness",
+   "title": "頭暈、眩暈（天旋地轉）",
+   "bodyArea": "neuro",
+   "audience": [
+    "adult"
+   ],
+   "status": "published",
+   "aliases": [
+    "頭暈",
+    "眩暈",
+    "暈眩",
+    "天旋地轉",
+    "頭重腳輕",
+    "頭昏",
+    "頭昏眼花",
+    "站不穩",
+    "走路不穩",
+    "耳石",
+    "耳石症",
+    "梅尼爾氏症",
+    "轉頭就暈",
+    "起床頭暈"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "summary": "頭暈很常見，通常不嚴重，常會自己好。但新出現、嚴重的頭暈，如果合併劇烈頭痛、胸痛、心跳不規則、手腳或臉無力、說話不清楚、看東西或聽力突然改變，可能是中風或心臟的問題，請立即撥打 119。",
+   "definition": "頭暈包括覺得站不穩、頭重腳輕、快昏倒，或覺得自己或周圍在旋轉（眩暈）。",
+   "definitionRefs": [
+    "nhs-dizzy"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "新出現、嚴重的頭暈或眩暈，加上下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "突然劇烈頭痛，或胸痛",
+       "refs": [
+        "mayo-dizzy"
+       ]
+      },
+      {
+       "text": "心跳很快或不規則",
+       "refs": [
+        "mayo-dizzy"
+       ]
+      },
+      {
+       "text": "手腳或臉無力、麻木，或走路不穩、跌倒",
+       "refs": [
+        "mayo-dizzy",
+        "nhs-vertigo"
+       ]
+      },
+      {
+       "text": "說話不清楚或意識混亂",
+       "refs": [
+        "mayo-dizzy",
+        "nhs-vertigo"
+       ]
+      },
+      {
+       "text": "看東西有兩個影像、突然看不見，或聽力突然改變",
+       "refs": [
+        "mayo-dizzy",
+        "nhs-vertigo"
+       ]
+      },
+      {
+       "text": "呼吸困難",
+       "refs": [
+        "mayo-dizzy"
+       ]
+      },
+      {
+       "text": "昏倒或抽搐",
+       "refs": [
+        "mayo-dizzy"
+       ]
+      },
+      {
+       "text": "一直嘔吐",
+       "refs": [
+        "mayo-dizzy"
+       ]
+      },
+      {
+       "text": "叫不醒",
+       "refs": [
+        "nhs-vertigo"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "先躺下，等頭暈過去再慢慢起身；不要突然彎腰或站起來。",
+       "refs": [
+        "nhs-dizzy"
+       ]
+      },
+      {
+       "text": "頭暈時不要開車、爬梯子或操作機器。",
+       "refs": [
+        "nhs-dizzy"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "眩暈合併劇烈頭痛、一直想吐或嘔吐，或發燒、發冷發抖",
+       "refs": [
+        "nhs-vertigo"
+       ]
+      },
+      {
+       "text": "一側耳朵突然聽不到",
+       "refs": [
+        "nhs-labyrinthitis"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "頭暈一直沒有好，或反覆發作，而且沒有上方任何一項",
+       "refs": [
+        "nhs-dizzy",
+        "nhs-vertigo",
+        "mayo-dizzy"
+       ]
+      },
+      {
+       "text": "合併耳鳴",
+       "refs": [
+        "nhs-dizzy"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "少數頭暈是心臟病、心律不整或小中風等疾病造成的。",
+       "refs": [
+        "mayo-dizzy"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "是天旋地轉，還是頭重腳輕、快昏倒？",
+     "why": "不同的感覺指向不同的原因。"
+    },
+    {
+     "q": "什麼時候會暈？轉頭、躺下、起身時？每次持續多久？",
+     "why": "誘發的動作和時間長短是重要線索。"
+    },
+    {
+     "q": "有沒有聽力變差、耳鳴、看東西、說話或手腳的問題？",
+     "why": "幫助分辨是耳朵還是腦部的問題。"
+    },
+    {
+     "q": "正在吃哪些藥？有沒有糖尿病、心臟病、偏頭痛？",
+     "why": "藥物和這些疾病都可能造成頭暈。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "中風或小中風",
+      "plain": "可能合併手腳或臉無力、說話不清楚、看東西有兩個影像。",
+      "refs": [
+       "mayo-dizzy",
+       "nhs-vertigo"
+      ]
+     },
+     {
+      "name": "心律不整或其他心臟病",
+      "plain": "心跳很快或不規則、胸痛。",
+      "refs": [
+       "mayo-dizzy"
+      ]
+     },
+     {
+      "name": "低血糖",
+      "plain": "使用胰島素或降血糖藥的人，可能合併冒汗、焦慮。",
+      "refs": [
+       "mayo-dizzy",
+       "nhs-dizzy"
+      ]
+     },
+     {
+      "name": "身體的血量不足",
+      "plain": "例如出血或嚴重脫水。",
+      "refs": [
+       "mayo-dizzy"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "耳石症（良性陣發性姿勢性眩暈）",
+      "plain": "頭快速轉動時，突然短暫天旋地轉。",
+      "refs": [
+       "mayo-dizzy"
+      ]
+     },
+     {
+      "name": "前庭神經炎、迷路炎",
+      "plain": "內耳發炎，突然天旋地轉、站不穩、噁心。",
+      "refs": [
+       "nhs-labyrinthitis",
+       "mayo-dizzy"
+      ]
+     },
+     {
+      "name": "姿勢性低血壓",
+      "plain": "坐起或站起來太快時頭暈。",
+      "refs": [
+       "mayo-dizzy",
+       "nhs-dizzy"
+      ]
+     },
+     {
+      "name": "偏頭痛",
+      "plain": "不一定伴隨頭痛。",
+      "refs": [
+       "mayo-dizzy",
+       "nhs-dizzy"
+      ]
+     },
+     {
+      "name": "藥物副作用",
+      "plain": "例如抗癲癇藥、抗憂鬱藥、鎮靜藥、降血壓藥。",
+      "refs": [
+       "mayo-dizzy"
+      ]
+     },
+     {
+      "name": "貧血、脫水或中暑",
+      "plain": "可能合併疲倦、臉色蒼白。",
+      "refs": [
+       "mayo-dizzy",
+       "nhs-dizzy"
+      ]
+     },
+     {
+      "name": "壓力或焦慮",
+      "plain": "",
+      "refs": [
+       "nhs-dizzy"
+      ]
+     }
+    ],
+    "patternsHeading": "依頭暈的感覺和情境",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "頭快速轉動、躺下或翻身時，突然短暫的天旋地轉",
+      "text": "可能是耳石症，請安排門診。",
+      "refs": [
+       "mayo-dizzy"
+      ]
+     },
+     {
+      "pattern": "突然持續的天旋地轉、站不穩、噁心嘔吐，可能合併聽力變差或耳鳴",
+      "text": "可能是前庭神經炎或迷路炎；一側耳朵突然聽不到，請今天就醫。合併上方任何一項，請撥打 119。",
+      "refs": [
+       "nhs-labyrinthitis"
+      ]
+     },
+     {
+      "pattern": "坐起或站起來時頭暈、快昏倒",
+      "text": "可能是姿勢性低血壓。起床時先在床邊坐一下再站起來。",
+      "refs": [
+       "mayo-dizzy",
+       "nhs-vertigo"
+      ]
+     },
+     {
+      "pattern": "反覆發作、一次持續好幾小時的眩暈，合併時好時壞的聽力變差、耳鳴、耳朵悶塞",
+      "text": "可能是梅尼爾氏症，請安排門診。",
+      "refs": [
+       "mayo-dizzy"
+      ]
+     },
+     {
+      "pattern": "有偏頭痛，反覆發作幾分鐘到幾小時的眩暈",
+      "text": "可能和偏頭痛有關，請安排門診。",
+      "refs": [
+       "mayo-dizzy"
+      ]
+     },
+     {
+      "pattern": "有糖尿病，合併冒汗、發抖、心悸",
+      "text": "可能是低血糖。還能安全吞嚥時，先喝一小杯果汁或含糖飲料；叫不醒或沒有改善，請撥打 119。",
+      "refs": [
+       "nhs-hypo"
+      ]
+     },
+     {
+      "pattern": "合併心跳很快或不規則、胸痛",
+      "text": "可能是心律不整或心臟的問題，請立即撥打 119。",
+      "refs": [
+       "mayo-dizzy"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [],
+   "visitPreparation": [
+    "頭暈開始的時間、每次持續多久、誘發的動作",
+    "使用中的所有藥物",
+    "病史：糖尿病、心臟病、偏頭痛、耳朵的問題"
+   ],
+   "sources": [
+    "nhs-dizzy",
+    "mayo-dizzy",
+    "nhs-vertigo",
+    "nhs-labyrinthitis",
+    "nhs-hypo"
+   ],
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17"
+  },
+  {
+   "slug": "fainting",
+   "title": "昏倒、暈厥",
+   "bodyArea": "whole-body",
+   "audience": [
+    "adult"
+   ],
+   "status": "published",
+   "aliases": [
+    "昏倒",
+    "暈倒",
+    "暈厥",
+    "昏厥",
+    "失去意識",
+    "突然倒下",
+    "眼前發黑",
+    "快昏倒",
+    "腦貧血",
+    "起身昏倒"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "summary": "昏倒是短暫失去意識。多數不嚴重，但也可能是心臟或出血等嚴重問題。在原因確定之前，請把昏倒當成緊急狀況處理。",
+   "definition": "昏倒（暈厥）是短時間失去意識，通常是腦部的血流突然減少。",
+   "definitionRefs": [
+    "nhs-faint",
+    "mayo-syncope"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119",
+     "intro": "有人昏倒，加上下列任何一項，請立即撥打 119：",
+     "items": [
+      {
+       "text": "沒有呼吸，或 1 分鐘內叫不醒",
+       "refs": [
+        "nhs-faint",
+        "mayo-faint-fa"
+       ]
+      },
+      {
+       "text": "醒來後沒有完全恢復，或說話、看東西、手腳活動有問題",
+       "refs": [
+        "nhs-faint",
+        "mlp-faint"
+       ]
+      },
+      {
+       "text": "胸痛、胸悶，或心跳很快、很用力、不規則",
+       "refs": [
+        "nhs-faint",
+        "mlp-faint"
+       ]
+      },
+      {
+       "text": "運動中昏倒，或躺著的時候昏倒",
+       "refs": [
+        "nhs-faint"
+       ]
+      },
+      {
+       "text": "昏倒前後受了重傷，或從高處跌落",
+       "refs": [
+        "nhs-faint",
+        "mlp-faint"
+       ]
+      },
+      {
+       "text": "抽搐、咬到舌頭，或大小便失禁",
+       "refs": [
+        "nhs-faint",
+        "mlp-faint"
+       ]
+      },
+      {
+       "text": "懷孕中",
+       "refs": [
+        "mlp-faint"
+       ]
+      },
+      {
+       "text": "50 歲以上",
+       "refs": [
+        "mlp-faint"
+       ]
+      },
+      {
+       "text": "有糖尿病",
+       "refs": [
+        "mlp-faint"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "快昏倒時：立刻躺下或坐下；坐著時把頭放在兩膝之間。不要太快站起來。",
+       "refs": [
+        "mayo-faint-fa"
+       ]
+      },
+      {
+       "text": "有人昏倒時：讓他平躺，鬆開領口和皮帶；沒有受傷又有呼吸，可以把腳抬高約 30 公分。",
+       "refs": [
+        "mayo-faint-fa",
+        "mlp-faint"
+       ]
+      },
+      {
+       "text": "吐了就讓他側躺，避免嗆到。",
+       "refs": [
+        "mlp-faint"
+       ]
+      },
+      {
+       "text": "沒有呼吸：撥打 119 並開始心肺復甦術（做法見「緊急狀況怎麼辦」頁）。",
+       "refs": [
+        "mayo-faint-fa",
+        "nfa-cpr"
+       ]
+      },
+      {
+       "text": "不要自己開車去急診。",
+       "refs": [
+        "nhs-faint"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "已經完全恢復，但這是第一次昏倒、最近常常昏倒，或不知道原因",
+       "refs": [
+        "mlp-faint",
+        "nhs-faint"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": []
+    },
+    "observe": null,
+    "observeOmittedReason": "昏倒的原因確定之前，本頁不提供在家觀察。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "昏倒可能沒有大礙，也可能是心臟等嚴重問題；原因確定之前，應把失去意識當成緊急狀況。",
+       "refs": [
+        "mayo-faint-fa"
+       ]
+      },
+      {
+       "text": "心跳太快時血壓會下降而昏倒，有心臟病的人比較容易發生。",
+       "refs": [
+        "mayo-palp"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "昏倒前在做什麼？站很久、運動、躺著、上廁所、咳嗽？",
+     "why": "昏倒前的情境是判斷原因的重要線索。"
+    },
+    {
+     "q": "昏倒前有沒有頭暈、冒汗、眼前發黑、胸痛或心悸？",
+     "why": "幫助分辨是一般的昏倒，還是心臟的問題。"
+    },
+    {
+     "q": "昏倒了多久？有沒有抽搐、咬到舌頭、尿失禁？",
+     "why": "幫助分辨昏倒和癲癇發作。"
+    },
+    {
+     "q": "有沒有心臟病、糖尿病？正在吃哪些藥？",
+     "why": "藥物和這些疾病都可能造成昏倒。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "心律不整或心臟病發作",
+      "plain": "可能合併胸痛、心悸。",
+      "refs": [
+       "mlp-faint",
+       "nhs-faint"
+      ]
+     },
+     {
+      "name": "出血或嚴重脫水",
+      "plain": "血壓突然下降。",
+      "refs": [
+       "mlp-faint"
+      ]
+     },
+     {
+      "name": "中風",
+      "plain": "醒來後說話、手腳活動有問題。",
+      "refs": [
+       "mlp-faint"
+      ]
+     },
+     {
+      "name": "癲癇發作",
+      "plain": "抽搐、咬到舌頭、大小便失禁。",
+      "refs": [
+       "mlp-faint"
+      ]
+     },
+     {
+      "name": "低血糖",
+      "plain": "使用降血糖藥的人。",
+      "refs": [
+       "mlp-faint"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "血管迷走神經性昏厥",
+      "plain": "看到血、情緒激動、站很久或太熱時，心跳和血壓突然下降。",
+      "refs": [
+       "mayo-syncope",
+       "nhs-faint"
+      ]
+     },
+     {
+      "name": "站起來太快（姿勢性低血壓）",
+      "plain": "",
+      "refs": [
+       "nhs-faint",
+       "mlp-faint"
+      ]
+     },
+     {
+      "name": "沒吃東西、喝水不夠或太熱",
+      "plain": "",
+      "refs": [
+       "nhs-faint"
+      ]
+     },
+     {
+      "name": "用力咳嗽、解便或半夜解尿時",
+      "plain": "",
+      "refs": [
+       "mlp-faint"
+      ]
+     },
+     {
+      "name": "藥物",
+      "plain": "例如降血壓藥、抗焦慮或抗憂鬱藥。",
+      "refs": [
+       "mlp-faint"
+      ]
+     },
+     {
+      "name": "喝酒或使用毒品",
+      "plain": "",
+      "refs": [
+       "nhs-faint",
+       "mlp-faint"
+      ]
+     }
+    ],
+    "patternsHeading": "依昏倒前的情境",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "運動中或躺著的時候突然昏倒",
+      "text": "可能是心臟的問題，請立即撥打 119。",
+      "refs": [
+       "nhs-faint"
+      ]
+     },
+     {
+      "pattern": "昏倒前胸痛、胸悶，或心跳很快、很用力、不規則",
+      "text": "可能是心律不整或心臟病發作，請立即撥打 119。",
+      "refs": [
+       "mlp-faint",
+       "nhs-faint"
+      ]
+     },
+     {
+      "pattern": "看到血、受到驚嚇、站很久或很熱時，先頭暈、冒汗再昏倒，很快醒來",
+      "text": "可能是血管迷走神經性昏厥，通常不危險；第一次發生或原因不明，仍要就醫檢查。",
+      "refs": [
+       "mayo-syncope",
+       "mlp-faint"
+      ]
+     },
+     {
+      "pattern": "從躺著或坐著突然站起來時昏倒",
+      "text": "可能是姿勢性低血壓。之後起身要慢。",
+      "refs": [
+       "nhs-faint",
+       "mlp-faint"
+      ]
+     },
+     {
+      "pattern": "用力咳嗽、解便或半夜起床解尿時昏倒",
+      "text": "這些情境也可能引起昏倒，請就醫檢查。",
+      "refs": [
+       "mlp-faint"
+      ]
+     },
+     {
+      "pattern": "有糖尿病，昏倒前冒汗、發抖",
+      "text": "可能是低血糖。還能安全吞嚥時，先喝一小杯果汁或含糖飲料；叫不醒或沒有改善，請撥打 119。",
+      "refs": [
+       "mlp-faint",
+       "nhs-hypo"
+      ]
+     },
+     {
+      "pattern": "昏倒前後吐血或解黑便",
+      "text": "可能是腸胃道出血，請立即撥打 119。",
+      "refs": [
+       "mlp-faint",
+       "nhs-vomit-blood"
+      ]
+     },
+     {
+      "pattern": "抽搐、咬到舌頭或大小便失禁",
+      "text": "可能是癲癇發作，請立即撥打 119。",
+      "refs": [
+       "mlp-faint"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "50 歲以上、懷孕或有糖尿病的人昏倒，請撥打 119。",
+     "refs": [
+      "mlp-faint"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "看到昏倒經過的人一起去",
+    "昏倒前在做什麼、昏倒多久",
+    "使用中的所有藥物",
+    "病史：心臟病、糖尿病、癲癇"
+   ],
+   "sources": [
+    "nhs-faint",
+    "mayo-syncope",
+    "mayo-faint-fa",
+    "mlp-faint",
+    "nfa-cpr",
+    "mayo-palp",
+    "nhs-hypo",
+    "nhs-vomit-blood"
    ],
    "reviewedBy": "潘麒亘",
    "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",

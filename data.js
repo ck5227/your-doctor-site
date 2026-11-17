@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-17T03:20:17.158Z",
+ "builtAt": "2026-11-17T11:01:25.742Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
@@ -33,6 +33,8 @@ window.YD = {
    "fever",
    "rash",
    "poisoning",
+   "snake-bee",
+   "marine-injury",
    "child-fever",
    "child-poisoning"
   ],
@@ -85,7 +87,8 @@ window.YD = {
     "fainting",
     "seizure",
     "leg-swelling",
-    "coughing-blood"
+    "coughing-blood",
+    "snake-bee"
    ],
    "_noObserveNote": "列在此處的症狀不得提供「在家觀察」選項；build 會直接失敗。"
   },
@@ -1465,6 +1468,38 @@ window.YD = {
    "publisher": "Mayo Clinic",
    "title": "Epiglottitis: Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/epiglottitis/symptoms-causes/syc-20372227",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "tsem-snake": {
+   "publisher": "台灣急診醫學會（台灣急診醫學通訊 3(4)，2020）",
+   "title": "台灣蛇咬傷與蜂螫的急性處置：文獻回顧（何政軒、白豐誠、蔡適鴻，三軍總醫院急診醫學部）",
+   "url": "https://www.sem.org.tw/EJournal/Detail/248",
+   "type": "台灣專業學會",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "tsem-marine": {
+   "publisher": "台灣急診醫學會（台灣急診醫學通訊 3(4)：e2020030402，2020）",
+   "title": "常見的海洋生物傷口處置（莫心怡、翁健瑞、馬漢平，雙和醫院急診部）",
+   "url": "https://www.sem.org.tw/EJournal/Detail/236",
+   "type": "台灣專業學會",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mohw-snake": {
+   "publisher": "衛生福利部疾病管制署",
+   "title": "清明連假民眾如至野外山區，請慎防毒蛇咬傷，如被毒蛇咬傷應速就醫注射抗蛇毒血清治療（五要五不）",
+   "url": "https://mohw.gov.tw/cp-16-82064-1.html",
+   "type": "台灣政府",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-stings": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Insect bites and stings",
+   "url": "https://www.nhs.uk/conditions/insect-bites-and-stings/",
    "type": "衛教",
    "checkedAt": "2026-11-17",
    "linkCheck": "ok"
@@ -10005,6 +10040,660 @@ window.YD = {
      "url": "https://ck5227.github.io/toxicology/",
      "note": "中毒症候群、解毒劑與臨床處置，給醫護人員參考"
     }
+   ]
+  },
+  {
+   "slug": "snake-bee",
+   "title": "被蛇咬、被蜂螫",
+   "bodyArea": "whole-body",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "被蛇咬",
+    "蛇咬",
+    "蛇咬傷",
+    "毒蛇咬傷",
+    "被毒蛇咬",
+    "龜殼花",
+    "青竹絲",
+    "赤尾青竹絲",
+    "雨傘節",
+    "眼鏡蛇",
+    "百步蛇",
+    "鎖鏈蛇",
+    "抗蛇毒血清",
+    "被蜂螫",
+    "蜂螫",
+    "被蜂叮",
+    "被蜜蜂叮",
+    "虎頭蜂",
+    "被虎頭蜂叮",
+    "胡蜂"
+   ],
+   "summary": "被蛇咬請一律當成毒蛇咬傷，立即就醫；最好的治療是儘早打足夠的抗蛇毒血清。被蜂螫大多只有局部紅腫，但出現喘、嘴唇喉嚨腫、嘔吐肚子痛、頭暈昏倒，或被虎頭蜂螫很多下，請立即撥打 119。",
+   "definition": "台灣醫療上重要的毒蛇有龜殼花、赤尾青竹絲、百步蛇、鎖鏈蛇、眼鏡蛇和雨傘節；其中龜殼花和青竹絲咬傷最常見。蜂螫要分是蜜蜂，還是虎頭蜂等胡蜂：胡蜂可以連續攻擊。",
+   "definitionRefs": [
+    "tsem-snake",
+    "mohw-snake"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "有下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "被蛇咬——不論是不是毒蛇、現在有沒有症狀，都當成毒蛇咬傷處理",
+       "refs": [
+        "mohw-snake",
+        "tsem-snake"
+       ]
+      },
+      {
+       "text": "被蜂螫後，嘴唇、嘴巴、喉嚨或舌頭腫起來",
+       "refs": [
+        "nhs-stings"
+       ]
+      },
+      {
+       "text": "呼吸很快、很喘、有喘鳴聲，或吞嚥困難",
+       "refs": [
+        "nhs-stings",
+        "tsem-snake"
+       ]
+      },
+      {
+       "text": "嘔吐、肚子痛",
+       "refs": [
+        "tsem-snake",
+        "nhs-stings"
+       ]
+      },
+      {
+       "text": "胸痛、心跳不規則、頭暈、快昏倒或昏倒",
+       "refs": [
+        "tsem-snake",
+        "nhs-stings"
+       ]
+      },
+      {
+       "text": "皮膚、嘴唇或舌頭發青、蒼白，或意識混亂",
+       "refs": [
+        "nhs-stings"
+       ]
+      },
+      {
+       "text": "症狀很快變嚴重",
+       "refs": [
+        "tsem-snake"
+       ]
+      },
+      {
+       "text": "被虎頭蜂等胡蜂螫，或被螫很多下",
+       "refs": [
+        "tsem-snake",
+        "nhs-stings"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "被蛇咬：保持冷靜，儘速就醫。記下蛇的外觀特徵；拿掉戒指、手環等飾品，避免肢體腫起來。",
+       "refs": [
+        "mohw-snake"
+       ]
+      },
+      {
+       "text": "被蛇咬：不要割開傷口、不要用嘴吸毒液、不要冰敷、不要喝酒或刺激性飲料，不要延誤就醫。",
+       "refs": [
+        "mohw-snake"
+       ]
+      },
+      {
+       "text": "被蜂螫：用指甲或卡片邊緣把螫針橫向刮掉，不要用夾子夾；再用肥皂和水清洗。",
+       "refs": [
+        "nhs-stings",
+        "tsem-snake"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "被蜂螫在嘴巴、喉嚨或眼睛附近",
+       "refs": [
+        "nhs-stings"
+       ]
+      },
+      {
+       "text": "以前被蟲螫有過嚴重的過敏反應",
+       "refs": [
+        "nhs-stings"
+       ]
+      },
+      {
+       "text": "發燒、淋巴結腫，或症狀愈來愈嚴重、一直沒有改善",
+       "refs": [
+        "nhs-stings"
+       ]
+      },
+      {
+       "text": "被螫後 5 天到 2 週，出現發燒、虛弱、淋巴結腫或多處關節痛（延遲反應）",
+       "refs": [
+        "tsem-snake"
+       ]
+      },
+      {
+       "text": "螫傷中央出現白色、像壞死的區域",
+       "refs": [
+        "tsem-snake"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "被蜜蜂螫，只有局部紅、腫、癢、痛，而且沒有上方任何一項：可以到診所看診",
+       "refs": [
+        "tsem-snake",
+        "nhs-stings"
+       ]
+      },
+      {
+       "text": "傷口紅、熱、腫痛或流膿（可能感染）",
+       "refs": [
+        "nhs-stings",
+        "tsem-snake"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "被蛇咬不提供在家觀察。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "毒蛇咬傷嚴重時可能造成呼吸障礙、瀰漫性出血、敗血症、腎衰竭、截肢，甚至死亡；及早使用抗蛇毒血清可以有效中止或逆轉毒性。",
+       "refs": [
+        "mohw-snake"
+       ]
+      },
+      {
+       "text": "雨傘節咬傷的呼吸抑制，通常在咬傷後 1.5 到 6 小時才出現。",
+       "refs": [
+        "tsem-snake"
+       ]
+      },
+      {
+       "text": "被蜂螫的部位愈多，預後可能愈差。",
+       "refs": [
+        "tsem-snake"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "被什麼咬或螫？記得蛇的樣子嗎？有沒有照片？",
+     "why": "辨認蛇種，才能選擇正確的抗蛇毒血清。"
+    },
+    {
+     "q": "什麼時間被咬或被螫？",
+     "why": "有些症狀會延遲出現。"
+    },
+    {
+     "q": "被螫了幾下？是蜜蜂還是虎頭蜂？",
+     "why": "虎頭蜂可以連續攻擊，被螫愈多處愈危險。"
+    },
+    {
+     "q": "以前被蜂螫有沒有嚴重過敏？",
+     "why": "過敏體質的人可能很快出現嚴重反應。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "毒蛇咬傷",
+      "plain": "最好的治療是儘早使用足夠的抗蛇毒血清。",
+      "refs": [
+       "tsem-snake",
+       "mohw-snake"
+      ]
+     },
+     {
+      "name": "嚴重過敏反應",
+      "plain": "被蜂螫後嘴唇喉嚨腫、喘、頭暈昏倒。",
+      "refs": [
+       "nhs-stings",
+       "tsem-snake"
+      ]
+     },
+     {
+      "name": "大量蜂螫的全身中毒",
+      "plain": "可能造成橫紋肌溶解、急性腎衰竭、心律不整、休克。",
+      "refs": [
+       "tsem-snake"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "蜜蜂螫傷的局部反應",
+      "plain": "紅腫通常維持幾天，會自己慢慢好。",
+      "refs": [
+       "tsem-snake"
+      ]
+     },
+     {
+      "name": "傷口感染",
+      "plain": "",
+      "refs": [
+       "tsem-snake",
+       "nhs-stings"
+      ]
+     }
+    ],
+    "patternsHeading": "依傷口和症狀（台灣常見的蛇種）",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。辨認蛇種要由醫師判斷，請不要為了確認蛇種延誤就醫。",
+    "painPatterns": [
+     {
+      "pattern": "傷口腫脹、瘀青、疼痛",
+      "text": "常見於龜殼花或赤尾青竹絲咬傷（全台平地到低海拔山區都有，是最常見的毒蛇咬傷），請立即到急診。",
+      "refs": [
+       "tsem-snake",
+       "mohw-snake"
+      ]
+     },
+     {
+      "pattern": "傷口有清楚的牙痕，很快大範圍腫脹、起血泡",
+      "text": "可能是百步蛇咬傷，請立即撥打 119。",
+      "refs": [
+       "tsem-snake"
+      ]
+     },
+     {
+      "pattern": "傷口不太腫，但身體其他地方出血",
+      "text": "可能是鎖鏈蛇咬傷（分布在東部和南部），請立即撥打 119。",
+      "refs": [
+       "tsem-snake"
+      ]
+     },
+     {
+      "pattern": "傷口潰爛",
+      "text": "常見於眼鏡蛇咬傷，請立即到急診。",
+      "refs": [
+       "tsem-snake"
+      ]
+     },
+     {
+      "pattern": "被蛇咬後幾小時出現呼吸困難",
+      "text": "可能是雨傘節等神經毒性的咬傷，請立即撥打 119。",
+      "refs": [
+       "tsem-snake"
+      ]
+     },
+     {
+      "pattern": "被虎頭蜂追、被螫很多下",
+      "text": "虎頭蜂可以連續攻擊，被螫處愈多愈危險，請立即撥打 119。",
+      "refs": [
+       "tsem-snake"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "到野外或山區：穿長袖衣物和包鞋；進入草叢先打草驚蛇；不要翻動中空林木或石塊；避免在夜間、日出和雨後停留。",
+     "refs": [
+      "mohw-snake"
+     ]
+    },
+    {
+     "text": "在山林活動：穿淺色長袖衣物和運動鞋，不要擦有香味的化妝品，避開蜂群活動的地方。",
+     "refs": [
+      "tsem-snake"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "被咬或被螫的時間",
+    "蛇的外觀特徵或照片",
+    "被螫了幾下、是蜜蜂還是虎頭蜂",
+    "過敏史、使用中的所有藥物"
+   ],
+   "links": [
+    {
+     "label": "疾管署抗蛇毒血清儲備點查詢",
+     "url": "https://gov.tw/yPR",
+     "note": "查詢附近儲備抗蛇毒血清的醫院"
+    }
+   ],
+   "sources": [
+    "tsem-snake",
+    "mohw-snake",
+    "nhs-stings"
+   ]
+  },
+  {
+   "slug": "marine-injury",
+   "title": "被水母螫、魚刺或海膽刺傷（海洋生物）",
+   "bodyArea": "whole-body",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "水母",
+    "被水母螫",
+    "水母螫傷",
+    "僧帽水母",
+    "箱水母",
+    "海膽",
+    "被海膽刺",
+    "海星",
+    "魚刺刺傷",
+    "被魚刺刺到",
+    "魟魚",
+    "獅子魚",
+    "海蛇",
+    "被海蛇咬",
+    "珊瑚割傷",
+    "海邊受傷",
+    "弧菌",
+    "殺魚割傷"
+   ],
+   "summary": "在台灣海邊常見的傷害有水母螫傷、魚刺或海膽刺傷，以及海蛇咬傷。多數只有局部疼痛，但呼吸困難、全身劇痛、昏倒，或被海蛇咬（即使不痛），請立即撥打 119。海洋相關的傷口容易感染，請注意紅腫和發燒。",
+   "definition": "水母、珊瑚以刺細胞螫傷；海膽、海星、魟魚、獅子魚以刺刺傷；海蛇以咬傷造成傷害。",
+   "definitionRefs": [
+    "tsem-marine"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "有下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "呼吸困難、全身劇痛、昏倒或休克",
+       "refs": [
+        "tsem-marine"
+       ]
+      },
+      {
+       "text": "被海蛇咬——即使不痛",
+       "refs": [
+        "tsem-marine"
+       ]
+      },
+      {
+       "text": "被魟魚刺傷",
+       "refs": [
+        "tsem-marine"
+       ]
+      },
+      {
+       "text": "全身痙攣或無力",
+       "refs": [
+        "tsem-marine"
+       ]
+      },
+      {
+       "text": "刺傷很深、刺進關節或肚子",
+       "refs": [
+        "tsem-marine"
+       ]
+      },
+      {
+       "text": "傷口紅腫愈來愈嚴重或發燒，特別是有慢性病或免疫力差的人",
+       "refs": [
+        "tsem-marine"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "水母螫傷：不要搓揉傷口，立即用海水沖洗；看得到的觸手，用卡片或膠帶移除。",
+       "refs": [
+        "tsem-marine"
+       ]
+      },
+      {
+       "text": "不確定是不是箱水母時，不要用醋，可能讓其他水母的螫傷更嚴重。",
+       "refs": [
+        "tsem-marine"
+       ]
+      },
+      {
+       "text": "魚刺、海膽、魟魚、獅子魚刺傷：用 43 到 46°C 的乾淨溫水或海水浸泡，直到疼痛緩解。",
+       "refs": [
+        "tsem-marine"
+       ]
+      },
+      {
+       "text": "沖洗傷口用海水或大量溫水，不要冰敷。",
+       "refs": [
+        "tsem-marine"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "刺斷在皮膚裡",
+       "refs": [
+        "tsem-marine"
+       ]
+      },
+      {
+       "text": "碰過海水的傷口（例如被珊瑚割傷、殺魚時割傷）紅腫",
+       "refs": [
+        "tsem-marine"
+       ]
+      },
+      {
+       "text": "被獅子魚等有毒的魚刺傷，疼痛擴散、起水泡或麻",
+       "refs": [
+        "tsem-marine"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "被一般的水母螫，只有灼熱刺痛，而且沒有上方任何一項：可以到診所看診",
+       "refs": [
+        "tsem-marine"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "海洋相關的傷口都應視為已感染；海水中的弧菌可能造成嚴重的傷口感染和敗血症，有慢性病或免疫力差的人要特別注意。",
+       "refs": [
+        "tsem-marine"
+       ]
+      },
+      {
+       "text": "海蛇咬傷剛開始常常不痛而被忽略，30 分鐘到 4 小時內可能出現劇痛和無力；沒有治療的重症個案死亡率很高。",
+       "refs": [
+        "tsem-marine"
+       ]
+      },
+      {
+       "text": "有毒的魚即使死了很久，刺仍然有毒。",
+       "refs": [
+        "tsem-marine"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "被什麼螫、刺或咬？在海水還是淡水？",
+     "why": "不同的生物和水域，處理方式和感染的細菌不同。"
+    },
+    {
+     "q": "多久以前？刺有沒有留在傷口裡？",
+     "why": "殘留的刺需要移除。"
+    },
+    {
+     "q": "有沒有喘、全身痛、無力或痙攣？",
+     "why": "這些是全身中毒的徵象。"
+    },
+    {
+     "q": "有沒有慢性病或免疫力差？",
+     "why": "弧菌感染在這些人比較危險。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "僧帽水母或箱水母螫傷",
+      "plain": "可能引起呼吸困難、休克，甚至死亡。",
+      "refs": [
+       "tsem-marine"
+      ]
+     },
+     {
+      "name": "海蛇咬傷",
+      "plain": "神經毒和肌肉毒，可能造成無力、橫紋肌溶解、腎衰竭。",
+      "refs": [
+       "tsem-marine"
+      ]
+     },
+     {
+      "name": "魟魚刺傷",
+      "plain": "劇烈疼痛，之後可能痙攣、呼吸困難。",
+      "refs": [
+       "tsem-marine"
+      ]
+     },
+     {
+      "name": "弧菌感染",
+      "plain": "嚴重的傷口感染和敗血症。",
+      "refs": [
+       "tsem-marine"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "一般水母螫傷",
+      "plain": "台灣沿海最常見，多半只有急性疼痛和灼熱感。",
+      "refs": [
+       "tsem-marine"
+      ]
+     },
+     {
+      "name": "海膽、海星刺傷",
+      "plain": "多半是局部疼痛和紅腫。",
+      "refs": [
+       "tsem-marine"
+      ]
+     },
+     {
+      "name": "珊瑚割傷",
+      "plain": "皮膚撕裂傷和局部紅腫。",
+      "refs": [
+       "tsem-marine"
+      ]
+     },
+     {
+      "name": "獅子魚刺傷",
+      "plain": "立即疼痛，可能擴散到四肢，傷口周圍起水泡、麻。",
+      "refs": [
+       "tsem-marine"
+      ]
+     }
+    ],
+    "patternsHeading": "依傷口和症狀",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "被水母螫後劇烈疼痛、明顯的紅色鞭痕",
+      "text": "可能是僧帽水母，請就醫；出現呼吸困難或休克，請撥打 119。",
+      "refs": [
+       "tsem-marine"
+      ]
+     },
+     {
+      "pattern": "被水母螫後 20 到 30 分鐘，全身劇烈疼痛",
+      "text": "可能是箱水母，請立即撥打 119。",
+      "refs": [
+       "tsem-marine"
+      ]
+     },
+     {
+      "pattern": "被海蛇咬，當下不痛，之後出現劇痛、無力或嘴巴張不開",
+      "text": "可能是海蛇毒，請立即撥打 119。",
+      "refs": [
+       "tsem-marine"
+      ]
+     },
+     {
+      "pattern": "被魚刺刺傷後立即疼痛、往四肢擴散，傷口周圍起水泡、麻",
+      "text": "可能是獅子魚等有毒的魚，請用溫水浸泡並今天就醫。",
+      "refs": [
+       "tsem-marine"
+      ]
+     },
+     {
+      "pattern": "被海膽刺傷在關節",
+      "text": "可能引起嚴重的關節發炎，需要手術，請立即就醫。",
+      "refs": [
+       "tsem-marine"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "有慢性病或免疫力差的人，海洋相關的傷口要特別注意弧菌感染。",
+     "refs": [
+      "tsem-marine"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "被什麼生物螫、刺或咬（可以拍照）",
+    "受傷的時間和地點（海水或淡水）",
+    "有沒有刺留在傷口裡",
+    "慢性病、使用中的藥物、破傷風疫苗接種情形"
+   ],
+   "sources": [
+    "tsem-marine"
    ]
   },
   {

@@ -42,6 +42,8 @@
   ICON_PATHS['eye-problems'] = '<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/>';
   ICON_PATHS.urinary = '<path d="M12 3.5s-5 5.8-5 9.5a5 5 0 0 0 10 0c0-3.7-5-9.5-5-9.5z"/><path d="M12 11v4M10 13h4"/>';
   ICON_PATHS['sore-throat'] = '<path d="M8 3.5v5a4 4 0 0 0 8 0v-5"/><path d="M10 12.5V20M14 12.5V20"/><path d="M9.5 16h5"/>';
+  ICON_PATHS['snake-bee'] = '<path d="M5 18c3 0 3-4 6-4s3 4 6 4"/><path d="M5 18c-1.2 0-2-.8-2-2"/><circle cx="17.5" cy="7" r="2.5"/><path d="M15 7h-3M17.5 4.5V3"/>';
+  ICON_PATHS['marine-injury'] = '<path d="M5 9a7 5 0 0 1 14 0z"/><path d="M8 9v5c0 1.5-1 2.5-1 4M12 9v8M16 9v5c0 1.5 1 2.5 1 4"/>';
   ICON_PATHS['child-fever'] = ICON_PATHS.fever;
   ICON_PATHS['child-poisoning'] = ICON_PATHS.poisoning;
   function icon(slug) {

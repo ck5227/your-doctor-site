@@ -44,6 +44,10 @@
   ICON_PATHS['sore-throat'] = '<path d="M8 3.5v5a4 4 0 0 0 8 0v-5"/><path d="M10 12.5V20M14 12.5V20"/><path d="M9.5 16h5"/>';
   ICON_PATHS['snake-bee'] = '<path d="M5 18c3 0 3-4 6-4s3 4 6 4"/><path d="M5 18c-1.2 0-2-.8-2-2"/><circle cx="17.5" cy="7" r="2.5"/><path d="M15 7h-3M17.5 4.5V3"/>';
   ICON_PATHS['marine-injury'] = '<path d="M5 9a7 5 0 0 1 14 0z"/><path d="M8 9v5c0 1.5-1 2.5-1 4M12 9v8M16 9v5c0 1.5 1 2.5 1 4"/>';
+  ICON_PATHS['burns'] = '<path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.5 1.5-4 2.5-5 .3 2 1.2 3 2.5 3.5-.5-3 0-5.5 0-8.5z"/>';
+  ICON_PATHS['nosebleed'] = '<path d="M12 3.5c-1 3-3.5 7-3.5 10.5a3.5 3.5 0 0 0 7 0C15.5 10.5 13 6.5 12 3.5z"/><path d="M17 17.5s-1.5 1.8-1.5 2.8a1.5 1.5 0 0 0 3 0c0-1-1.5-2.8-1.5-2.8z"/>';
+  ICON_PATHS['wounds-bites'] = '<rect x="3" y="9" width="18" height="6" rx="3" transform="rotate(-35 12 12)"/><path d="M10 11h.01M12 12.5h.01M14 11h.01M12 10h.01"/>';
+  ICON_PATHS['sprain-fracture'] = '<path d="M7 4.5a2 2 0 0 1 3 2.5l6 6a2 2 0 1 1-2.5 3l-6-6A2 2 0 0 1 7 4.5z"/><path d="M5 19l3-3M16 5l3-3"/>';
   ICON_PATHS['child-fever'] = ICON_PATHS.fever;
   ICON_PATHS['child-poisoning'] = ICON_PATHS.poisoning;
   function icon(slug) {

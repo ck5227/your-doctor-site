@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-17T11:14:23.760Z",
+ "builtAt": "2026-11-17T12:03:46.078Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
@@ -20,9 +20,11 @@ window.YD = {
    "urinary",
    "back-pain",
    "leg-swelling",
+   "sprain-fracture",
    "headache",
    "head-injury",
    "eye-problems",
+   "nosebleed",
    "sore-throat",
    "stroke",
    "memory-loss",
@@ -32,6 +34,8 @@ window.YD = {
    "seizure",
    "fever",
    "rash",
+   "burns",
+   "wounds-bites",
    "poisoning",
    "snake-bee",
    "marine-injury",
@@ -1509,6 +1513,78 @@ window.YD = {
    "title": "化學物質濺身的緊急處置（廖婉如、鄧昭芳、黃獻皞，臺北榮民總醫院急診部、臨床毒物與職業醫學科）",
    "url": "https://www.sem.org.tw/EJournal/Detail/235",
    "type": "台灣專業學會",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-burns": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Burns and scalds",
+   "url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-nosebleed": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Nosebleed",
+   "url": "https://www.nhs.uk/conditions/nosebleed/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-cuts": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Cuts and grazes",
+   "url": "https://www.nhs.uk/conditions/cuts-and-grazes/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-bites": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Animal and human bites",
+   "url": "https://www.nhs.uk/conditions/animal-and-human-bites/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-tetanus": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Tetanus",
+   "url": "https://www.nhs.uk/conditions/tetanus/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mohw-rabies": {
+   "publisher": "衛生福利部疾病管制署",
+   "title": "國內發生2起狂犬病陽性鼬獾咬傷人事件，請民眾勿接觸野生動物，不慎遭抓咬傷請儘速就醫",
+   "url": "https://www.mohw.gov.tw/cp-3791-39890-1.html",
+   "type": "台灣政府",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-sprain": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Sprains and strains",
+   "url": "https://www.nhs.uk/conditions/sprains-and-strains/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-broken-arm": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Broken arm or wrist",
+   "url": "https://www.nhs.uk/conditions/broken-arm-or-wrist/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-broken-ankle": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Broken ankle",
+   "url": "https://www.nhs.uk/conditions/broken-ankle/",
+   "type": "衛教",
    "checkedAt": "2026-11-17",
    "linkCheck": "ok"
   }
@@ -5295,6 +5371,295 @@ window.YD = {
    ]
   },
   {
+   "slug": "sprain-fracture",
+   "title": "扭傷、骨折（手腳受傷）",
+   "bodyArea": "limbs",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "扭傷",
+    "腳扭到",
+    "拐到腳",
+    "手扭到",
+    "骨折",
+    "斷掉",
+    "手腕痛",
+    "腳踝扭傷",
+    "腳踝腫",
+    "韌帶拉傷",
+    "肌肉拉傷",
+    "跌倒手腫",
+    "脫臼"
+   ],
+   "summary": "扭傷和拉傷很常見，前 2 到 3 天可以休息、冰敷、抬高。但手腳變形或角度怪異、骨頭突出、麻木刺痛、腳趾或手指發白發青、嚴重出血或劇痛，請立即到急診。",
+   "definition": "扭傷是韌帶拉傷或扭到；拉傷是肌肉受傷。手腕骨折、脫臼和嚴重扭傷很難從外表分辨，通常需要照 X 光。",
+   "definitionRefs": [
+    "nhs-sprain",
+    "nhs-broken-arm"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即到急診",
+     "intro": "受傷後有下列任何一項，請立即到急診：",
+     "items": [
+      {
+       "text": "手、腳變形，或角度很怪",
+       "refs": [
+        "nhs-broken-arm",
+        "nhs-broken-ankle"
+       ]
+      },
+      {
+       "text": "骨頭從皮膚穿出來",
+       "refs": [
+        "nhs-broken-arm",
+        "nhs-broken-ankle"
+       ]
+      },
+      {
+       "text": "受傷的手或腳麻木、刺痛，或腳趾、手指發青、發白",
+       "refs": [
+        "nhs-broken-arm",
+        "nhs-broken-ankle"
+       ]
+      },
+      {
+       "text": "有嚴重的傷口，或大量出血",
+       "refs": [
+        "nhs-broken-arm",
+        "nhs-broken-ankle"
+       ]
+      },
+      {
+       "text": "劇烈疼痛",
+       "refs": [
+        "nhs-broken-ankle"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "手受傷：用毛巾做成三角巾吊著手臂；拿掉戒指、手錶，手指可能會腫起來。",
+       "refs": [
+        "nhs-broken-arm"
+       ]
+      },
+      {
+       "text": "有傷口出血：用乾淨的布壓住止血。",
+       "refs": [
+        "nhs-broken-arm"
+       ]
+      },
+      {
+       "text": "可能需要手術時，到醫院前先不要吃喝東西。",
+       "refs": [
+        "nhs-broken-arm"
+       ]
+      },
+      {
+       "text": "不要自己開車去急診。",
+       "refs": [
+        "nhs-broken-arm",
+        "nhs-broken-ankle"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "很痛，或愈來愈痛",
+       "refs": [
+        "nhs-sprain",
+        "nhs-broken-arm",
+        "nhs-broken-ankle"
+       ]
+      },
+      {
+       "text": "腫得很厲害、瘀青很多，或愈來愈嚴重",
+       "refs": [
+        "nhs-sprain",
+        "nhs-broken-arm"
+       ]
+      },
+      {
+       "text": "腳完全不能踩地，或走不到幾步",
+       "refs": [
+        "nhs-sprain",
+        "nhs-broken-ankle"
+       ]
+      },
+      {
+       "text": "很僵硬、很難活動",
+       "refs": [
+        "nhs-sprain",
+        "nhs-broken-arm"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "輕微扭傷，沒有上方任何一項：可以到診所看診",
+       "refs": [
+        "nhs-sprain"
+       ]
+      },
+      {
+       "text": "自己照顧之後沒有改善，或愈來愈嚴重",
+       "refs": [
+        "nhs-sprain"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "前 2 到 3 天：休息，不要讓受傷的地方承重；用毛巾包冰袋冰敷，每 2 到 3 小時最多冰 20 分鐘；儘量抬高。",
+       "refs": [
+        "nhs-sprain"
+       ]
+      },
+      {
+       "text": "前幾天避免熱敷、泡熱水、喝酒和按摩，可以減少腫脹。",
+       "refs": [
+        "nhs-sprain"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "手腕骨折、脫臼和嚴重扭傷很難從外表分辨，通常需要照 X 光。",
+       "refs": [
+        "nhs-broken-arm"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "怎麼受傷的？",
+     "why": "受傷的方式幫助判斷有沒有骨折。"
+    },
+    {
+     "q": "受傷的腳能不能踩地？手能不能用？",
+     "why": "無法承重或使用可能是骨折。"
+    },
+    {
+     "q": "有沒有麻、刺痛，手指腳趾的顏色正常嗎？",
+     "why": "可能是神經或血管受傷。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "骨折",
+      "plain": "受傷後突然疼痛、腫、瘀青、很難活動，可能變形或麻。",
+      "refs": [
+       "nhs-broken-arm",
+       "nhs-broken-ankle"
+      ]
+     },
+     {
+      "name": "開放性骨折",
+      "plain": "骨頭穿出皮膚。",
+      "refs": [
+       "nhs-broken-arm",
+       "nhs-broken-ankle"
+      ]
+     },
+     {
+      "name": "神經或血管受傷",
+      "plain": "麻木、刺痛，手指腳趾發青發白。",
+      "refs": [
+       "nhs-broken-arm",
+       "nhs-broken-ankle"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "扭傷（韌帶）",
+      "plain": "常在腳踝、手腕、拇指、膝蓋。",
+      "refs": [
+       "nhs-sprain"
+      ]
+     },
+     {
+      "name": "拉傷（肌肉）",
+      "plain": "可能有肌肉抽筋。",
+      "refs": [
+       "nhs-sprain"
+      ]
+     }
+    ],
+    "patternsHeading": "依受傷後的情況",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "受傷的手腳變形、角度怪異，或骨頭穿出",
+      "text": "請立即到急診。",
+      "refs": [
+       "nhs-broken-arm",
+       "nhs-broken-ankle"
+      ]
+     },
+     {
+      "pattern": "受傷後手指或腳趾發青、發白、麻",
+      "text": "可能壓迫到血管或神經，請立即到急診。",
+      "refs": [
+       "nhs-broken-arm",
+       "nhs-broken-ankle"
+      ]
+     },
+     {
+      "pattern": "腳踝扭到後腫痛，可以踩地走路",
+      "text": "可能是扭傷；前 2 到 3 天休息、冰敷、抬高，請到診所看診。",
+      "refs": [
+       "nhs-sprain"
+      ]
+     },
+     {
+      "pattern": "腳完全不能踩地，或走不到幾步",
+      "text": "可能是骨折，請今天就醫照 X 光。",
+      "refs": [
+       "nhs-sprain",
+       "nhs-broken-ankle"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [],
+   "visitPreparation": [
+    "受傷的時間和方式",
+    "使用中的所有藥物",
+    "受傷後有沒有吃東西（可能需要手術時）"
+   ],
+   "sources": [
+    "nhs-sprain",
+    "nhs-broken-arm",
+    "nhs-broken-ankle"
+   ]
+  },
+  {
    "slug": "headache",
    "title": "頭痛",
    "aliases": [
@@ -6412,6 +6777,241 @@ window.YD = {
     "nhs-glaucoma",
     "nhs-stroke",
     "tsem-chem"
+   ]
+  },
+  {
+   "slug": "nosebleed",
+   "title": "流鼻血",
+   "bodyArea": "head",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "流鼻血",
+    "鼻出血",
+    "鼻子流血",
+    "鼻血",
+    "鼻血止不住"
+   ],
+   "summary": "流鼻血很常見，通常不嚴重，大多可以自己止血：坐下、身體前傾、捏住鼻翼 10 到 15 分鐘。流超過 10 到 15 分鐘、量很多、撞到頭後流鼻血，或覺得虛弱、頭暈、呼吸困難，請立即到急診。",
+   "definition": "鼻子裡面很容易受傷而流血，例如挖鼻孔、太用力擤鼻涕或鼻腔太乾。",
+   "definitionRefs": [
+    "nhs-nosebleed"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "流鼻血，加上下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "流超過 10 到 15 分鐘還沒停",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      },
+      {
+       "text": "出血量看起來很多",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      },
+      {
+       "text": "吞下很多血而吐出來",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      },
+      {
+       "text": "撞到頭之後開始流鼻血",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      },
+      {
+       "text": "覺得虛弱或頭暈",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      },
+      {
+       "text": "呼吸困難",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "坐下來，身體和頭往前傾，嘴巴張開用嘴呼吸。",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      },
+      {
+       "text": "捏住鼻孔上方軟的地方 10 到 15 分鐘。",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      },
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119；把正在吃的藥帶去。",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": []
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "常常流鼻血",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      },
+      {
+       "text": "有貧血的症狀：心悸、喘、臉色比平常蒼白",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      },
+      {
+       "text": "正在吃抗凝血藥（例如 warfarin）",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      },
+      {
+       "text": "有凝血方面的疾病（例如血友病）",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "需要就醫的流鼻血，常是從鼻子比較深的地方流出來，多發生在成人。",
+       "refs": [
+        "nhs-nosebleed"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "流了多久？量多少？",
+     "why": "決定需不需要立即處理。"
+    },
+    {
+     "q": "有沒有撞到頭或鼻子？",
+     "why": "外傷後流鼻血需要檢查。"
+    },
+    {
+     "q": "有沒有吃抗凝血藥？有沒有高血壓或凝血疾病？",
+     "why": "這些和流鼻血有關。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "頭部或鼻子受傷",
+      "plain": "",
+      "refs": [
+       "nhs-nosebleed"
+      ]
+     },
+     {
+      "name": "凝血異常或抗凝血藥",
+      "plain": "",
+      "refs": [
+       "nhs-nosebleed"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "挖鼻孔、太用力擤鼻涕",
+      "plain": "",
+      "refs": [
+       "nhs-nosebleed"
+      ]
+     },
+     {
+      "name": "鼻腔太乾",
+      "plain": "例如天氣溫度變化。",
+      "refs": [
+       "nhs-nosebleed"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的情況",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "撞到頭或鼻子之後流鼻血",
+      "text": "請立即到急診。",
+      "refs": [
+       "nhs-nosebleed"
+      ]
+     },
+     {
+      "pattern": "正在吃抗凝血藥，流鼻血",
+      "text": "捏住鼻子止血；超過 10 到 15 分鐘還沒停，請立即到急診；止住了也請安排門診。",
+      "refs": [
+       "nhs-nosebleed"
+      ]
+     },
+     {
+      "pattern": "挖鼻孔、擤鼻涕後少量流鼻血，捏住後就停了",
+      "text": "通常不嚴重；常常發生請安排門診。",
+      "refs": [
+       "nhs-nosebleed"
+      ]
+     },
+     {
+      "pattern": "常流鼻血，合併心悸、喘、臉色蒼白",
+      "text": "可能有貧血，請安排門診。",
+      "refs": [
+       "nhs-nosebleed"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "兒童、45 歲以上的成人、孕婦和有高血壓的人比較容易流鼻血。",
+     "refs": [
+      "nhs-nosebleed"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "流鼻血的時間和次數",
+    "使用中的所有藥物，特別是抗凝血藥",
+    "病史：高血壓、凝血疾病"
+   ],
+   "sources": [
+    "nhs-nosebleed"
    ]
   },
   {
@@ -9693,6 +10293,585 @@ window.YD = {
     "mayo-shingles",
     "mohw-cbz",
     "mohw-nhi-hla"
+   ]
+  },
+  {
+   "slug": "burns",
+   "title": "燒燙傷",
+   "bodyArea": "skin",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "燒燙傷",
+    "燙傷",
+    "燒傷",
+    "被燙到",
+    "熱水燙到",
+    "油燙到",
+    "蒸氣燙傷",
+    "電燒傷",
+    "觸電"
+   ],
+   "summary": "所有燒燙傷都要立刻處理：用涼的流動清水沖 20 分鐘。面積很大或很深、在臉部、生殖器或屁股，或是化學品、電造成的，請立即到急診。",
+   "definition": "燒傷通常是火、熨斗等乾熱造成，也可能是電或化學品；燙傷是熱液體或蒸氣造成。",
+   "definitionRefs": [
+    "nhs-burns"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "燒燙傷有下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "面積很大或很深",
+       "refs": [
+        "nhs-burns"
+       ]
+      },
+      {
+       "text": "在臉部、生殖器或屁股",
+       "refs": [
+        "nhs-burns"
+       ]
+      },
+      {
+       "text": "酸、化學品或電造成的",
+       "refs": [
+        "nhs-burns"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "儘快（受傷 3 小時內）用涼的流動清水沖 20 分鐘；沒有自來水時，可以用涼的瓶裝水或濕毛巾。",
+       "refs": [
+        "nhs-burns"
+       ]
+      },
+      {
+       "text": "拿掉傷口附近的衣物或飾品，但黏在傷口上的不要硬拉。",
+       "refs": [
+        "nhs-burns"
+       ]
+      },
+      {
+       "text": "沖完之後，可以用保鮮膜平鋪蓋在傷口上，不要纏繞。",
+       "refs": [
+        "nhs-burns"
+       ]
+      },
+      {
+       "text": "不要塗任何藥膏、油或奶油，不要用 OK 繃或有黏性的敷料，不要弄破水泡。",
+       "refs": [
+        "nhs-burns"
+       ]
+      },
+      {
+       "text": "化學品造成的：請看「中毒、誤食」頁的沖洗方式。",
+       "refs": [
+        "nhs-burns",
+        "tsem-chem"
+       ]
+      },
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119；把正在吃的藥帶去。",
+       "refs": [
+        "nhs-burns"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "不確定該怎麼處理",
+       "refs": [
+        "nhs-burns"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "小面積的燒燙傷，而且沒有上方任何一項：可以到診所看診",
+       "refs": [
+        "nhs-burns"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "可以吃普拿疼（乙醯胺酚）或布洛芬止痛。",
+       "refs": [
+        "nhs-burns"
+       ]
+      },
+      {
+       "text": "癒合時變乾、變癢，可以請藥師推薦潤膚藥膏。",
+       "refs": [
+        "nhs-burns"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "嚴重、面積大或深的燒燙傷可能需要住院、打點滴，甚至手術。",
+       "refs": [
+        "nhs-burns"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "怎麼燒燙傷的？熱水、火、電、還是化學品？",
+     "why": "電和化學品造成的傷害，可能比外表看起來嚴重。"
+    },
+    {
+     "q": "面積多大？在身體哪裡？",
+     "why": "面積大或在特殊部位需要急診處理。"
+    },
+    {
+     "q": "有沒有立刻用涼水沖？沖了多久？",
+     "why": "早期降溫可以減少傷害。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "大面積或深度燒燙傷",
+      "plain": "",
+      "refs": [
+       "nhs-burns"
+      ]
+     },
+     {
+      "name": "電燒傷",
+      "plain": "",
+      "refs": [
+       "nhs-burns"
+      ]
+     },
+     {
+      "name": "化學灼傷",
+      "plain": "嚴重程度無法只從外觀判斷。",
+      "refs": [
+       "nhs-burns",
+       "tsem-chem"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "小面積燙傷",
+      "plain": "多半可以在家照顧，大約 2 週癒合。",
+      "refs": [
+       "nhs-burns"
+      ]
+     }
+    ],
+    "patternsHeading": "依燒燙傷的原因和部位",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "被電到、觸電",
+      "text": "請立即到急診。",
+      "refs": [
+       "nhs-burns"
+      ]
+     },
+     {
+      "pattern": "化學品濺到皮膚",
+      "text": "先用大量流動清水沖洗，並立即到急診。",
+      "refs": [
+       "nhs-burns",
+       "tsem-chem"
+      ]
+     },
+     {
+      "pattern": "燙傷在臉部、生殖器或屁股",
+      "text": "請立即到急診。",
+      "refs": [
+       "nhs-burns"
+      ]
+     },
+     {
+      "pattern": "小面積燙傷，沖完涼水後只有紅、痛",
+      "text": "多半可以在家照顧；請到診所看診確認。",
+      "refs": [
+       "nhs-burns"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [],
+   "visitPreparation": [
+    "燒燙傷的原因（熱水、火、電、化學品）和時間",
+    "化學品的容器或名稱",
+    "使用中的所有藥物"
+   ],
+   "sources": [
+    "nhs-burns",
+    "tsem-chem"
+   ]
+  },
+  {
+   "slug": "wounds-bites",
+   "title": "割傷、擦傷、被動物咬傷",
+   "bodyArea": "skin",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "割傷",
+    "擦傷",
+    "傷口",
+    "流血不止",
+    "被割到",
+    "被刀割",
+    "被玻璃割到",
+    "被狗咬",
+    "被貓咬",
+    "被貓抓",
+    "動物咬傷",
+    "被人咬",
+    "狂犬病",
+    "鼬獾",
+    "破傷風"
+   ],
+   "summary": "多數割傷擦傷可以自己止血、清洗、包紮。但血止不住、噴血、傷口很大很深、有東西插著、傷口附近麻或不能動，請立即到急診。被野生動物或流浪犬貓抓咬傷，請用肥皂和大量清水沖洗 15 分鐘，儘速就醫評估狂犬病。",
+   "definition": "割傷和擦傷多半在幾天內開始癒合；但有感染風險或傷口嚴重時，需要醫護人員處理。",
+   "definitionRefs": [
+    "nhs-cuts"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "有下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "血止不住",
+       "refs": [
+        "nhs-cuts",
+        "nhs-bites"
+       ]
+      },
+      {
+       "text": "鮮紅色的血一陣一陣噴出來，很難控制",
+       "refs": [
+        "nhs-cuts"
+       ]
+      },
+      {
+       "text": "傷口附近失去感覺，或很難活動",
+       "refs": [
+        "nhs-cuts"
+       ]
+      },
+      {
+       "text": "臉部或手掌的嚴重割傷",
+       "refs": [
+        "nhs-cuts"
+       ]
+      },
+      {
+       "text": "傷口很大或很深",
+       "refs": [
+        "nhs-cuts",
+        "nhs-bites"
+       ]
+      },
+      {
+       "text": "傷口裡有東西插著（例如玻璃碎片）——不要自己拔出來",
+       "refs": [
+        "nhs-cuts"
+       ]
+      },
+      {
+       "text": "手指、耳朵等身體部位被咬斷或切斷",
+       "refs": [
+        "nhs-bites"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "洗手後戴手套；傷口裡沒有東西時，用乾淨的布用力壓住傷口止血。",
+       "refs": [
+        "nhs-cuts"
+       ]
+      },
+      {
+       "text": "傷口裡有東西插著：不要拔，也不要壓在東西上，從兩側壓住傷口邊緣。",
+       "refs": [
+        "nhs-cuts"
+       ]
+      },
+      {
+       "text": "傷口在手或手臂，舉高超過頭；在腳，躺下並把腳抬高超過心臟。血滲出來就再加一層布繼續壓。",
+       "refs": [
+        "nhs-cuts"
+       ]
+      },
+      {
+       "text": "被切斷的部位：用乾淨的紙巾包好放進塑膠袋，袋子外面放冰塊，一起帶去醫院。",
+       "refs": [
+        "nhs-bites"
+       ]
+      },
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119；把正在吃的藥帶去。",
+       "refs": [
+        "nhs-cuts",
+        "nhs-bites"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "被野生動物（例如鼬獾、蝙蝠）或流浪犬貓抓傷、咬傷",
+       "refs": [
+        "mohw-rabies",
+        "nhs-cuts"
+       ]
+      },
+      {
+       "text": "被人咬傷",
+       "refs": [
+        "nhs-bites",
+        "nhs-cuts"
+       ]
+      },
+      {
+       "text": "咬傷在手、腳、臉或頭",
+       "refs": [
+        "nhs-bites"
+       ]
+      },
+      {
+       "text": "傷口裡可能有牙齒、毛髮、泥土，或清洗後還是很髒",
+       "refs": [
+        "nhs-cuts",
+        "nhs-bites"
+       ]
+      },
+      {
+       "text": "傷口紅、腫、熱、愈來愈痛，或流膿、有臭味",
+       "refs": [
+        "nhs-cuts",
+        "nhs-bites"
+       ]
+      },
+      {
+       "text": "割傷大於約 5 公分",
+       "refs": [
+        "nhs-cuts"
+       ]
+      },
+      {
+       "text": "發燒、發冷發抖，或覺得全身不舒服",
+       "refs": [
+        "nhs-cuts",
+        "nhs-bites"
+       ]
+      },
+      {
+       "text": "被咬傷，而且過去 10 年沒有打過破傷風疫苗",
+       "refs": [
+        "nhs-bites"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "小的割傷擦傷，沒有上方任何一項：可以到診所看診",
+       "refs": [
+        "nhs-cuts"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "止血後，用自來水或瓶裝水沖洗傷口，拍乾，再用肥皂和水清洗傷口周圍的皮膚，最後蓋上乾淨的敷料或 OK 繃。",
+       "refs": [
+        "nhs-cuts"
+       ]
+      },
+      {
+       "text": "保持敷料乾淨乾燥，需要時更換。",
+       "refs": [
+        "nhs-cuts"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "狂犬病發病後致死率接近 100%；被動物抓咬傷後及時就醫並接受暴露後預防接種，可以降低發病的風險。",
+       "refs": [
+        "mohw-rabies"
+       ]
+      },
+      {
+       "text": "泥土進入傷口有破傷風的風險，破傷風可能危及生命。",
+       "refs": [
+        "nhs-tetanus"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "怎麼受傷的？被什麼割到或咬到？",
+     "why": "動物和人的咬傷、髒的傷口感染風險比較高。"
+    },
+    {
+     "q": "什麼時候受傷？血止住了嗎？",
+     "why": "決定處理的急迫性。"
+    },
+    {
+     "q": "上一次打破傷風疫苗是什麼時候？",
+     "why": "可能需要補打破傷風疫苗。"
+    },
+    {
+     "q": "被動物咬：是野生動物、流浪動物，還是家裡的寵物？寵物有沒有打狂犬病疫苗？",
+     "why": "醫師會評估需不需要打狂犬病疫苗。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "大量出血",
+      "plain": "",
+      "refs": [
+       "nhs-cuts"
+      ]
+     },
+     {
+      "name": "神經或肌腱受傷",
+      "plain": "傷口附近麻或不能動。",
+      "refs": [
+       "nhs-cuts"
+      ]
+     },
+     {
+      "name": "狂犬病暴露",
+      "plain": "被野生動物或流浪犬貓抓咬傷；台灣的狂犬病主要在鼬獾等野生動物。",
+      "refs": [
+       "mohw-rabies"
+      ]
+     },
+     {
+      "name": "破傷風",
+      "plain": "",
+      "refs": [
+       "nhs-tetanus",
+       "nhs-bites"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "傷口感染",
+      "plain": "紅、腫、熱、痛、流膿。",
+      "refs": [
+       "nhs-cuts",
+       "nhs-bites"
+      ]
+     }
+    ],
+    "patternsHeading": "依受傷的方式",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "被鼬獾、蝙蝠等野生動物，或流浪犬貓抓咬傷",
+      "text": "請立刻用肥皂和大量清水沖洗傷口 15 分鐘，再用優碘或 70% 酒精消毒，儘速到「人用狂犬病疫苗接種服務醫院」就醫評估。不要接觸或捕捉野生動物。",
+      "refs": [
+       "mohw-rabies"
+      ]
+     },
+     {
+      "pattern": "被狗、貓或人咬破皮",
+      "text": "用肥皂和溫水清洗，輕輕擠出一點血，蓋上乾淨的敷料；請今天就醫。",
+      "refs": [
+       "nhs-bites"
+      ]
+     },
+     {
+      "pattern": "傷口沾到泥土或很髒，或很久沒打破傷風疫苗",
+      "text": "可能需要補打破傷風疫苗，請今天就醫。",
+      "refs": [
+       "nhs-tetanus",
+       "nhs-bites"
+      ]
+     },
+     {
+      "pattern": "傷口幾天後紅、腫、熱、痛，或流膿",
+      "text": "可能是傷口感染，請今天就醫。",
+      "refs": [
+       "nhs-cuts"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "每年帶家裡的犬、貓打狂犬病疫苗。",
+     "refs": [
+      "mohw-rabies"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "受傷的時間和原因",
+    "咬人的是哪一種動物、有沒有打疫苗、現在在哪裡",
+    "上一次打破傷風疫苗的時間",
+    "使用中的所有藥物"
+   ],
+   "sources": [
+    "nhs-cuts",
+    "nhs-bites",
+    "mohw-rabies",
+    "nhs-tetanus"
    ]
   },
   {

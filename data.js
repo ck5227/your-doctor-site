@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-17T12:07:00.826Z",
+ "builtAt": "2026-11-17T12:10:13.822Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
@@ -15,10 +15,13 @@ window.YD = {
    "coughing-blood",
    "cough",
    "palpitations",
+   "high-blood-pressure",
    "abdominal-pain",
    "gi-bleeding",
    "vomiting-diarrhea",
    "urinary",
+   "pregnancy-bleeding",
+   "testicle-pain",
    "back-pain",
    "leg-swelling",
    "sprain-fracture",
@@ -43,6 +46,7 @@ window.YD = {
    "poisoning",
    "snake-bee",
    "marine-injury",
+   "suicidal-thoughts",
    "child-fever",
    "child-poisoning"
   ],
@@ -96,7 +100,10 @@ window.YD = {
     "seizure",
     "leg-swelling",
     "coughing-blood",
-    "snake-bee"
+    "snake-bee",
+    "pregnancy-bleeding",
+    "testicle-pain",
+    "suicidal-thoughts"
    ],
    "_noObserveNote": "列在此處的症狀不得提供「在家觀察」選項；build 會直接失敗。"
   },
@@ -1652,6 +1659,70 @@ window.YD = {
    "publisher": "NHS（英國國民保健署）",
    "title": "Dental abscess",
    "url": "https://www.nhs.uk/conditions/dental-abscess/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-preg-bleed": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Vaginal bleeding in pregnancy",
+   "url": "https://www.nhs.uk/pregnancy/related-conditions/common-symptoms/vaginal-bleeding/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-miscarriage": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Miscarriage",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-ectopic": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Ectopic pregnancy",
+   "url": "https://www.nhs.uk/conditions/ectopic-pregnancy/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-testicle": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Testicle pain",
+   "url": "https://www.nhs.uk/conditions/testicle-pain/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-bp": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "High blood pressure",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-htn-crisis": {
+   "publisher": "Mayo Clinic",
+   "title": "Hypertensive crisis: What are the symptoms?",
+   "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/expert-answers/hypertensive-crisis/faq-20058491",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-suicidal": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Help for suicidal thoughts",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-mh-crisis": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Where to get urgent help for mental health",
+   "url": "https://www.nhs.uk/nhs-services/mental-health-services/where-to-get-urgent-help-for-mental-health/",
    "type": "衛教",
    "checkedAt": "2026-11-17",
    "linkCheck": "ok"
@@ -3380,6 +3451,229 @@ window.YD = {
    "nextReviewAt": "2027-11-17"
   },
   {
+   "slug": "high-blood-pressure",
+   "title": "血壓很高",
+   "bodyArea": "chest",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "血壓很高",
+    "血壓高",
+    "高血壓",
+    "血壓飆高",
+    "血壓180",
+    "量血壓很高",
+    "高血壓危象"
+   ],
+   "summary": "在家量到血壓 180/120 以上，又有胸痛、喘、手腳或臉麻木無力、說話或走路困難、視力改變，請立即撥打 119。沒有症狀時，先休息幾分鐘再量一次，仍然很高請今天就醫。",
+   "definition": "高血壓危象是血壓突然大幅升高到 180/120 mmHg 以上，可能傷害心臟、腦、腎臟和眼睛。",
+   "definitionRefs": [
+    "mayo-htn-crisis"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119",
+     "intro": "血壓 180/120 以上，加上下列任何一項，請立即撥打 119：",
+     "items": [
+      {
+       "text": "胸痛",
+       "refs": [
+        "mayo-htn-crisis"
+       ]
+      },
+      {
+       "text": "呼吸困難",
+       "refs": [
+        "mayo-htn-crisis"
+       ]
+      },
+      {
+       "text": "手腳或臉麻木、刺痛、失去感覺（常常只有一側），或走路、說話困難",
+       "refs": [
+        "mayo-htn-crisis"
+       ]
+      },
+      {
+       "text": "視力改變或看不清楚",
+       "refs": [
+        "mayo-htn-crisis"
+       ]
+      },
+      {
+       "text": "劇烈頭痛、意識混亂、抽搐，或叫不醒",
+       "refs": [
+        "mayo-htn-crisis"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "血壓 180/120 以上、沒有症狀：先休息幾分鐘再量一次，仍然很高",
+       "refs": [
+        "mayo-htn-crisis"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "40 歲以上，超過 5 年沒有量過血壓",
+       "refs": [
+        "nhs-bp"
+       ]
+      },
+      {
+       "text": "常常量到血壓偏高",
+       "refs": [
+        "nhs-bp"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "高血壓危象是緊急狀況，可能引起心臟病發作或中風。",
+       "refs": [
+        "mayo-htn-crisis"
+       ]
+      },
+      {
+       "text": "高血壓通常沒有症狀，不量就不會知道。",
+       "refs": [
+        "nhs-bp"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "量到的血壓是多少？休息後再量一次是多少？",
+     "why": "確認血壓是否真的很高。"
+    },
+    {
+     "q": "有沒有胸痛、喘、頭痛、看不清楚、手腳無力？",
+     "why": "這些表示器官可能受到傷害。"
+    },
+    {
+     "q": "平常有沒有吃降血壓藥？最近有沒有忘記吃或停藥？",
+     "why": "忘記吃藥或突然停藥是常見原因。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "高血壓緊急症",
+      "plain": "血壓很高，而且器官受到傷害，可能危及生命。",
+      "refs": [
+       "mayo-htn-crisis"
+      ]
+     },
+     {
+      "name": "中風",
+      "plain": "",
+      "refs": [
+       "mayo-htn-crisis",
+       "nhs-stroke"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "忘記吃降血壓藥",
+      "plain": "",
+      "refs": [
+       "mayo-htn-crisis"
+      ]
+     },
+     {
+      "name": "突然停用某些心臟藥物",
+      "plain": "例如乙型阻斷劑。",
+      "refs": [
+       "mayo-htn-crisis"
+      ]
+     },
+     {
+      "name": "藥物交互作用",
+      "plain": "",
+      "refs": [
+       "mayo-htn-crisis"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的症狀",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "血壓很高，合併臉歪、一側手腳無力、說話不清楚",
+      "text": "可能是中風，請立即撥打 119。",
+      "refs": [
+       "mayo-htn-crisis",
+       "nhs-stroke"
+      ]
+     },
+     {
+      "pattern": "血壓很高，合併胸痛或很喘",
+      "text": "請立即撥打 119。",
+      "refs": [
+       "mayo-htn-crisis"
+      ]
+     },
+     {
+      "pattern": "血壓很高、沒有症狀，休息幾分鐘後再量仍然很高",
+      "text": "請今天就醫。",
+      "refs": [
+       "mayo-htn-crisis"
+      ]
+     },
+     {
+      "pattern": "最近忘記吃降血壓藥，或自己停藥",
+      "text": "請就醫，由醫師評估和調整用藥。",
+      "refs": [
+       "mayo-htn-crisis"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "高血壓在年長者很常見。",
+     "refs": [
+      "nhs-bp"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "量到的血壓數值和時間（可以拍照）",
+    "使用中的所有藥物，最近有沒有漏吃或停藥",
+    "血壓計"
+   ],
+   "sources": [
+    "mayo-htn-crisis",
+    "nhs-bp",
+    "nhs-stroke"
+   ]
+  },
+  {
    "slug": "abdominal-pain",
    "title": "腹痛",
    "aliases": [
@@ -5003,6 +5297,451 @@ window.YD = {
     "nhs-blood-urine",
     "nhs-kidneystones",
     "mayo-kidney-infection"
+   ]
+  },
+  {
+   "slug": "pregnancy-bleeding",
+   "title": "懷孕出血",
+   "bodyArea": "abdomen",
+   "audienceNote": "適用懷孕中的女性。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "懷孕出血",
+    "懷孕流血",
+    "孕期出血",
+    "懷孕陰道出血",
+    "懷孕肚子痛",
+    "流產",
+    "小產",
+    "子宮外孕",
+    "安胎",
+    "懷孕見紅"
+   ],
+   "summary": "懷孕出血不一定嚴重，但有時需要緊急治療，請一定要讓醫護人員評估。出血量多、肚子劇痛、肩膀痛、頭暈或昏倒，請立即撥打 119。",
+   "definition": "懷孕出血可能是內褲或衛生紙上的粉紅、紅或咖啡色點狀血，也可能多到需要衛生棉，甚至很快浸濕衛生棉、有血塊。",
+   "definitionRefs": [
+    "nhs-preg-bleed"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119",
+     "intro": "懷孕中出血，加上下列任何一項，請立即撥打 119：",
+     "items": [
+      {
+       "text": "肚子劇痛（痛到無法專心看電視、看書或做日常的事）",
+       "refs": [
+        "nhs-preg-bleed"
+       ]
+      },
+      {
+       "text": "肩膀痛",
+       "refs": [
+        "nhs-preg-bleed",
+        "nhs-ectopic"
+       ]
+      },
+      {
+       "text": "想吐、快昏倒、頭暈或失去意識",
+       "refs": [
+        "nhs-preg-bleed"
+       ]
+      },
+      {
+       "text": "出血量多：衛生棉剛換上很快就濕透",
+       "refs": [
+        "nhs-preg-bleed"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119；把正在吃的藥帶去。",
+       "refs": [
+        "nhs-preg-bleed"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "少量出血或點狀出血，不痛或只有輕微肚子痛",
+       "refs": [
+        "nhs-preg-bleed"
+       ]
+      },
+      {
+       "text": "出血合併腹瀉，或解尿、解便時疼痛或有壓迫感",
+       "refs": [
+        "nhs-preg-bleed"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": []
+    },
+    "observe": null,
+    "observeOmittedReason": "懷孕出血不提供在家觀察。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "懷孕出血有時需要緊急治療，一定要讓醫護人員評估。",
+       "refs": [
+        "nhs-preg-bleed"
+       ]
+      },
+      {
+       "text": "子宮外孕可能在肚子裡大量出血，危及生命。",
+       "refs": [
+        "nhs-ectopic",
+        "mayo-ectopic"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "懷孕幾週了？",
+     "why": "不同週數的出血原因不同。"
+    },
+    {
+     "q": "出血量多少？有沒有血塊？",
+     "why": "出血量決定處理的急迫性。"
+    },
+    {
+     "q": "有沒有肚子痛、肩膀痛、頭暈？",
+     "why": "可能是子宮外孕等需要立即處理的狀況。"
+    },
+    {
+     "q": "有沒有媽媽手冊或產檢紀錄？",
+     "why": "幫助醫師了解懷孕的狀況。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "子宮外孕",
+      "plain": "下腹一側痛、肩膀尖端痛、陰道出血。",
+      "refs": [
+       "nhs-ectopic",
+       "nhs-preg-bleed"
+      ]
+     },
+     {
+      "name": "流產",
+      "plain": "懷孕 24 週前陰道出血，可能合併下腹痛和抽痛。",
+      "refs": [
+       "nhs-miscarriage",
+       "nhs-preg-bleed"
+      ]
+     },
+     {
+      "name": "胎盤的問題",
+      "plain": "例如前置胎盤。",
+      "refs": [
+       "nhs-preg-bleed"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "懷孕很早期的著床出血",
+      "plain": "",
+      "refs": [
+       "nhs-preg-bleed"
+      ]
+     },
+     {
+      "name": "子宮頸血管的變化",
+      "plain": "例如性行為後出血。",
+      "refs": [
+       "nhs-preg-bleed"
+      ]
+     },
+     {
+      "name": "感染",
+      "plain": "例如泌尿道感染或性傳染病。",
+      "refs": [
+       "nhs-preg-bleed"
+      ]
+     },
+     {
+      "name": "「見紅」",
+      "plain": "封住子宮頸的黏液塞帶著血排出，可能表示要開始生產。",
+      "refs": [
+       "nhs-preg-bleed"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的症狀",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "懷孕早期，下腹一側痛、肩膀尖端痛，可能有陰道出血",
+      "text": "可能是子宮外孕，請立即撥打 119。",
+      "refs": [
+       "nhs-ectopic"
+      ]
+     },
+     {
+      "pattern": "懷孕 24 週前陰道出血，合併下腹痛和抽痛",
+      "text": "可能是流產，請立即就醫。",
+      "refs": [
+       "nhs-miscarriage"
+      ]
+     },
+     {
+      "pattern": "出血很快浸濕衛生棉，或頭暈、快昏倒",
+      "text": "請立即撥打 119。",
+      "refs": [
+       "nhs-preg-bleed"
+      ]
+     },
+     {
+      "pattern": "少量點狀出血，不痛",
+      "text": "不一定嚴重，但請今天就醫評估。",
+      "refs": [
+       "nhs-preg-bleed"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [],
+   "visitPreparation": [
+    "懷孕週數",
+    "媽媽手冊或產檢紀錄",
+    "出血開始的時間和量",
+    "使用中的所有藥物"
+   ],
+   "audience": [
+    "adult"
+   ],
+   "sources": [
+    "nhs-preg-bleed",
+    "nhs-ectopic",
+    "mayo-ectopic",
+    "nhs-miscarriage"
+   ]
+  },
+  {
+   "slug": "testicle-pain",
+   "title": "睪丸痛",
+   "bodyArea": "abdomen",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "適用男性。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "睪丸痛",
+    "蛋蛋痛",
+    "陰囊痛",
+    "陰囊腫",
+    "睪丸腫",
+    "睪丸扭轉",
+    "副睪丸炎",
+    "睪丸硬塊"
+   ],
+   "summary": "睪丸突然劇痛，可能是睪丸扭轉，不及時治療可能失去睪丸，請立即到急診。睪丸有硬塊、腫起來或形狀改變，請今天就醫。",
+   "definition": "睪丸痛有很多原因，有時很嚴重；突然、劇烈或一直不好的疼痛，請立即就醫。",
+   "definitionRefs": [
+    "nhs-testicle"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即到急診",
+     "intro": "有下列任何一項，請立即到急診：",
+     "items": [
+      {
+       "text": "一側睪丸突然劇痛",
+       "refs": [
+        "nhs-testicle"
+       ]
+      },
+      {
+       "text": "睪丸痛合併想吐、嘔吐或肚子痛",
+       "refs": [
+        "nhs-testicle"
+       ]
+      },
+      {
+       "text": "睪丸痛超過 1 小時，或休息時還在痛",
+       "refs": [
+        "nhs-testicle"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119；把正在吃的藥帶去。",
+       "refs": [
+        "nhs-testicle"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "睪丸有硬塊",
+       "refs": [
+        "nhs-testicle"
+       ]
+      },
+      {
+       "text": "睪丸腫起來、形狀或摸起來的感覺改變",
+       "refs": [
+        "nhs-testicle"
+       ]
+      },
+      {
+       "text": "睪丸痠痛或不舒服，讓你擔心",
+       "refs": [
+        "nhs-testicle"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": []
+    },
+    "observe": null,
+    "observeOmittedReason": "睪丸痛不提供在家觀察。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "睪丸扭轉如果沒有及時治療，可能失去睪丸。",
+       "refs": [
+        "nhs-testicle"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "是突然痛，還是慢慢痛？痛多久了？",
+     "why": "突然劇痛要先想到睪丸扭轉。"
+    },
+    {
+     "q": "有沒有想吐、嘔吐、肚子痛？",
+     "why": "睪丸扭轉常合併這些症狀。"
+    },
+    {
+     "q": "有沒有摸到硬塊、腫脹？最近有沒有受傷？",
+     "why": "幫助找出原因。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "睪丸扭轉",
+      "plain": "突然劇痛，需要儘快在醫院治療。",
+      "refs": [
+       "nhs-testicle"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "副睪丸炎（感染）",
+      "plain": "",
+      "refs": [
+       "nhs-testicle"
+      ]
+     },
+     {
+      "name": "受傷",
+      "plain": "",
+      "refs": [
+       "nhs-testicle"
+      ]
+     },
+     {
+      "name": "腹股溝疝氣",
+      "plain": "",
+      "refs": [
+       "nhs-testicle"
+      ]
+     },
+     {
+      "name": "囊腫、精索靜脈曲張",
+      "plain": "",
+      "refs": [
+       "nhs-testicle"
+      ]
+     },
+     {
+      "name": "睪丸癌",
+      "plain": "單純疼痛通常不是癌症，癌症多半會摸到硬塊或腫脹。",
+      "refs": [
+       "nhs-testicle"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的症狀",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "一側睪丸突然劇痛，可能合併想吐、嘔吐或肚子痛",
+      "text": "可能是睪丸扭轉，請立即到急診。",
+      "refs": [
+       "nhs-testicle"
+      ]
+     },
+     {
+      "pattern": "睪丸痛超過 1 小時，或休息時也痛",
+      "text": "請立即到急診。",
+      "refs": [
+       "nhs-testicle"
+      ]
+     },
+     {
+      "pattern": "摸到睪丸有硬塊或腫脹",
+      "text": "請今天就醫檢查。",
+      "refs": [
+       "nhs-testicle"
+      ]
+     },
+     {
+      "pattern": "受傷後睪丸痛",
+      "text": "請今天就醫；劇痛或愈來愈痛，請立即到急診。",
+      "refs": [
+       "nhs-testicle"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [],
+   "visitPreparation": [
+    "疼痛開始的時間",
+    "有沒有受傷",
+    "使用中的所有藥物"
+   ],
+   "sources": [
+    "nhs-testicle"
    ]
   },
   {
@@ -12967,6 +13706,203 @@ window.YD = {
    ],
    "sources": [
     "tsem-marine"
+   ]
+  },
+  {
+   "slug": "suicidal-thoughts",
+   "title": "想自殺、想傷害自己（心理危機）",
+   "bodyArea": "whole-body",
+   "audience": [
+    "adult"
+   ],
+   "audienceNote": "你不是一個人。不論是你自己，還是擔心身邊的人，都可以尋求幫助。",
+   "status": "published",
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17",
+   "aliases": [
+    "想自殺",
+    "自殺",
+    "想死",
+    "不想活",
+    "想傷害自己",
+    "自殘",
+    "割腕",
+    "活不下去",
+    "撐不下去",
+    "心理危機",
+    "輕生",
+    "安心專線",
+    "1925"
+   ],
+   "summary": "如果你有想結束生命的念頭，請告訴別人，現在就可以得到幫助。已經傷害自己、吃了過量的藥，或覺得快要傷害自己，請立即撥打 119。想找人談，可以撥打 1925 安心專線（24 小時免付費）。",
+   "definition": "心理的緊急狀況和身體的緊急狀況一樣重要；尋求幫助不是在浪費別人的時間。",
+   "definitionRefs": [
+    "nhs-mh-crisis"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "有下列任何一項，請立即撥打 119，或請別人帶你到急診：",
+     "items": [
+      {
+       "text": "已經嚴重傷害自己，例如吃了過量的藥",
+       "refs": [
+        "nhs-suicidal",
+        "nhs-mh-crisis"
+       ]
+      },
+      {
+       "text": "覺得自己快要傷害自己",
+       "refs": [
+        "nhs-suicidal"
+       ]
+      },
+      {
+       "text": "覺得沒有辦法保護自己或別人的安全",
+       "refs": [
+        "nhs-mh-crisis"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "吃了過量的藥：也請看「中毒、誤食」頁，把藥袋或藥罐帶去醫院。",
+       "refs": [
+        "nhs-suicidal",
+        "mohw-1925"
+       ]
+      },
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119。",
+       "refs": [
+        "nhs-mh-crisis"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "現在就找人談",
+     "intro": "有想結束生命的念頭，但還沒有行動：",
+     "items": [
+      {
+       "text": "撥打 1925 安心專線（24 小時免付費），擔心身邊的人也可以打。",
+       "refs": [
+        "mohw-1925",
+        "nhs-suicidal"
+       ]
+      },
+      {
+       "text": "告訴你信任的家人或朋友，他們可以陪你、幫助你保持安全。",
+       "refs": [
+        "nhs-suicidal"
+       ]
+      },
+      {
+       "text": "儘快就醫；如果正在看身心科，聯絡你的醫療團隊。",
+       "refs": [
+        "nhs-suicidal"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": []
+    },
+    "observe": null,
+    "observeOmittedReason": "心理危機不提供在家觀察，請找人陪你並尋求幫助。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "心理的緊急狀況和身體的緊急狀況一樣重要，請不要覺得求助是在浪費別人的時間。",
+       "refs": [
+        "nhs-mh-crisis"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "你現在安全嗎？有沒有已經傷害自己或吃了藥？",
+     "why": "已經傷害自己需要立即處理。"
+    },
+    {
+     "q": "身邊有沒有可以陪你的人？",
+     "why": "有人陪伴可以幫助你保持安全。"
+    },
+    {
+     "q": "有沒有正在看身心科、吃什麼藥？",
+     "why": "幫助醫療人員了解你的狀況。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "服藥過量或中毒",
+      "plain": "",
+      "refs": [
+       "nhs-suicidal"
+      ]
+     },
+     {
+      "name": "自我傷害",
+      "plain": "",
+      "refs": [
+       "nhs-suicidal"
+      ]
+     }
+    ],
+    "otherCommon": [],
+    "patternsHeading": "依現在的狀況",
+    "patternsIntro": "這些不是診斷。不論是哪一種狀況，你都不需要一個人面對；有立即危險時，請撥打 119。",
+    "painPatterns": [
+     {
+      "pattern": "已經傷害自己，或吃了過量的藥",
+      "text": "請立即撥打 119，或請別人帶你到急診。",
+      "refs": [
+       "nhs-suicidal"
+      ]
+     },
+     {
+      "pattern": "覺得沒有辦法保護自己或別人的安全",
+      "text": "請立即撥打 119 或到急診。",
+      "refs": [
+       "nhs-mh-crisis"
+      ]
+     },
+     {
+      "pattern": "覺得撐不下去、想結束生命，但還沒有行動",
+      "text": "請撥打 1925 安心專線（24 小時），告訴信任的人，並儘快就醫。",
+      "refs": [
+       "mohw-1925",
+       "nhs-suicidal"
+      ]
+     },
+     {
+      "pattern": "擔心身邊的人想自殺",
+      "text": "可以撥打 1925 安心專線討論怎麼幫助他；他有立即危險時，請撥打 119。",
+      "refs": [
+       "mohw-1925",
+       "nhs-suicidal"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [],
+   "visitPreparation": [
+    "正在吃的所有藥物",
+    "可以陪你的人"
+   ],
+   "sources": [
+    "nhs-mh-crisis",
+    "nhs-suicidal",
+    "mohw-1925"
    ]
   },
   {

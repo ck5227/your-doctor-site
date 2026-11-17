@@ -1,13 +1,13 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-13T01:37:37.519Z",
+ "builtAt": "2026-11-17T01:52:50.247Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
   "region": "TW",
   "regionName": "台灣",
-  "contentUpdatedAt": "2026-11-12",
+  "contentUpdatedAt": "2026-11-17",
   "feedbackEmail": "017138@tool.caaumed.org.tw",
   "symptomOrder": [
    "chest-pain",
@@ -15,6 +15,9 @@ window.YD = {
    "abdominal-pain",
    "back-pain",
    "headache",
+   "stroke",
+   "memory-loss",
+   "weakness",
    "fever",
    "rash",
    "poisoning",
@@ -64,7 +67,9 @@ window.YD = {
    "noObserveSymptoms": [
     "chest-pain",
     "poisoning",
-    "child-poisoning"
+    "child-poisoning",
+    "stroke",
+    "memory-loss"
    ],
    "_noObserveNote": "列在此處的症狀不得提供「在家觀察」選項；build 會直接失敗。"
   },
@@ -1006,6 +1011,150 @@ window.YD = {
    "url": "https://dep.mohw.gov.tw/DOMA/dl-13882-22bd0839-e9ad-45b6-8665-1bdd2344446a.html",
    "type": "台灣政府",
    "checkedAt": "2026-11-12",
+   "linkCheck": "ok"
+  },
+  "nhs-stroke": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Symptoms of a stroke",
+   "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-tia": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Transient ischaemic attack (TIA)",
+   "url": "https://www.nhs.uk/conditions/transient-ischaemic-attack-tia/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-stroke": {
+   "publisher": "Mayo Clinic",
+   "title": "Stroke: Symptoms and causes",
+   "url": "https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-tga": {
+   "publisher": "Mayo Clinic",
+   "title": "Transient global amnesia: Symptoms and causes",
+   "url": "https://www.mayoclinic.org/diseases-conditions/transient-global-amnesia/symptoms-causes/syc-20378531",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mlp-memory": {
+   "publisher": "MedlinePlus（美國國家醫學圖書館）",
+   "title": "Memory loss",
+   "url": "https://medlineplus.gov/ency/article/003257.htm",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-confusion": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Sudden confusion (delirium)",
+   "url": "https://www.nhs.uk/conditions/confusion/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mlp-weakness": {
+   "publisher": "MedlinePlus（美國國家醫學圖書館）",
+   "title": "Weakness",
+   "url": "https://medlineplus.gov/ency/article/003174.htm",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-gbs": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Guillain-Barré syndrome",
+   "url": "https://www.nhs.uk/conditions/guillain-barre-syndrome/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mlp-hypokalemia": {
+   "publisher": "MedlinePlus（美國國家醫學圖書館）",
+   "title": "Low blood potassium",
+   "url": "https://medlineplus.gov/ency/article/000479.htm",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mlp-hpp": {
+   "publisher": "MedlinePlus（美國國家醫學圖書館）",
+   "title": "Hypokalemic periodic paralysis",
+   "url": "https://medlineplus.gov/ency/article/000312.htm",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mlp-tpp": {
+   "publisher": "MedlinePlus（美國國家醫學圖書館）",
+   "title": "Thyrotoxic periodic paralysis",
+   "url": "https://medlineplus.gov/ency/article/000319.htm",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-hypo": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Low blood sugar (hypoglycaemia)",
+   "url": "https://www.nhs.uk/conditions/low-blood-sugar-hypoglycaemia/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-mg": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Myasthenia gravis",
+   "url": "https://www.nhs.uk/conditions/myasthenia-gravis/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-tired": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Tiredness and fatigue",
+   "url": "https://www.nhs.uk/conditions/tiredness-and-fatigue/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "nhs-bells": {
+   "publisher": "NHS（英國國民保健署）",
+   "title": "Bell's palsy",
+   "url": "https://www.nhs.uk/conditions/bells-palsy/",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-bells": {
+   "publisher": "Mayo Clinic",
+   "title": "Bell's palsy: Symptoms and causes",
+   "url": "https://www.mayoclinic.org/diseases-conditions/bells-palsy/symptoms-causes/syc-20370028",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mlp-facial": {
+   "publisher": "MedlinePlus（美國國家醫學圖書館）",
+   "title": "Facial paralysis",
+   "url": "https://medlineplus.gov/ency/article/003028.htm",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
+   "linkCheck": "ok"
+  },
+  "mayo-tm": {
+   "publisher": "Mayo Clinic",
+   "title": "Transverse myelitis: Symptoms and causes",
+   "url": "https://www.mayoclinic.org/diseases-conditions/transverse-myelitis/symptoms-causes/syc-20354726",
+   "type": "衛教",
+   "checkedAt": "2026-11-17",
    "linkCheck": "ok"
   }
  },
@@ -3519,6 +3668,1036 @@ window.YD = {
      }
     ]
    }
+  },
+  {
+   "slug": "stroke",
+   "title": "中風徵兆（臉歪、手腳無力、說話不清）",
+   "bodyArea": "neuro",
+   "audience": [
+    "adult"
+   ],
+   "status": "published",
+   "aliases": [
+    "中風",
+    "腦中風",
+    "嘴歪",
+    "臉歪",
+    "單側無力",
+    "半邊無力",
+    "一邊手腳無力",
+    "一邊手腳麻",
+    "半身不遂",
+    "口齒不清",
+    "說話不清楚",
+    "講話不清楚",
+    "說不出話",
+    "突然看不見",
+    "手舉不起來",
+    "小中風",
+    "暫時性腦缺血"
+   ],
+   "audienceNote": "適用 18 歲以上成人。中風任何年紀都可能發生。",
+   "summary": "中風是腦部的血管塞住或出血。臉歪、一側手腳無力或麻木、說話不清楚，常常是突然發生。每一分鐘都很重要，請立即撥打 119；即使症狀已經消失，也要立即就醫。",
+   "definition": "中風是腦部的血液供應被阻斷，或腦部的血管破裂出血。症狀在短時間內完全消失的，稱為暫時性腦缺血（小中風），一開始無法和中風分辨。",
+   "definitionRefs": [
+    "mayo-stroke",
+    "nhs-tia"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119",
+     "intro": "出現下列任何一項，請立即撥打 119，不要等它自己好：",
+     "items": [
+      {
+       "text": "臉歪一邊，笑起來不對稱",
+       "refs": [
+        "nhs-stroke",
+        "mohw-stroke"
+       ]
+      },
+      {
+       "text": "一側的手或腳無力、麻木，手舉不起來或舉不久",
+       "refs": [
+        "nhs-stroke",
+        "mohw-stroke"
+       ]
+      },
+      {
+       "text": "說話不清楚、說不出話、想不出字，或聽不懂別人說的話",
+       "refs": [
+        "nhs-stroke",
+        "mayo-stroke"
+       ]
+      },
+      {
+       "text": "一眼或兩眼突然看不清楚或看不見",
+       "refs": [
+        "nhs-stroke",
+        "mayo-stroke"
+       ]
+      },
+      {
+       "text": "突然意識混亂或失憶",
+       "refs": [
+        "nhs-stroke"
+       ]
+      },
+      {
+       "text": "突然頭暈、走路不穩或跌倒",
+       "refs": [
+        "nhs-stroke"
+       ]
+      },
+      {
+       "text": "突然劇烈頭痛",
+       "refs": [
+        "nhs-stroke",
+        "mayo-stroke"
+       ]
+      },
+      {
+       "text": "過去 24 小時內出現過上面任何症狀——即使現在已經好了",
+       "refs": [
+        "nhs-stroke",
+        "nhs-tia",
+        "mayo-stroke"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "記住「微笑、舉手、說你好」：請他笑一下、兩手平舉、說一句話，任何一個做不好，就撥打 119。",
+       "refs": [
+        "mohw-stroke"
+       ]
+      },
+      {
+       "text": "記下症狀開始的時間，告訴救護人員；有些治療愈早給，效果愈好。",
+       "refs": [
+        "mayo-stroke"
+       ]
+      },
+      {
+       "text": "不要等症狀自己消失。等救護車時，陪在旁邊注意他的狀況。",
+       "refs": [
+        "mayo-stroke"
+       ]
+      },
+      {
+       "text": "不要自己開車去急診。",
+       "refs": [
+        "nhs-stroke"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "以前出現過上面的症狀，當時沒有就醫，現在已經超過 24 小時",
+       "refs": [
+        "nhs-tia"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": []
+    },
+    "observe": null,
+    "observeOmittedReason": "中風徵兆不提供在家觀察。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "中風愈晚治療，腦部受損和失能的機會愈大。",
+       "refs": [
+        "mayo-stroke"
+       ]
+      },
+      {
+       "text": "一開始無法只靠症狀分辨是小中風還是中風。",
+       "refs": [
+        "nhs-tia",
+        "mayo-stroke"
+       ]
+      },
+      {
+       "text": "小中風是警訊，表示近期發生完整中風的風險很高。",
+       "refs": [
+        "nhs-tia"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "症狀是幾點開始的？",
+     "why": "有些中風的治療要愈早給愈好。"
+    },
+    {
+     "q": "哪一邊無力或麻木？臉、手、腳哪些地方？",
+     "why": "幫助醫師判斷腦部哪裡出了問題。"
+    },
+    {
+     "q": "有沒有說話、看東西、走路或頭痛的問題？",
+     "why": "這些也可能是中風的表現。"
+    },
+    {
+     "q": "有沒有高血壓、糖尿病、心律不整（心房顫動）、抽菸？有沒有吃抗凝血藥？",
+     "why": "這些和中風的風險與治療有關。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "缺血性中風",
+      "plain": "腦部的血管被血塊塞住。",
+      "refs": [
+       "mayo-stroke"
+      ]
+     },
+     {
+      "name": "出血性中風（腦出血）",
+      "plain": "腦部的血管破裂出血。",
+      "refs": [
+       "mayo-stroke"
+      ]
+     },
+     {
+      "name": "暫時性腦缺血（小中風）",
+      "plain": "症狀幾分鐘到幾小時內完全消失，但仍是中風的警訊。",
+      "refs": [
+       "nhs-tia"
+      ]
+     },
+     {
+      "name": "低血糖",
+      "plain": "使用胰島素或降血糖藥的人，可能出現意識混亂、無力。",
+      "refs": [
+       "nhs-hypo",
+       "nhs-confusion"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "周邊顏面神經麻痺（例如貝爾氏麻痺）",
+      "plain": "嘴角歪斜、眼睛閉不緊，需要就醫；症狀和中風很像，一般人無法自己分辨。",
+      "refs": [
+       "mayo-bells",
+       "nhs-bells"
+      ]
+     },
+     {
+      "name": "神經受壓迫（例如椎間盤突出）",
+      "plain": "某個部位無力或麻。",
+      "refs": [
+       "mlp-weakness"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的症狀",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "突然臉歪、一側手腳無力或麻木、說話不清楚",
+      "text": "可能是中風，請立即撥打 119。",
+      "refs": [
+       "nhs-stroke"
+      ]
+     },
+     {
+      "pattern": "同樣的症狀幾分鐘到幾小時內就完全好了",
+      "text": "可能是暫時性腦缺血（小中風），一樣要立即撥打 119，到醫院評估。",
+      "refs": [
+       "nhs-tia"
+      ]
+     },
+     {
+      "pattern": "一側嘴角歪斜、眼睛閉不緊",
+      "text": "可能是周邊顏面神經麻痺（例如貝爾氏麻痺），需要就醫。一般人不容易自己分辨，無法確定，或合併手腳無力、說話不清楚、劇烈頭痛、抽搐或看不見時，請依上方撥打 119。",
+      "refs": [
+       "mayo-bells",
+       "mlp-facial",
+       "nhs-bells"
+      ]
+     },
+     {
+      "pattern": "突然劇烈頭痛，合併嘔吐、頭暈或意識改變",
+      "text": "可能是出血性中風，請立即撥打 119。",
+      "refs": [
+       "mayo-stroke"
+      ]
+     },
+     {
+      "pattern": "有糖尿病、使用胰島素或降血糖藥，出現冒汗、發抖、心悸、意識混亂或無力",
+      "text": "可能是低血糖。還能安全吞嚥時，先喝一小杯果汁或含糖飲料；叫不醒或沒有改善，請撥打 119。",
+      "refs": [
+       "nhs-hypo"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "中風在年紀大的人比較常見，但任何年紀都可能發生。",
+     "refs": [
+      "nhs-stroke"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "症狀開始的時間",
+    "看到發生經過的人一起去",
+    "使用中的所有藥物，特別是抗凝血藥、降血糖藥",
+    "病史：高血壓、糖尿病、心律不整、以前的中風"
+   ],
+   "sources": [
+    "mayo-stroke",
+    "nhs-tia",
+    "nhs-stroke",
+    "mohw-stroke",
+    "nhs-hypo",
+    "nhs-confusion",
+    "mlp-weakness",
+    "mayo-bells",
+    "nhs-bells",
+    "mlp-facial"
+   ],
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17"
+  },
+  {
+   "slug": "memory-loss",
+   "title": "突然失憶、意識混亂",
+   "bodyArea": "neuro",
+   "audience": [
+    "adult"
+   ],
+   "status": "published",
+   "aliases": [
+    "失憶",
+    "突然失憶",
+    "短暫失憶",
+    "暫時性全面失憶",
+    "記不起剛剛的事",
+    "一直重複問同樣的問題",
+    "意識混亂",
+    "突然糊塗",
+    "搞不清楚狀況",
+    "譫妄",
+    "胡言亂語",
+    "變得很健忘",
+    "健忘"
+   ],
+   "audienceNote": "適用 18 歲以上成人。",
+   "summary": "突然記不得剛剛發生的事、一直重複問同樣的問題，或突然意識混亂，可能是中風、低血糖、感染、一氧化碳中毒等需要立即處理的原因。暫時性全面失憶本身不危險，但無法從外表分辨，請立即就醫。",
+   "definition": "暫時性全面失憶（TGA）是突然發生、無法記住新事情的狀態：患者清醒、知道自己是誰，但記不得剛剛的事，常一直重複問同樣的問題，通常在幾小時內慢慢恢復。",
+   "definitionRefs": [
+    "mayo-tga"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "有人突然出現下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "突然記不得剛剛發生的事，一直重複問同樣的問題",
+       "refs": [
+        "mayo-tga",
+        "nhs-confusion"
+       ]
+      },
+      {
+       "text": "突然意識混亂：搞不清楚自己在哪裡、說話或思考不清楚，或看到、聽到不存在的東西",
+       "refs": [
+        "nhs-confusion"
+       ]
+      },
+      {
+       "text": "合併臉歪、一側手腳無力或說話不清楚（中風徵兆）",
+       "refs": [
+        "nhs-stroke",
+        "nhs-confusion"
+       ]
+      },
+      {
+       "text": "頭部受傷之後",
+       "refs": [
+        "nhs-confusion",
+        "mlp-memory"
+       ]
+      },
+      {
+       "text": "有糖尿病、使用胰島素或降血糖藥",
+       "refs": [
+        "nhs-confusion",
+        "nhs-hypo"
+       ]
+      },
+      {
+       "text": "同住的人也一起頭痛或不舒服（可能是一氧化碳中毒）",
+       "refs": [
+        "nhs-confusion",
+        "nhs-co"
+       ]
+      },
+      {
+       "text": "抽搐之後",
+       "refs": [
+        "nhs-confusion",
+        "mlp-memory"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "他自己太混亂無法求助時，由你幫他撥打 119。",
+       "refs": [
+        "mayo-tga"
+       ]
+      },
+      {
+       "text": "陪在他身邊，告訴他你是誰、他在哪裡，用簡單的短句安撫他；不要一直問問題考他。",
+       "refs": [
+        "nhs-confusion"
+       ]
+      },
+      {
+       "text": "記下他正在吃的藥，帶去醫院。",
+       "refs": [
+        "nhs-confusion"
+       ]
+      },
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119。",
+       "refs": [
+        "nhs-confusion"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": []
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "好幾個月來慢慢變得愈來愈健忘或糊塗，而且沒有上方任何一項",
+       "refs": [
+        "nhs-confusion",
+        "mlp-memory"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "突然失憶或意識混亂不提供在家觀察。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "暫時性全面失憶本身不危險，但無法從外表和中風等危及生命的疾病分辨。",
+       "refs": [
+        "mayo-tga"
+       ]
+      },
+      {
+       "text": "許多突然意識混亂的原因需要儘快檢查和治療，有時會危及生命。",
+       "refs": [
+        "nhs-confusion"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "從什麼時候開始？持續多久了？",
+     "why": "發生的快慢和時間長短，是醫師判斷原因的第一步。"
+    },
+    {
+     "q": "有沒有人看到發生經過？有沒有撞到頭或抽搐？",
+     "why": "目擊者的描述對診斷很重要。"
+    },
+    {
+     "q": "他知道自己是誰、認得家人嗎？",
+     "why": "幫助醫師分辨是哪一種記憶問題。"
+    },
+    {
+     "q": "有沒有糖尿病、偏頭痛、癲癇？正在吃哪些藥？有沒有喝酒？",
+     "why": "藥物、酒精和這些疾病都可能造成意識混亂。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "中風或小中風",
+      "plain": "可能合併臉歪、手腳無力、說話不清楚。",
+      "refs": [
+       "nhs-confusion",
+       "mlp-memory"
+      ]
+     },
+     {
+      "name": "低血糖",
+      "plain": "使用降血糖藥的人常見。",
+      "refs": [
+       "nhs-confusion"
+      ]
+     },
+     {
+      "name": "頭部受傷",
+      "plain": "撞到頭之後。",
+      "refs": [
+       "nhs-confusion",
+       "mlp-memory"
+      ]
+     },
+     {
+      "name": "癲癇發作",
+      "plain": "某些類型的癲癇會造成意識混亂。",
+      "refs": [
+       "nhs-confusion",
+       "mlp-memory"
+      ]
+     },
+     {
+      "name": "一氧化碳中毒",
+      "plain": "同住的人可能也一起不舒服。",
+      "refs": [
+       "nhs-confusion"
+      ]
+     },
+     {
+      "name": "感染",
+      "plain": "例如泌尿道感染（年長者常見），或腦炎、腦膜炎。",
+      "refs": [
+       "nhs-confusion",
+       "mlp-memory"
+      ]
+     },
+     {
+      "name": "酒精或藥物",
+      "plain": "喝酒、戒酒，或某些處方藥、毒品。",
+      "refs": [
+       "nhs-confusion",
+       "mlp-memory"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "暫時性全面失憶（TGA）",
+      "plain": "原因不明，通常幾小時內慢慢恢復。",
+      "refs": [
+       "mayo-tga",
+       "mlp-memory"
+      ]
+     },
+     {
+      "name": "失智症",
+      "plain": "通常是慢慢發生，不是突然。",
+      "refs": [
+       "mlp-memory",
+       "nhs-confusion"
+      ]
+     },
+     {
+      "name": "重大壓力或創傷事件之後",
+      "plain": "心理因素也可能影響記憶。",
+      "refs": [
+       "mlp-memory"
+      ]
+     },
+     {
+      "name": "維生素 B1 或 B12 不足",
+      "plain": "營養缺乏也會影響記憶。",
+      "refs": [
+       "mlp-memory"
+      ]
+     }
+    ],
+    "patternsHeading": "依出現的情況",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "中年以上的人突然記不得剛剛的事、一直重複問同樣的問題，但知道自己是誰、認得家人，沒有手腳無力",
+      "text": "可能是暫時性全面失憶，通常幾小時內慢慢恢復；但無法和中風等危險疾病分辨，仍要立即就醫。",
+      "refs": [
+       "mayo-tga"
+      ]
+     },
+     {
+      "pattern": "剛泡冷水或熱水、劇烈運動、受到情緒打擊之後發生",
+      "text": "這些是暫時性全面失憶常見的誘發情境，但仍要立即就醫。",
+      "refs": [
+       "mayo-tga"
+      ]
+     },
+     {
+      "pattern": "合併臉歪、一側手腳無力或說話不清楚",
+      "text": "可能是中風，請立即撥打 119。",
+      "refs": [
+       "nhs-stroke"
+      ]
+     },
+     {
+      "pattern": "有糖尿病，合併冒汗、發抖、心悸",
+      "text": "可能是低血糖。還能安全吞嚥時，先喝一小杯果汁或含糖飲料；叫不醒或沒有改善，請撥打 119。",
+      "refs": [
+       "nhs-hypo"
+      ]
+     },
+     {
+      "pattern": "在使用瓦斯熱水器、爐具或燒炭的空間，同住的人一起頭痛、不舒服",
+      "text": "可能是一氧化碳中毒，請立即撥打 119。",
+      "refs": [
+       "nhs-confusion",
+       "nhs-co"
+      ]
+     },
+     {
+      "pattern": "年長者突然變得糊塗",
+      "text": "常見原因是泌尿道感染等感染，請立即就醫。",
+      "refs": [
+       "nhs-confusion"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "年長者或失智症患者突然變得更糊塗，常見的原因是泌尿道感染。",
+     "refs": [
+      "nhs-confusion"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "看到發生經過的人一起去",
+    "症狀開始的時間",
+    "使用中的所有藥物",
+    "病史：糖尿病、偏頭痛、癲癇",
+    "最近有沒有撞到頭"
+   ],
+   "sources": [
+    "mayo-tga",
+    "nhs-confusion",
+    "nhs-stroke",
+    "mlp-memory",
+    "nhs-hypo",
+    "nhs-co"
+   ],
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17"
+  },
+  {
+   "slug": "weakness",
+   "title": "無力（全身無力、雙腳無力）",
+   "bodyArea": "neuro",
+   "audience": [
+    "adult"
+   ],
+   "status": "published",
+   "aliases": [
+    "無力",
+    "全身無力",
+    "四肢無力",
+    "手腳無力",
+    "雙腳無力",
+    "腳沒力",
+    "腳軟",
+    "站不起來",
+    "沒力氣",
+    "虛弱",
+    "走不動",
+    "手沒力",
+    "肌肉無力",
+    "癱軟",
+    "週期性麻痺",
+    "低血鉀"
+   ],
+   "audienceNote": "適用 18 歲以上成人。只有一側的臉、手或腳無力，請看「中風徵兆」頁並立即撥打 119。",
+   "summary": "無力可能是全身，也可能只在某個部位。一側突然無力可能是中風；雙腳無力合併大小便異常、或無力合併呼吸吞嚥困難，都需要立即處理。",
+   "definition": "無力可能是真的肌肉力量變差，也可能只是覺得沒力氣（例如感冒時）。只在某個部位的無力比較容易察覺。",
+   "definitionRefs": [
+    "mlp-weakness"
+   ],
+   "actions": {
+    "emergency": {
+     "heading": "立即撥打 119 或到急診",
+     "intro": "無力加上下列任何一項，請立即就醫：",
+     "items": [
+      {
+       "text": "一側的臉、手或腳突然無力或麻木，或說話不清楚（中風徵兆）",
+       "refs": [
+        "nhs-stroke",
+        "mlp-weakness"
+       ]
+      },
+      {
+       "text": "呼吸困難、吞嚥困難或說話困難",
+       "refs": [
+        "mlp-hpp",
+        "nhs-gbs",
+        "nhs-mg"
+       ]
+      },
+      {
+       "text": "兩隻腳都無力或麻木，或腳無力愈來愈嚴重",
+       "refs": [
+        "nhs-sciatica"
+       ]
+      },
+      {
+       "text": "生殖器或肛門周圍麻木，或尿不出來、無法控制大小便",
+       "refs": [
+        "nhs-sciatica"
+       ]
+      },
+      {
+       "text": "心跳不規則、頭暈或昏倒",
+       "refs": [
+        "mlp-hpp",
+        "mlp-hypokalemia"
+       ]
+      },
+      {
+       "text": "有糖尿病，出現意識混亂或叫不醒",
+       "refs": [
+        "nhs-hypo"
+       ]
+      },
+      {
+       "text": "合併意識混亂、無法控制的發抖、呼吸困難，或皮膚、嘴唇發紫或出現花斑（可能是敗血症）",
+       "refs": [
+        "nhs-sepsis"
+       ]
+      }
+     ],
+     "doNow": [
+      {
+       "text": "有糖尿病又出現冒汗、發抖等低血糖症狀：還能安全吞嚥時，先喝一小杯果汁或含糖飲料，10 到 15 分鐘後再量一次血糖。叫不醒時不要餵食，讓他側躺並撥打 119。",
+       "refs": [
+        "nhs-hypo"
+       ]
+      },
+      {
+       "text": "不要自己開車去急診，請別人載或撥打 119。",
+       "refs": [
+        "nhs-stroke",
+        "nhs-gbs"
+       ]
+      }
+     ]
+    },
+    "urgent": {
+     "heading": "今天就要就醫",
+     "intro": "沒有上面的任何一項，但符合下列情況，請今天就醫：",
+     "items": [
+      {
+       "text": "突然出現無力，特別是只在某個部位",
+       "refs": [
+        "mlp-weakness"
+       ]
+      },
+      {
+       "text": "感冒、腸胃炎等病毒感染之後出現無力",
+       "refs": [
+        "mlp-weakness"
+       ]
+      },
+      {
+       "text": "手腳先發麻刺痛，接著無力，幾天到幾週內愈來愈嚴重",
+       "refs": [
+        "nhs-gbs"
+       ]
+      },
+      {
+       "text": "無力反覆發作、發作之間完全正常，常在睡醒、吃了大量澱粉或甜食、很鹹的一餐，或運動後休息時發作",
+       "refs": [
+        "mlp-hpp",
+        "mlp-tpp"
+       ]
+      },
+      {
+       "text": "嚴重腹瀉、嘔吐，或正在吃利尿劑，出現無力、抽筋或心悸",
+       "refs": [
+        "mlp-hypokalemia"
+       ]
+      }
+     ]
+    },
+    "routine": {
+     "heading": "儘快安排門診",
+     "intro": "下列情況請儘快安排門診，不要拖延：",
+     "items": [
+      {
+       "text": "一直覺得很累、沒力氣，持續一段時間沒有改善，也找不到原因，而且沒有上方任何一項",
+       "refs": [
+        "nhs-tired",
+        "mlp-weakness"
+       ]
+      },
+      {
+       "text": "眼皮下垂、看東西有兩個影像，或咀嚼、吞嚥、說話容易累，傍晚比較嚴重",
+       "refs": [
+        "nhs-mg"
+       ]
+      }
+     ]
+    },
+    "observe": null,
+    "observeOmittedReason": "目前沒有經醫師核准、可以在家觀察的條件。",
+    "delayRisks": {
+     "heading": "延遲就醫的風險",
+     "intro": "不確定要不要就醫時，請選擇就醫：",
+     "items": [
+      {
+       "text": "呼吸或吞嚥的肌肉無力是緊急狀況；週期性麻痺發作時也可能出現危險的心律不整。",
+       "refs": [
+        "mlp-hpp"
+       ]
+      },
+      {
+       "text": "血鉀很低可能引起心律不整，甚至心跳停止。",
+       "refs": [
+        "mlp-hypokalemia"
+       ]
+      },
+      {
+       "text": "格林-巴利症候群的症狀通常在頭 2 到 4 週持續惡化，需要住院治療。",
+       "refs": [
+        "nhs-gbs"
+       ]
+      }
+     ]
+    }
+   },
+   "keyQuestions": [
+    {
+     "q": "是全身無力，還是某個部位（一側、雙腳、臉、眼皮）？",
+     "why": "無力的部位能幫助醫師找原因。"
+    },
+    {
+     "q": "是突然發生、慢慢變差，還是反覆發作？",
+     "why": "發生的方式和時間幫助判斷原因。"
+    },
+    {
+     "q": "有沒有呼吸、吞嚥或說話困難？大小便正常嗎？",
+     "why": "這些是需要立即處理的警訊。"
+    },
+    {
+     "q": "最近有沒有感冒、腹瀉嘔吐，或新吃的藥（例如利尿劑）？",
+     "why": "感染和藥物都可能造成無力。"
+    },
+    {
+     "q": "有沒有糖尿病、甲狀腺疾病？家人有沒有類似的發作？",
+     "why": "週期性麻痺可能和甲狀腺或家族有關。"
+    }
+   ],
+   "possibleCauses": {
+    "ruleOutFirst": [
+     {
+      "name": "中風",
+      "plain": "一側的臉、手或腳突然無力。",
+      "refs": [
+       "nhs-stroke",
+       "mlp-weakness"
+      ]
+     },
+     {
+      "name": "神經嚴重受壓迫（馬尾症候群）",
+      "plain": "雙腳無力，合併會陰麻木或大小便異常。",
+      "refs": [
+       "nhs-sciatica"
+      ]
+     },
+     {
+      "name": "脊髓的問題（橫斷性脊髓炎、脊髓受壓迫、脊髓中風）",
+      "plain": "雙腳無力、麻木，可能合併大小便異常；脊髓受壓迫需要緊急手術。",
+      "refs": [
+       "mayo-tm"
+      ]
+     },
+     {
+      "name": "格林-巴利症候群",
+      "plain": "神經發炎，手腳發麻後無力，可能影響呼吸。",
+      "refs": [
+       "nhs-gbs",
+       "mlp-weakness"
+      ]
+     },
+     {
+      "name": "電解質失衡（例如低血鉀、低血鈉，包括週期性麻痺）",
+      "plain": "可能引起心律不整。",
+      "refs": [
+       "mlp-weakness",
+       "mlp-hypokalemia",
+       "mlp-hpp",
+       "mlp-tpp"
+      ]
+     },
+     {
+      "name": "低血糖",
+      "plain": "使用胰島素或降血糖藥的人。",
+      "refs": [
+       "nhs-hypo"
+      ]
+     },
+     {
+      "name": "敗血症",
+      "plain": "感染引起的嚴重全身反應。",
+      "refs": [
+       "nhs-sepsis"
+      ]
+     }
+    ],
+    "otherCommon": [
+     {
+      "name": "感冒等感染",
+      "plain": "覺得沒力氣，但肌肉力量沒有真的變差。",
+      "refs": [
+       "mlp-weakness"
+      ]
+     },
+     {
+      "name": "貧血",
+      "plain": "可能合併心悸、喘、臉色蒼白。",
+      "refs": [
+       "mlp-weakness",
+       "nhs-tired"
+      ]
+     },
+     {
+      "name": "甲狀腺亢進",
+      "plain": "可能合併手抖、怕熱、心悸、體重減輕。",
+      "refs": [
+       "mlp-weakness",
+       "nhs-tired"
+      ]
+     },
+     {
+      "name": "神經受壓迫（例如椎間盤突出）",
+      "plain": "某個部位無力或麻。",
+      "refs": [
+       "mlp-weakness"
+      ]
+     },
+     {
+      "name": "睡眠不足、壓力、生活作息",
+      "plain": "常見的疲累原因。",
+      "refs": [
+       "nhs-tired"
+      ]
+     }
+    ],
+    "patternsHeading": "依無力的部位和方式",
+    "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
+    "painPatterns": [
+     {
+      "pattern": "只有一側的臉、手或腳突然無力或麻木",
+      "text": "可能是中風，請立即撥打 119。",
+      "refs": [
+       "nhs-stroke"
+      ]
+     },
+     {
+      "pattern": "兩隻腳無力，合併生殖器或肛門周圍麻木、尿不出來或無法控制大小便",
+      "text": "可能是神經嚴重受壓迫（馬尾症候群），請立即到急診。",
+      "refs": [
+       "nhs-sciatica"
+      ]
+     },
+     {
+      "pattern": "雙腳沉重、無力或麻木，走路絆到、拖著腳，可能合併背痛或大小便異常",
+      "text": "可能是脊髓的問題（橫斷性脊髓炎、脊髓受壓迫）或電解質失衡，請立即就醫。",
+      "refs": [
+       "mayo-tm",
+       "mlp-weakness"
+      ]
+     },
+     {
+      "pattern": "手腳先發麻刺痛，接著無力，幾天到幾週內愈來愈嚴重",
+      "text": "可能是格林-巴利症候群，請今天就醫；出現呼吸或吞嚥困難，請立即撥打 119。",
+      "refs": [
+       "nhs-gbs"
+      ]
+     },
+     {
+      "pattern": "睡醒、飽餐或運動後休息時，突然四肢無力（常在肩膀、髖部），發作之間完全正常；可能合併心悸、手抖、怕熱、體重減輕",
+      "text": "可能是低血鉀週期性麻痺（包括甲狀腺亢進引起的），請今天就醫；合併呼吸困難、心跳不規則或昏倒，請撥打 119。",
+      "refs": [
+       "mlp-hpp",
+       "mlp-tpp"
+      ]
+     },
+     {
+      "pattern": "嚴重腹瀉、嘔吐，或吃利尿劑之後無力、抽筋、心悸",
+      "text": "可能是低血鉀，請今天就醫。",
+      "refs": [
+       "mlp-hypokalemia"
+      ]
+     },
+     {
+      "pattern": "眼皮下垂、看東西有兩個影像，咀嚼、吞嚥、說話容易累，傍晚比較嚴重",
+      "text": "可能是重症肌無力，請安排門診；突然吞嚥或呼吸困難，請立即就醫。",
+      "refs": [
+       "nhs-mg"
+      ]
+     }
+    ]
+   },
+   "specialPopulations": [
+    {
+     "text": "甲狀腺亢進引起的週期性麻痺，亞洲男性比較常見。",
+     "refs": [
+      "mlp-tpp"
+     ]
+    }
+   ],
+   "visitPreparation": [
+    "無力開始的時間、部位，是否反覆發作",
+    "使用中的所有藥物，特別是利尿劑、降血糖藥",
+    "最近的感冒、腹瀉或嘔吐",
+    "病史：糖尿病、甲狀腺疾病",
+    "家人有沒有類似的發作"
+   ],
+   "sources": [
+    "mlp-weakness",
+    "nhs-stroke",
+    "mlp-hpp",
+    "nhs-gbs",
+    "nhs-mg",
+    "nhs-sciatica",
+    "mlp-hypokalemia",
+    "nhs-hypo",
+    "nhs-sepsis",
+    "mlp-tpp",
+    "nhs-tired",
+    "mayo-tm"
+   ],
+   "reviewedBy": "潘麒亘",
+   "reviewerCredentials": "急診醫學專科醫師、臨床毒物專科醫師",
+   "reviewedAt": "2026-11-17",
+   "nextReviewAt": "2027-11-17"
   },
   {
    "slug": "fever",

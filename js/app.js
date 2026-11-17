@@ -13,8 +13,8 @@
   }
   function $(sel) { return document.querySelector(sel); }
   function param(name) { return new URLSearchParams(location.search).get(name) || ''; }
-  var AREA = { head: '頭頸部', chest: '胸部', abdomen: '腹部', back: '背部', 'whole-body': '全身', skin: '皮膚', child: '兒童' };
-  var AREA_ORDER = ['head', 'chest', 'abdomen', 'back', 'skin', 'whole-body', 'child'];
+  var AREA = { head: '頭頸部', chest: '胸部', abdomen: '腹部', back: '背部', 'whole-body': '全身', skin: '皮膚', neuro: '腦和神經', child: '兒童' };
+  var AREA_ORDER = ['head', 'neuro', 'chest', 'abdomen', 'back', 'skin', 'whole-body', 'child'];
 
   /* 單色線條圖示（裝飾用，aria-hidden） */
   var ICON_PATHS = {
@@ -27,6 +27,9 @@
     'poisoning': '<path d="M9.5 2.5h5M10 2.5v4.2L6.5 12a5.5 5.5 0 1 0 11 0L14 6.7V2.5"/><path d="M10 14.5l4 3M14 14.5l-4 3"/>',
     'rash': '<circle cx="12" cy="12" r="8.5"/><circle cx="9" cy="9.5" r="1"/><circle cx="14.5" cy="8.5" r=".9"/><circle cx="11" cy="14" r="1.1"/><circle cx="15.5" cy="13.5" r=".9"/><circle cx="8.2" cy="13.8" r=".6"/>'
   };
+  ICON_PATHS.stroke = '<path d="M12 4.5c-3.8 0-6.5 2.6-6.5 6 0 2 .9 3.6 2.4 4.6V19h8.2v-3.9c1.5-1 2.4-2.6 2.4-4.6 0-3.4-2.7-6-6.5-6z"/><path d="M12 4.5v14.5"/><path d="M14.5 9l1.5 1.5-1.5 1.5"/>';
+  ICON_PATHS['memory-loss'] = '<circle cx="12" cy="11" r="7"/><path d="M9.8 9.2a2.3 2.3 0 1 1 3.2 2.1c-.7.3-1 .8-1 1.5v.4"/><path d="M12 16h.01"/>';
+  ICON_PATHS.weakness = '<circle cx="12" cy="4.5" r="1.8"/><path d="M12 7v6"/><path d="M8 10l4-1 4 1"/><path d="M12 13l-2.5 7M12 13l2.5 7"/><path d="M5 20h14" stroke-dasharray="1.5 2"/>';
   ICON_PATHS['child-fever'] = ICON_PATHS.fever;
   ICON_PATHS['child-poisoning'] = ICON_PATHS.poisoning;
   function icon(slug) {

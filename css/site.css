@@ -309,3 +309,33 @@ sup.ref a:hover { color: var(--text); }
 .table-scroll { overflow-x: auto; }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* ---------- 2026-11-19 設計優化：部位篩選、手機列表卡、跳轉列 ---------- */
+.area-chips { display: flex; gap: 8px; margin: 0 0 16px; overflow-x: auto; padding: 2px 2px 6px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.area-chips::-webkit-scrollbar { display: none; }
+@media (min-width: 640px) { .area-chips { flex-wrap: wrap; overflow: visible; } }
+.area-chip { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 7px; min-height: 38px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); font: inherit; font-size: 14px; letter-spacing: .04em; cursor: pointer; transition: border-color .15s, color .15s, background .15s; }
+.area-chip span { font-size: 12px; color: var(--faint); font-variant-numeric: tabular-nums; }
+.area-chip:hover { border-color: var(--ink); color: var(--text); }
+.area-chip:focus-visible { outline: none; box-shadow: var(--focus); }
+.area-chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.area-chip[aria-pressed="true"] span { color: rgba(255,255,255,.7); }
+
+/* 手機：症狀卡改成一欄的列表列，掃讀更快 */
+@media (max-width: 519px) {
+  .sym-grid { grid-template-columns: 1fr; gap: 8px; }
+  .sym-card { display: grid; grid-template-columns: 40px 1fr 16px; grid-template-rows: auto auto; column-gap: 14px; align-items: center; padding: 12px 14px; }
+  .sym-card .ico { grid-row: 1 / 3; width: 40px; height: 40px; padding: 9px; margin: 0; }
+  .sym-t { font-size: 16px; grid-column: 2; }
+  .sym-a { grid-column: 2; }
+  .sym-go { position: static; grid-column: 3; grid-row: 1 / 3; }
+  .sym-card:hover { transform: none; }
+}
+
+/* 手機：症狀頁的跳轉連結排成一列，可橫向滑動 */
+@media (max-width: 519px) {
+  .jump { flex-wrap: nowrap; overflow-x: auto; margin-left: -16px; margin-right: -16px; padding: 2px 16px 6px; scrollbar-width: none; }
+  .jump::-webkit-scrollbar { display: none; }
+  .jump { gap: 6px; }
+  .jump a { flex: 0 0 auto; padding: 6px 11px; font-size: 13.5px; letter-spacing: .02em; gap: 4px; }
+}

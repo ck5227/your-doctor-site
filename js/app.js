@@ -108,8 +108,15 @@
   /* ---------- 首頁 ---------- */
   function renderHome() {
     var list = D.symptoms;
+    var areas = AREA_ORDER.filter(function (a) { return list.some(function (s) { return s.bodyArea === a; }); });
+    var chips = '<div class="area-chips" role="group" aria-label="依身體部位篩選">' +
+      '<button type="button" class="area-chip" data-area="" aria-pressed="true">全部<span>' + list.length + '</span></button>' +
+      areas.map(function (a) {
+        var n = list.filter(function (s) { return s.bodyArea === a; }).length;
+        return '<button type="button" class="area-chip" data-area="' + esc(a) + '" aria-pressed="false">' + esc(AREA[a]) + '<span>' + n + '</span></button>';
+      }).join('') + '</div>';
     var cards = list.length
-      ? symCards(list)
+      ? chips + '<div id="home-cards">' + symCards(list) + '</div>'
       : '<div class="notice"><p><strong>症狀頁正在醫師審核中，尚未開放。</strong></p><p class="small muted">我們只公開經醫師審核的內容。現在如果身體不舒服，請就醫或諮詢醫療人員；危急時請撥打 ' + esc(EM) + '。</p></div>';
     $('#main').innerHTML =
       '<section class="hero"><div class="wrap">' +
@@ -119,13 +126,13 @@
       '<form class="search" role="search" action="symptoms.html" method="get">' +
       '<label for="q" class="skip">描述你的症狀</label>' +
       '<span class="search-field"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>' +
-      '<input id="q" name="q" type="search" autocomplete="off" placeholder="例如：胸口悶、肚子痛、起疹子" aria-describedby="q-hint"></span>' +
+      '<input id="q" name="q" type="search" autocomplete="off" placeholder="例如：胸口悶" aria-describedby="q-hint"></span>' +
       '<button type="submit">搜尋</button></form>' +
       '<p id="q-hint" class="hint">可以輸入口語說法；本網站不會記錄你輸入的內容。</p>' +
       '<div id="live" aria-live="polite"></div>' +
       '</div></section>' +
       '<div class="wrap">' +
-      '<section aria-labelledby="common-h"><p class="eyebrow" id="common-h">常見症狀</p>' + cards + '</section>' +
+      '<section aria-labelledby="common-h"><p class="eyebrow" id="common-h">依部位找症狀</p>' + cards + '</section>' +
       emStrip('胸痛、很喘、叫不醒、中風徵兆？不要等，立即撥打 ' + EM + '。') +
       '<section aria-labelledby="how-h"><p class="eyebrow" id="how-h">怎麼使用</p><ol class="steps">' +
       '<li><span class="step-n">01</span><strong>描述症狀</strong><span>用平常說話的方式輸入，例如「胸口悶」。</span></li>' +
@@ -138,6 +145,14 @@
     input.addEventListener('input', function () {
       var r = YDSearch.search(D.symptoms, input.value);
       live.innerHTML = input.value.trim() ? resultList(r, true) : '';
+    });
+    var box = $('#home-cards');
+    [].forEach.call(document.querySelectorAll('.area-chip'), function (b) {
+      b.addEventListener('click', function () {
+        var a = b.getAttribute('data-area');
+        [].forEach.call(document.querySelectorAll('.area-chip'), function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+        box.innerHTML = symCards(a ? list.filter(function (s) { return s.bodyArea === a; }) : list);
+      });
     });
   }
 

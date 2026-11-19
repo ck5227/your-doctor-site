@@ -1,7 +1,7 @@
 /* 由 scripts/build.mjs 產生，請勿手動修改。來源：content/ */
 window.YD = {
  "mode": "public",
- "builtAt": "2026-11-17T23:19:25.762Z",
+ "builtAt": "2026-11-19T03:19:09.154Z",
  "config": {
   "siteName": "你的醫生",
   "tagline": "依症狀了解可能疾病",
@@ -166,48 +166,48 @@ window.YD = {
    "title": "Chest pain – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/chest-pain/symptoms-causes/syc-20370838",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-sob": {
    "publisher": "Mayo Clinic",
    "title": "Shortness of breath – Causes / When to see a doctor",
    "url": "https://www.mayoclinic.org/symptoms/shortness-of-breath/basics/causes/sym-20050890",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-abdo": {
    "publisher": "Mayo Clinic",
    "title": "Abdominal pain – Causes / When to see a doctor",
    "url": "https://www.mayoclinic.org/symptoms/abdominal-pain/basics/causes/sym-20050728",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-headache": {
    "publisher": "Mayo Clinic",
    "title": "Headache – Causes / When to see a doctor",
    "url": "https://www.mayoclinic.org/symptoms/headache/basics/causes/sym-20050800",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-fever": {
    "publisher": "Mayo Clinic",
    "title": "Fever – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/fever/symptoms-causes/syc-20352759",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-anaphylaxis": {
    "publisher": "Mayo Clinic",
    "title": "Anaphylaxis – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/anaphylaxis/symptoms-causes/syc-20351468",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mlp-chest": {
    "publisher": "MedlinePlus（美國國家醫學圖書館）",
@@ -363,8 +363,8 @@ window.YD = {
    "title": "Poisoning: First aid",
    "url": "https://www.mayoclinic.org/first-aid/first-aid-poisoning/basics/art-20056657",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "poison-org": {
    "publisher": "National Capital Poison Center（美國毒物中心）",
@@ -387,8 +387,8 @@ window.YD = {
    "title": "Appendicitis – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/appendicitis/symptoms-causes/syc-20369543",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mlp-appendicitis": {
    "publisher": "MedlinePlus（美國國家醫學圖書館）",
@@ -411,8 +411,8 @@ window.YD = {
    "title": "Kidney stones – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/kidney-stones/symptoms-causes/syc-20355755",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mlp-kidneystones": {
    "publisher": "MedlinePlus（美國國家醫學圖書館）",
@@ -435,32 +435,32 @@ window.YD = {
    "title": "Gallstones – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/gallstones/symptoms-causes/syc-20354214",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-diverticulitis": {
    "publisher": "Mayo Clinic",
    "title": "Diverticulitis – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/diverticulitis/symptoms-causes/syc-20371758",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-pancreatitis": {
    "publisher": "Mayo Clinic",
    "title": "Pancreatitis – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/pancreatitis/symptoms-causes/syc-20360227",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-ectopic": {
    "publisher": "Mayo Clinic",
    "title": "Ectopic pregnancy – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/ectopic-pregnancy/symptoms-causes/syc-20372088",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mlp-rash": {
    "publisher": "MedlinePlus（美國國家醫學圖書館）",
@@ -515,8 +515,8 @@ window.YD = {
    "title": "Stevens-Johnson syndrome – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/stevens-johnson-syndrome/symptoms-causes/syc-20355936",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "nhs-meningitis": {
    "publisher": "NHS（英國國民保健署）",
@@ -531,40 +531,40 @@ window.YD = {
    "title": "Drug allergy – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/drug-allergy/symptoms-causes/syc-20371835",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-cellulitis": {
    "publisher": "Mayo Clinic",
    "title": "Cellulitis – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/cellulitis/symptoms-causes/syc-20370762",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-shingles": {
    "publisher": "Mayo Clinic",
    "title": "Shingles – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/shingles/symptoms-causes/syc-20353054",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-hives": {
    "publisher": "Mayo Clinic",
    "title": "Chronic hives – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/chronic-hives/symptoms-causes/syc-20352719",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-food-allergy": {
    "publisher": "Mayo Clinic",
    "title": "Food allergy – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/food-allergy/symptoms-causes/syc-20355095",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mohw-cbz": {
    "publisher": "衛生福利部（原衛生署食品藥物管理局）",
@@ -603,8 +603,8 @@ window.YD = {
    "title": "Back pain – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/back-pain/symptoms-causes/syc-20369906",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "nhs-sciatica": {
    "publisher": "NHS（英國國民保健署）",
@@ -619,8 +619,8 @@ window.YD = {
    "title": "Abdominal aortic aneurysm – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/abdominal-aortic-aneurysm/symptoms-causes/syc-20350688",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "nhs-aaa": {
    "publisher": "NHS（英國國民保健署）",
@@ -635,16 +635,16 @@ window.YD = {
    "title": "Kidney infection – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/kidney-infection/symptoms-causes/syc-20353387",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-herniated": {
    "publisher": "Mayo Clinic",
    "title": "Herniated disk – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/herniated-disk/symptoms-causes/syc-20354095",
    "type": "衛教",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "nhs-index": {
    "publisher": "NHS（英國國民保健署）",
@@ -711,8 +711,8 @@ window.YD = {
    "title": "Mayo Clinic 症狀索引",
    "url": "https://www.mayoclinic.org/symptoms",
    "type": "編輯參考",
-   "checkedAt": "2026-11-10",
-   "linkCheck": "ok",
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）",
    "siteReference": {
     "order": 7,
     "learnedFrom": "讓民眾由症狀了解可能原因。本站列出原因時不排序機率，也不當作診斷。"
@@ -907,16 +907,16 @@ window.YD = {
    "title": "Aortic dissection – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/aortic-dissection/symptoms-causes/syc-20369496",
    "type": "衛教",
-   "checkedAt": "2026-11-11",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-pneumothorax": {
    "publisher": "Mayo Clinic",
    "title": "Pneumothorax – Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/pneumothorax/symptoms-causes/syc-20350367",
    "type": "衛教",
-   "checkedAt": "2026-11-11",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mohw-stroke": {
    "publisher": "衛生福利部（國民健康署、台灣腦中風學會）",
@@ -1068,16 +1068,16 @@ window.YD = {
    "title": "Stroke: Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-tga": {
    "publisher": "Mayo Clinic",
    "title": "Transient global amnesia: Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/transient-global-amnesia/symptoms-causes/syc-20378531",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mlp-memory": {
    "publisher": "MedlinePlus（美國國家醫學圖書館）",
@@ -1172,8 +1172,8 @@ window.YD = {
    "title": "Bell's palsy: Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/bells-palsy/symptoms-causes/syc-20370028",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mlp-facial": {
    "publisher": "MedlinePlus（美國國家醫學圖書館）",
@@ -1188,8 +1188,8 @@ window.YD = {
    "title": "Transverse myelitis: Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/transverse-myelitis/symptoms-causes/syc-20354726",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "nhs-dizzy": {
    "publisher": "NHS（英國國民保健署）",
@@ -1212,8 +1212,8 @@ window.YD = {
    "title": "Dizziness: Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/dizziness/symptoms-causes/syc-20371787",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "nhs-labyrinthitis": {
    "publisher": "NHS（英國國民保健署）",
@@ -1244,16 +1244,16 @@ window.YD = {
    "title": "Fainting: First aid",
    "url": "https://www.mayoclinic.org/first-aid/first-aid-fainting/basics/art-20056606",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mayo-syncope": {
    "publisher": "Mayo Clinic",
    "title": "Vasovagal syncope: Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/vasovagal-syncope/symptoms-causes/syc-20350527",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "nhs-vomit-blood": {
    "publisher": "NHS（英國國民保健署）",
@@ -1276,8 +1276,8 @@ window.YD = {
    "title": "Gastrointestinal bleeding: Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/gastrointestinal-bleeding/symptoms-causes/syc-20372729",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "mlp-black-stool": {
    "publisher": "MedlinePlus（美國國家醫學圖書館）",
@@ -1300,8 +1300,8 @@ window.YD = {
    "title": "Heart palpitations: Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/heart-palpitations/symptoms-causes/syc-20373196",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "nhs-af": {
    "publisher": "NHS（英國國民保健署）",
@@ -1348,8 +1348,8 @@ window.YD = {
    "title": "Head trauma: First aid",
    "url": "https://www.mayoclinic.org/first-aid/first-aid-head-trauma/basics/art-20056626",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "nhs-dvt": {
    "publisher": "NHS（英國國民保健署）",
@@ -1364,8 +1364,8 @@ window.YD = {
    "title": "Deep vein thrombosis (DVT): Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/deep-vein-thrombosis/symptoms-causes/syc-20352557",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "nhs-cellulitis": {
    "publisher": "NHS（英國國民保健署）",
@@ -1396,8 +1396,8 @@ window.YD = {
    "title": "Seizures: Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/seizure/symptoms-causes/syc-20365711",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "nhs-cough-blood": {
    "publisher": "NHS（英國國民保健署）",
@@ -1484,8 +1484,8 @@ window.YD = {
    "title": "Epiglottitis: Symptoms and causes",
    "url": "https://www.mayoclinic.org/diseases-conditions/epiglottitis/symptoms-causes/syc-20372227",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "tsem-snake": {
    "publisher": "台灣急診醫學會（台灣急診醫學通訊 3(4)，2020）",
@@ -1708,8 +1708,8 @@ window.YD = {
    "title": "Hypertensive crisis: What are the symptoms?",
    "url": "https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/expert-answers/hypertensive-crisis/faq-20058491",
    "type": "衛教",
-   "checkedAt": "2026-11-17",
-   "linkCheck": "ok"
+   "checkedAt": "2026-11-19",
+   "linkCheck": "ok（瀏覽器）"
   },
   "nhs-suicidal": {
    "publisher": "NHS（英國國民保健署）",
@@ -2007,7 +2007,8 @@ window.YD = {
       "name": "帶狀疱疹（皮蛇）",
       "plain": "沿神經分布的刺痛，之後可能出現水泡。",
       "refs": [
-       "mayo-chest"
+       "mayo-chest",
+       "mayo-shingles"
       ]
      },
      {
@@ -2123,12 +2124,12 @@ window.YD = {
     "nhs-chest",
     "mlp-chest",
     "nhs-angina",
+    "mayo-shingles",
     "nhs-heart-attack",
     "mayo-dissection",
     "nhs-pe",
     "mayo-pneumothorax",
     "nhs-pneumonia",
-    "mayo-shingles",
     "nhs-panic"
    ],
    "thinking": {
@@ -2160,7 +2161,7 @@ window.YD = {
      },
      {
       "title": "肺和肋膜",
-      "text": "肺炎或肋膜炎、氣胸、肺栓塞。",
+      "text": "肋膜炎、氣胸、肺栓塞。",
       "refs": [
        "mayo-chest"
       ]
@@ -2523,7 +2524,8 @@ window.YD = {
       "pattern": "突然胸痛，同時覺得喘",
       "text": "可能是氣胸（肺塌陷），請立即撥打 119。",
       "refs": [
-       "mayo-pneumothorax"
+       "mayo-pneumothorax",
+       "mayo-sob"
       ]
      },
      {
@@ -3647,6 +3649,13 @@ window.YD = {
       ]
      },
      {
+      "name": "突然停用某些心臟藥物",
+      "plain": "例如乙型阻斷劑。",
+      "refs": [
+       "mayo-htn-crisis"
+      ]
+     },
+     {
       "name": "藥物交互作用",
       "plain": "",
       "refs": [
@@ -3680,8 +3689,8 @@ window.YD = {
       ]
      },
      {
-      "pattern": "最近忘記吃降血壓藥，或自己停藥",
-      "text": "請就醫，由醫師評估和調整用藥。",
+      "pattern": "最近忘記吃降血壓藥，或突然停用某些心臟藥物（例如乙型阻斷劑）",
+      "text": "可能引起血壓突然升高，請依上面的血壓數字和症狀決定就醫方式。",
       "refs": [
        "mayo-htn-crisis"
       ]
@@ -5872,7 +5881,7 @@ window.YD = {
        ]
       },
       {
-       "text": "突然、劇烈的上背痛（兩側肩胛骨之間）或胸痛，感覺像撕裂一樣，可能延伸到脖子",
+       "text": "突然、劇烈的胸痛或上背痛，感覺像撕裂一樣，可能延伸到脖子或背部",
        "refs": [
         "mayo-dissection"
        ]
@@ -6238,10 +6247,10 @@ window.YD = {
     "mlp-lbp",
     "nhs-aaa",
     "mayo-aaa",
+    "mayo-dissection",
     "mayo-kidneystones",
     "mayo-kidney-infection",
-    "mayo-herniated",
-    "mayo-dissection"
+    "mayo-herniated"
    ],
    "thinking": {
     "status": "published",
@@ -8380,7 +8389,7 @@ window.YD = {
     "ruleOutFirst": [
      {
       "name": "會厭炎",
-      "plain": "吞嚥很痛、流口水、吸氣有尖銳聲、身體前傾才好呼吸。",
+      "plain": "喉嚨痛、發燒、聲音悶或沙啞、吸氣有尖銳聲、吞嚥或呼吸困難、流口水。",
       "refs": [
        "mayo-epiglottitis"
       ]
@@ -8427,7 +8436,7 @@ window.YD = {
     "patternsIntro": "這些只是線索，不能用來自己判斷。只要有上方「立即求助」的任何一項，請立即撥打 119 或到急診。",
     "painPatterns": [
      {
-      "pattern": "吞嚥很痛、流口水、吸氣有尖銳聲，坐著身體前傾才好呼吸",
+      "pattern": "喉嚨痛合併吞嚥困難、流口水、聲音悶啞、吸氣有尖銳聲或呼吸困難",
       "text": "可能是會厭炎，請立即撥打 119。",
       "refs": [
        "mayo-epiglottitis"
@@ -12094,7 +12103,7 @@ window.YD = {
      },
      {
       "pattern": "紅、腫、熱、痛，範圍在擴大",
-      "text": "可能是蜂窩性組織炎，合併發燒或快速擴大時請立即就醫。",
+      "text": "可能是蜂窩性組織炎，合併發燒或快速擴大時請立即就醫；沒有發燒也要在 24 小時內就醫。",
       "refs": [
        "mayo-cellulitis"
       ]
@@ -12116,7 +12125,7 @@ window.YD = {
      ]
     },
     {
-     "text": "50 歲以上或免疫力低下的人得到帶狀疱疹，發生併發症的風險較高。",
+     "text": "50 歲以上的人得到帶狀疱疹，發生併發症的風險較高；免疫力低下的人懷疑帶狀疱疹時，也要儘快就醫。",
      "refs": [
       "mayo-shingles"
      ]
